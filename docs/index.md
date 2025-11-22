@@ -8,28 +8,24 @@ Version 4.0 | © 2025 Dossant LLC | www.RecapMyCalls.com
 
 # Table of Contents
 
-## Part 1: Quick Start
+## Getting Started
 - [What is RECAP?](#what-is-recap)
-- [What You Need](#what-you-need)
-- [Quick Start: 4 Steps](#quick-start-4-steps)
+- [What You Need](getting-started/overview.md)
+- [Quick Start: 4 Steps](getting-started/quick-start.md)
+- [Compatibility Requirements](getting-started/requirements.md)
 
-## Part 2: Troubleshooting
-- [The 5-Minute Diagnostic](#the-5-minute-diagnostic)
-- [Common Problems & Solutions](#common-problems--solutions)
-- [The USB Adapter Solution](#the-usb-adapter-solution)
+## Using RECAP
+- [How RECAP Works](using-recap/making-calls.md)
+- [Recording Software Guide](using-recap/saving-exporting.md)
 
-## Part 3: Reference
-- [How RECAP Works](#how-recap-works)
-- [Compatibility Requirements](#compatibility-requirements)
-- [Setup by Device Type](#setup-by-device-type)
-- [Recording Software Guide](#recording-software-guide)
-- [Technical Specifications](#technical-specifications)
+## Troubleshooting
+- [No Audio Recorded](troubleshooting/no-audio.md)
+- [Low Volume & Noise](troubleshooting/low-volume-noise.md)
+- [Device Scanner & USB Adapter](troubleshooting/device-scanner.md)
 
-## Part 4: Support
-- [Warranty & Returns](#warranty--returns)
-- [Before You Contact Support](#before-you-contact-support)
-- [Frequently Asked Questions](#frequently-asked-questions)
-- [Quick Reference Card](#quick-reference-card)
+## Support
+- [Frequently Asked Questions](faq.md)
+- [Warranty & Support](support.md)
 
 ---
 

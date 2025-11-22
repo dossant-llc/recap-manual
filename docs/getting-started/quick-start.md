@@ -44,7 +44,7 @@ Phone ──→ RECAP ──→ Headset
 
 **Results:**
 - ✅ **YES** → RECAP hardware works! Continue to Step 3
-- ❌ **NO** → Either bad headset (redo Step 1) or hardware issue ([contact support](#before-you-contact-support))
+- ❌ **NO** → Either bad headset (redo Step 1) or hardware issue ([contact support](../support.md))
 
 ---
 
@@ -65,7 +65,7 @@ This free browser tool scans your computer's audio inputs.
 **If MONO:**
 - 80% of modern laptops/Macs have MONO-only inputs
 - This is NOT a defect - it's a compatibility issue
-- Solution: Get Andrea USB stereo adapter ($20-40) FIRST - [See USB Adapter Solution](#the-usb-adapter-solution)
+- Solution: Get Andrea USB stereo adapter ($20-40) FIRST - [See USB Adapter Solution](../troubleshooting/device-scanner.md)
 - RECAP works perfectly, your computer just needs the adapter
 - **Don't proceed to Step 4 until you have the USB adapter**
 
@@ -114,8 +114,8 @@ Phone ──→ RECAP ──→ Headset
 - ✅ Clear audio, reasonable volume
 
 **Problems?**
-- One-sided or no audio → [Go to Troubleshooting](#the-5-minute-diagnostic)
-- Very quiet audio → [See "Low Volume" solution](#problem-low-volume-or-faint-audio)
+- One-sided or no audio → [Go to Troubleshooting](../troubleshooting/no-audio.md)
+- Very quiet audio → [See "Low Volume" solution](../troubleshooting/low-volume-noise.md)
 
 ---
 

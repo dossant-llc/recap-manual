@@ -60,7 +60,7 @@ This fixes 90% of low volume issues!
 
 4. **If none of above work**
    - May be RECAP hardware defect
-   - [Contact support](#before-you-contact-support) with test results
+   - [Contact support](../support.md) with test results
 
 ---
 
@@ -102,7 +102,7 @@ This fixes 90% of low volume issues!
 - **Combo port** (one port for headphones + mic): Usually MONO only
 - **Separate input jack**: Often LINE IN, not MIC IN (incompatible)
 
-**Solution:** Andrea USB stereo adapter - [details here](#the-usb-adapter-solution)
+**Solution:** Andrea USB stereo adapter - [details here](device-scanner.md)
 
 ---
 
