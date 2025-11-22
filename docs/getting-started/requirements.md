@@ -3,11 +3,13 @@
 ### Phone Compatibility
 
 **Compatible:**
+
 - iPhone (with 3.5mm jack or Lightning-to-3.5mm adapter)
 - Android phones with 3.5mm headphone jack
 - Any phone using AHJ standard connector (most cell phones)
 
 **Not compatible:**
+
 - Phones without headphone jack and no adapter
 - Phones using OMTP standard (rare, mostly older European/Asian models)
 
@@ -18,6 +20,7 @@
 ### Headset Compatibility
 
 **Requirements:**
+
 - Must be compatible with YOUR phone
 - Standard 3.5mm TRRS connector (4-pole)
 - Known-working headsets: Apple EarPods, most phone headsets
@@ -29,6 +32,7 @@
 4. If both YES → Headset is compatible
 
 **Common incompatibilities:**
+
 - Old headsets using OMTP standard (mic/ground pins reversed)
 - Headsets designed for different phone brands
 - Damaged or worn-out headsets
@@ -80,6 +84,7 @@ This is where most compatibility issues occur.
 - Professional recorders with stereo line-level input + preamp
 
 **Requirements:**
+
 - Must accept stereo external microphone (2 channels)
 - Must provide bias voltage (or use adapter with bias voltage)
 - **Not LINE IN** - must be MIC IN or have MIC mode

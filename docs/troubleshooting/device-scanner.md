@@ -61,6 +61,7 @@ flowchart TD
 ### When You Need It
 
 **You need a USB stereo adapter if:**
+
 - Device scanner shows "MONO input detected"
 - Your computer has no MIC IN port (only LINE IN or combo port)
 - Pass-through test works but recording fails
@@ -69,6 +70,7 @@ flowchart TD
 ### Why This Happens
 
 **RECAP outputs stereo audio (2 channels):**
+
 - Left channel = Your voice
 - Right channel = Other person's voice
 
@@ -86,6 +88,7 @@ Most modern computers save cost by including only MONO microphone inputs. This c
 - **Search for:** "Andrea USB stereo microphone adapter"
 
 **Why we recommend this specific adapter:**
+
 - ✅ Guaranteed stereo microphone input (2 channels)
 - ✅ Plug-and-play (no drivers needed)
 - ✅ Works on Windows, Mac, Linux
@@ -120,11 +123,13 @@ flowchart LR
 If Andrea adapter unavailable, look for:
 
 **Required features:**
+
 - **Stereo microphone input** (2 channels) - most important
 - Bias voltage for external microphones
 - Specifications mention "stereo mic input" or "2-channel input"
 
 **NOT compatible:**
+
 - USB adapters with only LINE IN
 - USB adapters with only MONO mic input (1 channel)
 - Bluetooth adapters (too much latency for real-time)

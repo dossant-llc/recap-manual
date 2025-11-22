@@ -99,6 +99,7 @@ This fixes 90% of low volume issues!
 2. Most Macs show MONO only → USB adapter needed
 
 **Mac audio port types:**
+
 - **Combo port** (one port for headphones + mic): Usually MONO only
 - **Separate input jack**: Often LINE IN, not MIC IN (incompatible)
 

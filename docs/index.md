@@ -36,12 +36,14 @@ Version 4.0 | © 2025 Dossant LLC | www.RecapMyCalls.com
 RECAP is a small hardware adapter that lets you record phone calls on your computer.
 
 **What it does:**
+
 - Captures both sides of your phone conversation
 - Works with any phone that has a headphone jack
 - Outputs to your computer as a stereo microphone
 - Pass-through audio so you can hear the call in real-time
 
 **What you get:**
+
 - Left channel (RED): Your voice from the headset mic
 - Right channel (GREEN): Other person's voice from the phone
 

@@ -26,16 +26,19 @@ flowchart LR
 ### Technical Details
 
 **Input (Phone Plug):**
+
 - 3.5mm TRRS connector (4-pole)
 - Standard: AHJ (American Headset Jack)
 - Receives both mic audio (from headset) and speaker audio (to headset)
 
 **Pass-Through (Headset Jack):**
+
 - 3.5mm TRRS connector (4-pole)
 - Identical to phone plug
 - Allows you to hear call in real-time
 
 **Output (MIC Jack):**
+
 - 3.5mm TRS connector (3-pole stereo)
 - Pin 1 (Tip): Right channel - Other person's voice (1kΩ impedance)
 - Pin 2 (Ring): Left channel - Your voice (1kΩ impedance)
@@ -43,6 +46,7 @@ flowchart LR
 - Requires 700-2000mV bias voltage (standard for computer MIC IN)
 
 **Power:**
+
 - No batteries required
 - Powered by computer's microphone bias voltage
 

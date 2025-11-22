@@ -44,23 +44,27 @@
 ### Recording Tips
 
 **Before recording:**
+
 - Close other apps that use microphone (Zoom, Skype, etc.)
 - Check input levels (speak and watch meter)
 - Make a 10-second test recording first
 
 **During recording:**
+
 - Keep headset mic 1-2 inches from corner of mouth
 - Don't touch RECAP device (can cause handling noise)
 - Monitor input levels if software shows them
 - Avoid loud background noise
 
 **After recording:**
+
 - Listen to first 30 seconds before ending call
 - If one-sided or no audio, stop and troubleshoot immediately
 - Save in WAV format for highest quality (can convert to MP3 later)
 - Backup important recordings to cloud storage
 
 **File formats:**
+
 - **WAV:** Uncompressed, best quality, large files (10MB per minute)
 - **MP3:** Compressed, good quality, small files (1MB per minute)
 - **Recommendation:** Record as WAV, convert to MP3 for sharing
