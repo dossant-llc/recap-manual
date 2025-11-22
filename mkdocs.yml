@@ -1,0 +1,30 @@
+site_name: RECAP User Manual
+site_url: https://dossant-llc.github.io/recap-manual/
+repo_name: dossant-llc/recap-manual
+repo_url: https://github.com/dossant-llc/recap-manual
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.expand
+    - search.highlight
+    - search.suggest
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Overview: getting-started/overview.md
+      - Requirements: getting-started/requirements.md
+      - Quick Start: getting-started/quick-start.md
+  - Using RECAP:
+      - Making Calls: using-recap/making-calls.md
+      - Saving & Exporting: using-recap/saving-exporting.md
+  - Troubleshooting:
+      - Low Volume & Noise: troubleshooting/low-volume-noise.md
+      - No Audio Recorded: troubleshooting/no-audio.md
+      - Device Scanner: troubleshooting/device-scanner.md
+  - FAQ: faq.md
+  - Support: support.md
