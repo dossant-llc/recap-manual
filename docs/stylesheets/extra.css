@@ -1,0 +1,24 @@
+/* RECAP Brand Colors */
+:root {
+  --md-primary-fg-color: #cf2e2e;
+  --md-primary-fg-color--light: #e04545;
+  --md-primary-fg-color--dark: #b82626;
+  --md-accent-fg-color: #cf2e2e;
+}
+
+/* Dark mode */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #cf2e2e;
+  --md-primary-fg-color--light: #e04545;
+  --md-primary-fg-color--dark: #b82626;
+  --md-accent-fg-color: #cf2e2e;
+}
+
+/* Additional RECAP styling */
+.md-header {
+  background-color: #cf2e2e;
+}
+
+.md-tabs {
+  background-color: #cf2e2e;
+}
