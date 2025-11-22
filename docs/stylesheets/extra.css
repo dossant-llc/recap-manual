@@ -22,3 +22,11 @@
 .md-tabs {
   background-color: #cf2e2e;
 }
+
+/* Logo with white pill background */
+.md-logo img {
+  background-color: white;
+  padding: 8px 16px;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
