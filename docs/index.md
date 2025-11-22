@@ -29,8 +29,6 @@ Version 4.0 | © 2025 Dossant LLC | www.RecapMyCalls.com
 
 ---
 
-# Part 1: Quick Start
-
 ## What is RECAP?
 
 RECAP is a small hardware adapter that lets you record phone calls on your computer.
