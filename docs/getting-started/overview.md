@@ -11,8 +11,9 @@ RECAP is a small hardware adapter that lets you record phone calls on your compu
 
 **What you get:**
 
-- Left channel (RED): Your voice from the headset mic
-- Right channel (GREEN): Other person's voice from the phone
+- One channel: Your voice from the headset mic
+- Other channel: Their voice from the phone
+- ⚠️ Channel assignment (L/R) may vary depending on USB adapter used
 
 **What you need:** Phone + Headset + Computer + Recording software (free)
 

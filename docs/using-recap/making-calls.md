@@ -9,7 +9,7 @@ RECAP is a hardware audio converter. It transforms phone headset audio into a fo
 ```mermaid
 flowchart LR
     Phone[📱 YOUR PHONE<br/><br/>Phone call audio]
-    RECAP[⚡ RECAP S2<br/><br/>Converts to stereo mic:<br/>LEFT = Your voice RED<br/>RIGHT = Their voice GREEN]
+    RECAP[⚡ RECAP S2<br/><br/>Converts to stereo mic:<br/>Channel 1 = Your voice<br/>Channel 2 = Their voice]
     Headset[🎧 HEADSET<br/><br/>You hear call<br/>in real-time]
     Computer[💻 COMPUTER<br/><br/>Records stereo input<br/>Saves both sides]
 
@@ -44,6 +44,7 @@ flowchart LR
 - Pin 2 (Ring): Left channel - Your voice (1kΩ impedance)
 - Pin 3 (Sleeve): Ground
 - Requires 700-2000mV bias voltage (standard for computer MIC IN)
+- ⚠️ **Note:** Some USB adapters may swap L/R channels - verify which is which in your recording
 
 **Power:**
 

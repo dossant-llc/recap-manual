@@ -71,8 +71,9 @@ flowchart TD
 
 **RECAP outputs stereo audio (2 channels):**
 
-- Left channel = Your voice
-- Right channel = Other person's voice
+- One channel = Your voice
+- Other channel = Their voice
+- ⚠️ Channel assignment (L/R) may vary depending on USB adapter
 
 **Your computer needs stereo input to record both channels.**
 
