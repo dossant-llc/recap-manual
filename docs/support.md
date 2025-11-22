@@ -8,11 +8,13 @@
 - Proof of purchase required
 
 **What's covered:**
+
 - ✅ Hardware defects (device doesn't pass pass-through test)
 - ✅ Manufacturing flaws in connectors or housing
 - ✅ Electrical failures in RECAP circuitry
 
 **What's NOT covered:**
+
 - ❌ Computer compatibility issues (MONO input, LINE IN, etc.)
 - ❌ Headset compatibility issues
 - ❌ User damage (physical damage, water damage, phantom power damage)
@@ -24,6 +26,7 @@
 **80% of "not working" reports are compatibility issues, NOT defects.**
 
 Before assuming RECAP is defective, complete the diagnostic checklist:
+
 - ✅ Headset works directly with phone?
 - ✅ Pass-through test passes (hear call in headphones)?
 - ✅ Device scanner shows MONO? (need USB adapter)
@@ -41,6 +44,7 @@ We encourage you to:
 3. Contact support for troubleshooting before requesting return
 
 **Exceptions:**
+
 - Manufacturing defects within 30 days (with proof)
 - Unopened packages returned within 14 days (subject to restocking fee)
 
