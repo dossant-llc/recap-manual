@@ -3,11 +3,13 @@
 ### Windows Software
 
 **Built-in: Sound Recorder**
+
 - **Pros:** Already installed, simple one-button operation
 - **Cons:** Very basic, no editing features, saves to WMA format
 - **Best for:** Quick recordings, beginners
 
 **Recommended: Audacity (Free)**
+
 - **Download:** <https://www.audacityteam.org>
 - **Pros:**
   - Free and open source
@@ -19,6 +21,7 @@
 - **Best for:** Anyone wanting to edit or keep recordings long-term
 
 **How to use Audacity:**
+
 1. Open Audacity
 2. Check input device at top: Should say "Microphone" or "RECAP"
 3. Click red record button
@@ -31,11 +34,13 @@
 ### Mac Software
 
 **Built-in: QuickTime Player**
+
 - **Pros:** Already installed, simple interface
 - **Cons:** Basic features, saves to M4A format
 - **Best for:** Quick recordings
 
 **Recommended: Audacity (Free)**
+
 - Same as Windows version (see above)
 - Download: <https://www.audacityteam.org>
 

@@ -26,6 +26,7 @@
 - Known-working headsets: Apple EarPods, most phone headsets
 
 **How to test compatibility:**
+
 1. Plug headset directly into phone (no RECAP)
 2. Make test call
 3. Verify: Can you hear them? Can they hear you?
@@ -49,12 +50,14 @@
 This is where most compatibility issues occur.
 
 **✅ Compatible:**
+
 - Computers with stereo MIC IN port (2 channels)
 - Older Windows laptops/desktops (pre-2015)
 - Some desktop PCs with dedicated sound cards
 - Computers using USB adapter (Andrea recommended)
 
 **❌ NOT Compatible (without USB adapter):**
+
 - Most modern laptops (2015+) - usually MONO input only
 - Most Mac computers - usually MONO input or LINE IN only
 - Computers with only LINE IN port (no bias voltage)
@@ -79,6 +82,7 @@ This is where most compatibility issues occur.
 ### Recording Device Compatibility
 
 **Compatible devices:**
+
 - Digital voice recorders with **stereo** external mic input
 - Portable recorders (Zoom, Tascam, etc.) with stereo MIC IN
 - Professional recorders with stereo line-level input + preamp
@@ -90,11 +94,13 @@ This is where most compatibility issues occur.
 - **Not LINE IN** - must be MIC IN or have MIC mode
 
 **How to check your recorder:**
+
 - Look in user manual for "stereo external microphone" support
 - Some recorders have mono/stereo switch - must be set to STEREO
 - Some have MIC IN / LINE IN switch - must be set to MIC IN
 
 **NOT compatible:**
+
 - Voice recorders with only mono mic input
 - Devices with only LINE IN (no bias voltage)
 - iPhone/iPad/Android as recording device (combo ports only)
@@ -104,22 +110,26 @@ This is where most compatibility issues occur.
 ### What's NOT Compatible
 
 **❌ LINE IN ports**
+
 - Don't provide bias voltage needed to power RECAP
 - Usually blue color or line icon
 - Found on: Older desktops, some Macs, stereo equipment
 
 **❌ +48V Phantom Power**
+
 - Professional mixer equipment
 - **Will damage RECAP** - never connect to phantom power!
 - RECAP designed for computer mic bias only (2V max)
 
 **❌ Mobile devices as recorder**
+
 - iPhones, iPads, Android phones/tablets
 - Have combo ports (headphone + mic combined)
 - RECAP requires dedicated stereo MIC IN port
 - No adapter exists for this configuration
 
 **❌ Splitter cables**
+
 - No supported configuration for using splitters
 - Splitters are for different purpose (sharing audio)
 

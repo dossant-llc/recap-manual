@@ -91,6 +91,7 @@ Without these test results, support cannot help diagnose your issue.
 **Website:** www.RecapMyCalls.com
 
 **When contacting support, include:**
+
 1. ✅ Results from ALL 5 tests above (copy and paste)
 2. ✅ Device scanner screenshot (attach image)
 3. ✅ Your setup:

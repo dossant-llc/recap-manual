@@ -48,6 +48,7 @@ flowchart TD
 ```
 
 **How to use this flowchart:**
+
 1. Start at the top
 2. Follow each test in order
 3. Yellow boxes = Action needed (fix something)
@@ -111,6 +112,7 @@ flowchart LR
 ```
 
 **Setup steps:**
+
 1. Plug USB adapter into computer's USB port
 2. Connect RECAP's output to USB adapter's MIC IN jack
 3. Computer will automatically recognize "USB Audio Device"

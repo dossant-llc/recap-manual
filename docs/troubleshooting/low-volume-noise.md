@@ -22,18 +22,22 @@ This fixes 90% of low volume issues!
   3. Drag "Input volume" slider all the way to the right
 
 **2. Headset microphone position**
+
 - Boom mic should be 1-2 inches from corner of mouth
 - Not directly in front (causes breath noise)
 
 **3. Recording software input level**
+
 - Many programs have their own gain slider
 - In Audacity: Input level slider at top (set to 0.8-1.0)
 
 **4. Phone call volume**
+
 - During test call, increase phone volume with buttons
 - Affects how loud other person sounds in recording
 
 **5. Weak headset microphone**
+
 - Some cheap headsets have poor quality
 - Try different headset (Apple EarPods are good reference)
 
@@ -95,6 +99,7 @@ This fixes 90% of low volume issues!
 **Most Macs have MONO-only or LINE IN ports**
 
 **Diagnostic:**
+
 1. Run device scanner: <https://audio.recapmycalls.com>
 2. Most Macs show MONO only → USB adapter needed
 
