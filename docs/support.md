@@ -68,6 +68,7 @@ Without these test results, support cannot help diagnose your issue.
 ### The 5-Test Diagnostic Checklist
 
 **☑ Test 1: Direct Headset Test**
+
 - [ ] Disconnected RECAP completely
 - [ ] Plugged headset directly into phone (via adapter if needed)
 - [ ] Made test call to friend or voicemail
@@ -79,6 +80,7 @@ Without these test results, support cannot help diagnose your issue.
 ---
 
 **☑ Test 2: Pass-Through Test**
+
 - [ ] Connected: Phone → RECAP → Headset
 - [ ] Connected separate headphones to RECAP's output jack
 - [ ] Made test call
@@ -89,7 +91,8 @@ Without these test results, support cannot help diagnose your issue.
 ---
 
 **☑ Test 3: Device Scanner**
-- [ ] Visited https://audio.recapmycalls.com
+
+- [ ] Visited <https://audio.recapmycalls.com>
 - [ ] Allowed browser to access microphone
 - [ ] Took screenshot of results
 - [ ] **Result:** Shows STEREO or MONO? **__________**
@@ -99,6 +102,7 @@ Without these test results, support cannot help diagnose your issue.
 ---
 
 **☑ Test 4: Audio Input Gain**
+
 - [ ] Opened computer audio settings
 - [ ] Found microphone gain/level control
 - [ ] Set microphone gain to **80-100%**
@@ -111,6 +115,7 @@ Without these test results, support cannot help diagnose your issue.
 ---
 
 **☑ Test 5: Recording Software Check**
+
 - [ ] Opened recording software
 - [ ] Checked input device selection
 - [ ] **Result:** What input device is selected? **__________**
