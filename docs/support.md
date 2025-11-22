@@ -17,8 +17,6 @@ Before assuming RECAP is defective, complete the diagnostic checklist:
 
 **MONO input is not a defect** - it's a computer limitation requiring USB adapter.
 
-**Processing time:** 24-48 hours for initial response
-
 ---
 
 ## Before You Contact Support
@@ -102,8 +100,6 @@ Without these test results, support cannot help diagnose your issue.
    - Operating system: __________ (Windows 10/11, macOS version, etc.)
    - Recording software: __________
 4. ✅ Proof of purchase (if warranty claim)
-
-**Response time:** 24-48 hours
 
 **Support cannot help without diagnostic test results.** This information allows us to quickly identify the issue and provide the correct solution.
 
