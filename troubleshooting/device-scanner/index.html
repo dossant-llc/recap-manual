@@ -998,7 +998,7 @@
 <p><strong>Use this flowchart to diagnose ANY problem with RECAP.</strong></p>
 <p>Run tests IN ORDER. Don't skip steps.</p>
 <h3 id="diagnostic-flowchart">Diagnostic Flowchart</h3>
-<pre><code class="language-mermaid">flowchart TD
+<pre class="mermaid"><code>flowchart TD
     Start([Having problems with RECAP?&lt;br/&gt;Start here]) --&gt; Test1{Test 1: Direct Headset Test&lt;br/&gt;&lt;br/&gt;Plug headset into phone&lt;br/&gt;Make test call&lt;br/&gt;&lt;br/&gt;Can you hear them?&lt;br/&gt;Can they hear you?}
 
     Test1 --&gt;|NO to either| BadHeadset[❌ STOP&lt;br/&gt;&lt;br/&gt;Get different headset&lt;br/&gt;Old headsets from drawers&lt;br/&gt;often don't work&lt;br/&gt;&lt;br/&gt;RECAP can't fix&lt;br/&gt;incompatible headsets]
@@ -1035,8 +1035,7 @@
     style FixSoftware fill:#ffd43b,stroke:#f08c00,color:#000
     style Success fill:#51cf66,stroke:#2f9e44,color:#fff
     style ContactSupport fill:#748ffc,stroke:#4c6ef5,color:#fff
-    style Start fill:#e7f5ff,stroke:#339af0,color:#000
-</code></pre>
+    style Start fill:#e7f5ff,stroke:#339af0,color:#000</code></pre>
 <p><strong>How to use this flowchart:</strong>
 1. Start at the top
 2. Follow each test in order
@@ -1071,14 +1070,13 @@
 - ✅ Tested and confirmed compatible</p>
 <h3 id="how-to-use-usb-adapter">How to Use USB Adapter</h3>
 <p><strong>Connections:</strong></p>
-<pre><code class="language-mermaid">flowchart LR
+<pre class="mermaid"><code>flowchart LR
     Phone[📱 Phone] --&gt; RECAP[⚡ RECAP]
     RECAP --&gt; Headset[🎧 Headset]
     RECAP --&gt;|3.5mm cable| USBAdapter[🔌 USB Adapter&lt;br/&gt;MIC IN jack]
     USBAdapter --&gt;|USB cable| Computer[💻 Computer&lt;br/&gt;USB port]
 
-    style USBAdapter fill:#ffd43b,stroke:#f08c00
-</code></pre>
+    style USBAdapter fill:#ffd43b,stroke:#f08c00</code></pre>
 <p><strong>Setup steps:</strong>
 1. Plug USB adapter into computer's USB port
 2. Connect RECAP's output to USB adapter's MIC IN jack
