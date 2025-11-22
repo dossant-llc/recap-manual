@@ -7,7 +7,7 @@ theme:
   name: material
   language: en
   logo: assets/images/recap-logo.png
-  favicon: assets/images/recap-logo.png
+  favicon: assets/images/favicon.png
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
