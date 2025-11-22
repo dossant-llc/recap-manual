@@ -56,7 +56,7 @@ This is where 80% of compatibility issues occur.
 - Computers with only LINE IN port (no bias voltage)
 - Computers with only headphone/speaker outputs
 
-**How to check:** Visit **https://audio.recapmycalls.com** and run the free device scanner.
+**How to check:** Visit **<https://audio.recapmycalls.com>** and run the free device scanner.
 
 **Port types explained:**
 

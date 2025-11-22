@@ -19,7 +19,7 @@ A: No. RECAP is powered by your computer's microphone bias voltage.
 ### Compatibility Questions
 
 **Q: Why do I only hear one side of the conversation?**
-A: Your computer has a MONO microphone input (captures only one channel). Run the scanner at https://audio.recapmycalls.com to confirm. Solution: USB stereo adapter ($20-40).
+A: Your computer has a MONO microphone input (captures only one channel). Run the scanner at <https://audio.recapmycalls.com> to confirm. Solution: USB stereo adapter ($20-40).
 
 **Q: Why doesn't RECAP work with my Mac?**
 A: Most modern Macs have MONO inputs or LINE IN ports (not MIC IN). Use the Andrea USB stereo adapter.
@@ -28,7 +28,7 @@ A: Most modern Macs have MONO inputs or LINE IN ports (not MIC IN). Use the Andr
 A: No. Mobile devices have combo ports (headphone + mic combined), not separate stereo MIC IN ports. You need a computer or digital voice recorder.
 
 **Q: Will RECAP work with my computer?**
-A: Check compatibility with our free scanner: https://audio.recapmycalls.com. If it shows STEREO input, yes. If MONO, you'll need a USB adapter.
+A: Check compatibility with our free scanner: <https://audio.recapmycalls.com>. If it shows STEREO input, yes. If MONO, you'll need a USB adapter.
 
 **Q: What's the difference between MIC IN and LINE IN?**
 A: MIC IN provides bias voltage to power RECAP and has amplification for microphone signals. LINE IN has neither (RECAP won't work). MIC IN is usually pink, LINE IN is usually blue.

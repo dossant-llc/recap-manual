@@ -8,7 +8,7 @@
 - **Best for:** Quick recordings, beginners
 
 **Recommended: Audacity (Free)**
-- **Download:** https://www.audacityteam.org
+- **Download:** <https://www.audacityteam.org>
 - **Pros:**
   - Free and open source
   - Shows stereo waveform (verify both channels recording)
@@ -37,7 +37,7 @@
 
 **Recommended: Audacity (Free)**
 - Same as Windows version (see above)
-- Download: https://www.audacityteam.org
+- Download: <https://www.audacityteam.org>
 
 ---
 

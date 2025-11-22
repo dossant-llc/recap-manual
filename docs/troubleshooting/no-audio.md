@@ -5,7 +5,7 @@
 **Run the diagnostic flowchart above. Most common causes:**
 
 1. **Computer has MONO input (80% of cases)**
-   - Run scanner: https://audio.recapmycalls.com
+   - Run scanner: <https://audio.recapmycalls.com>
    - Solution: USB adapter needed - [details here](device-scanner.md)
 
 2. **Audio input gain too low/muted (10% of cases)**

@@ -15,13 +15,13 @@
 **3. Computer with STEREO microphone input**
 - This is where 80% of issues happen
 - Most modern laptops/Macs only have MONO input
-- Use our free scanner to check: **https://audio.recapmycalls.com**
+- Use our free scanner to check: **<https://audio.recapmycalls.com>**
 - If MONO only → You need a USB adapter ($20-40)
 
 **4. Recording software (free)**
 - Windows: Sound Recorder (built-in) or Audacity (recommended)
 - Mac: QuickTime Player (built-in) or Audacity (recommended)
-- Download Audacity: https://www.audacityteam.org
+- Download Audacity: <https://www.audacityteam.org>
 
 ### Items Included with RECAP
 
