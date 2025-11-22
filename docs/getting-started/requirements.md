@@ -42,7 +42,7 @@
 
 **The Critical Requirement: STEREO Microphone Input**
 
-This is where 80% of compatibility issues occur.
+This is where most compatibility issues occur.
 
 **✅ Compatible:**
 - Computers with stereo MIC IN port (2 channels)

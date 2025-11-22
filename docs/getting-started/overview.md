@@ -13,7 +13,7 @@
 - Apple EarPods work well as a reference headset
 
 **3. Computer with STEREO microphone input**
-- This is where 80% of issues happen
+- This is where most issues happen
 - Most modern laptops/Macs only have MONO input
 - Use our free scanner to check: **<https://audio.recapmycalls.com>**
 - If MONO only → You need a USB adapter ($20-40)

@@ -63,7 +63,7 @@ This free browser tool scans your computer's audio inputs.
 - ❌ **"MONO input detected (1 channel)"** → You need a USB adapter
 
 **If MONO:**
-- 80% of modern laptops/Macs have MONO-only inputs
+- Most modern laptops/Macs have MONO-only inputs
 - This is NOT a defect - it's a compatibility issue
 - Solution: Get Andrea USB stereo adapter ($20-40) FIRST - [See USB Adapter Solution](../troubleshooting/device-scanner.md)
 - RECAP works perfectly, your computer just needs the adapter

@@ -18,11 +18,11 @@ flowchart TD
 
     Test2 -->|YES| Test3{Test 3: Device Scanner<br/><br/>Visit: audio.recapmycalls.com<br/>Take screenshot<br/><br/>STEREO or MONO input?}
 
-    Test3 -->|MONO| USBAdapter[✅ USB Adapter Needed<br/><br/>Andrea USB adapter $20-40<br/><br/>This is NOT a defect<br/>80% of modern computers<br/>have MONO inputs<br/><br/>Get adapter, then continue]
+    Test3 -->|MONO| USBAdapter[✅ USB Adapter Needed<br/><br/>Andrea USB adapter $20-40<br/><br/>This is NOT a defect<br/>Most modern computers<br/>have MONO inputs<br/><br/>Get adapter, then continue]
 
     Test3 -->|STEREO| Test4{Test 4: Audio Input Gain<br/><br/>Windows: Recording devices<br/>→ Microphone → Properties<br/>→ Levels → Set to 100%<br/><br/>Mac: System Preferences<br/>→ Sound → Input<br/>→ Drag slider right<br/><br/>Level meter moving?}
 
-    Test4 -->|NO movement| FixGain[✅ Increase gain to 100%<br/><br/>This fixes 90% of<br/>low volume issues!<br/><br/>Also check: correct<br/>input device selected?]
+    Test4 -->|NO movement| FixGain[✅ Increase gain to 100%<br/><br/>This fixes most<br/>low volume issues!<br/><br/>Also check: correct<br/>input device selected?]
 
     Test4 -->|YES| Test5{Test 5: Recording Software<br/><br/>Correct mic selected?<br/>STEREO mode enabled?<br/><br/>Make test recording<br/>Play it back}
 
@@ -76,7 +76,7 @@ flowchart TD
 
 Most modern computers save cost by including only MONO microphone inputs. This captures only ONE channel (one-sided audio or no audio).
 
-**This is NOT a RECAP defect** - it's a computer compatibility issue affecting 80% of users.
+**This is NOT a RECAP defect** - it's a common computer compatibility issue.
 
 ### Recommended Solution: Andrea USB Adapter
 

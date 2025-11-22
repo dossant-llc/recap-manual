@@ -1,29 +1,12 @@
 ## Warranty & Returns
 
-### Warranty Policy
+**For complete warranty and return policy, visit:**
 
-**30-Day Limited Warranty**
-- Covers manufacturing defects only
-- Valid from date of purchase
-- Proof of purchase required
-
-**What's covered:**
-
-- ✅ Hardware defects (device doesn't pass pass-through test)
-- ✅ Manufacturing flaws in connectors or housing
-- ✅ Electrical failures in RECAP circuitry
-
-**What's NOT covered:**
-
-- ❌ Computer compatibility issues (MONO input, LINE IN, etc.)
-- ❌ Headset compatibility issues
-- ❌ User damage (physical damage, water damage, phantom power damage)
-- ❌ Normal wear and tear
-- ❌ Lost or stolen items
+👉 **<https://recapmycalls.com/tc>**
 
 ### Important: Compatibility vs. Defects
 
-**80% of "not working" reports are compatibility issues, NOT defects.**
+Many "not working" reports are compatibility issues, NOT hardware defects.
 
 Before assuming RECAP is defective, complete the diagnostic checklist:
 
@@ -33,31 +16,6 @@ Before assuming RECAP is defective, complete the diagnostic checklist:
 - ✅ Audio gain set to 100%?
 
 **MONO input is not a defect** - it's a computer limitation requiring USB adapter.
-
-### Return Policy
-
-**All sales are final.**
-
-We encourage you to:
-1. Check compatibility BEFORE purchasing (device scanner tool)
-2. Complete diagnostic tests if issues arise
-3. Contact support for troubleshooting before requesting return
-
-**Exceptions:**
-
-- Manufacturing defects within 30 days (with proof)
-- Unopened packages returned within 14 days (subject to restocking fee)
-
-### How to Make a Warranty Claim
-
-1. Complete full diagnostic checklist (see below)
-2. Contact support via www.RecapMyCalls.com
-3. Provide:
-   - Proof of purchase
-   - Results of all 5 diagnostic tests
-   - Device scanner screenshot
-   - Description of issue
-4. Support will review and provide next steps
 
 **Processing time:** 24-48 hours for initial response
 
@@ -101,7 +59,7 @@ Without these test results, support cannot help diagnose your issue.
 - [ ] Took screenshot of results
 - [ ] **Result:** Shows STEREO or MONO? **__________**
 
-**If MONO:** USB adapter needed. This is NOT a defect - 80% of modern computers are MONO.
+**If MONO:** USB adapter needed. This is NOT a defect - most modern computers have MONO inputs.
 
 ---
 
