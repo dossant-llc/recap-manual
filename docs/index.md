@@ -9,8 +9,7 @@ Version 4.0 | © 2025 Dossant LLC | www.RecapMyCalls.com
 # Table of Contents
 
 ## Getting Started
-- [What is RECAP?](#what-is-recap)
-- [What You Need](getting-started/overview.md)
+- [Overview](getting-started/overview.md)
 - [Quick Start: 4 Steps](getting-started/quick-start.md)
 - [Compatibility Requirements](getting-started/requirements.md)
 
@@ -28,22 +27,3 @@ Version 4.0 | © 2025 Dossant LLC | www.RecapMyCalls.com
 - [Warranty & Support](support.md)
 
 ---
-
-## What is RECAP?
-
-RECAP is a small hardware adapter that lets you record phone calls on your computer.
-
-**What it does:**
-
-- Captures both sides of your phone conversation
-- Works with any phone that has a headphone jack
-- Outputs to your computer as a stereo microphone
-- Pass-through audio so you can hear the call in real-time
-
-**What you get:**
-
-- Left channel (RED): Your voice from the headset mic
-- Right channel (GREEN): Other person's voice from the phone
-
-**What you need:** Phone + Headset + Computer + Recording software (free)
-
