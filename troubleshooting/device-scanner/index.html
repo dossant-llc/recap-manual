@@ -793,6 +793,78 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#test-3c-baseline-stereo-test-critical" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test 3C: Baseline Stereo Test (Critical!)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Test 3C: Baseline Stereo Test (Critical!)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-this-test-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why This Test Matters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-perform-baseline-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Perform Baseline Test
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-qualifies-as-a-stereo-microphone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Qualifies as a Stereo Microphone?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpreting-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpreting Results
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-fix-failed-baseline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Fix Failed Baseline
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#the-usb-adapter-solution" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1037,6 +1109,78 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#test-3c-baseline-stereo-test-critical" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test 3C: Baseline Stereo Test (Critical!)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Test 3C: Baseline Stereo Test (Critical!)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-this-test-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why This Test Matters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-perform-baseline-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Perform Baseline Test
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-qualifies-as-a-stereo-microphone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Qualifies as a Stereo Microphone?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpreting-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpreting Results
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-fix-failed-baseline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Fix Failed Baseline
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#the-usb-adapter-solution" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1151,9 +1295,14 @@
 
     Test3B --&gt;|Features ON| FixInterference[⚠️ Disable Interference&lt;br/&gt;&lt;br/&gt;Turn OFF these features:&lt;br/&gt;• Echo Cancellation&lt;br/&gt;• Noise Suppression&lt;br/&gt;• Auto Gain Control&lt;br/&gt;&lt;br/&gt;These can merge or kill channels!]
 
-    Test3B --&gt;|All OFF| Test4{Test 4: Audio Input Gain&lt;br/&gt;&lt;br/&gt;Windows: Recording devices&lt;br/&gt;→ Microphone → Properties&lt;br/&gt;→ Levels → Set to 100%&lt;br/&gt;&lt;br/&gt;Mac: System Preferences&lt;br/&gt;→ Sound → Input&lt;br/&gt;→ Drag slider right&lt;br/&gt;&lt;br/&gt;Level meter moving?}
+    Test3B --&gt;|All OFF| Test3C{Test 3C: Baseline Test&lt;br/&gt;&lt;br/&gt;Test with standard&lt;br/&gt;stereo microphone&lt;br/&gt;&lt;br/&gt;Does computer record&lt;br/&gt;stereo audio at all?}
 
-    FixInterference --&gt; Test4
+    Test3C --&gt;|NO| FixBaseline[⚠️ Fix Computer Setup&lt;br/&gt;&lt;br/&gt;Problem is NOT RECAP!&lt;br/&gt;Computer can't record stereo.&lt;br/&gt;&lt;br/&gt;Check:&lt;br/&gt;• Using MIC IN port not LINE IN&lt;br/&gt;• Recording software set to STEREO&lt;br/&gt;• Correct input device selected]
+
+    Test3C --&gt;|YES or No stereo mic| Test4{Test 4: Audio Input Gain&lt;br/&gt;&lt;br/&gt;Windows: Recording devices&lt;br/&gt;→ Microphone → Properties&lt;br/&gt;→ Levels → Set to 100%&lt;br/&gt;&lt;br/&gt;Mac: System Preferences&lt;br/&gt;→ Sound → Input&lt;br/&gt;→ Drag slider right&lt;br/&gt;&lt;br/&gt;Level meter moving?}
+
+    FixInterference --&gt; Test3C
+    FixBaseline --&gt; Test4
 
     Test4 --&gt;|NO movement| FixGain[✅ Increase gain to 100%&lt;br/&gt;&lt;br/&gt;This fixes most&lt;br/&gt;low volume issues!&lt;br/&gt;&lt;br/&gt;Also check: correct&lt;br/&gt;input device selected?]
 
@@ -1174,6 +1323,7 @@
     style TryHeadset fill:#ff6b6b,stroke:#c92a2a,color:#fff
     style USBAdapter fill:#ffd43b,stroke:#f08c00,color:#000
     style FixInterference fill:#ffd43b,stroke:#f08c00,color:#000
+    style FixBaseline fill:#ffd43b,stroke:#f08c00,color:#000
     style FixGain fill:#ffd43b,stroke:#f08c00,color:#000
     style FixSoftware fill:#ffd43b,stroke:#f08c00,color:#000
     style Success fill:#51cf66,stroke:#2f9e44,color:#fff
@@ -1242,6 +1392,77 @@
 <li>Both L and R channels should show movement when speaking</li>
 <li>If only one bar moves, you have a channel interference problem</li>
 </ol>
+<hr />
+<h2 id="test-3c-baseline-stereo-test-critical">Test 3C: Baseline Stereo Test (Critical!)</h2>
+<p><strong>Before troubleshooting RECAP further, verify your computer can record stereo audio at all.</strong></p>
+<p>Many customers have NEVER successfully recorded stereo audio on their computer before using RECAP. If the computer/software isn't configured correctly, RECAP won't work either.</p>
+<h3 id="why-this-test-matters">Why This Test Matters</h3>
+<p><strong>The problem:</strong> You might be blaming RECAP when your computer was never set up for stereo recording in the first place.</p>
+<p><strong>Common issues this catches:</strong>
+- RECAP plugged into LINE IN (no microphone power)
+- Recording software defaulting to MONO mode
+- Wrong port selected in recording software
+- Computer genuinely lacks stereo capability (scanner false positive)</p>
+<h3 id="how-to-perform-baseline-test">How to Perform Baseline Test</h3>
+<p><strong>You'll need:</strong> A stereo microphone (options below)</p>
+<p><strong>Test procedure:</strong></p>
+<ol>
+<li><strong>Unplug RECAP temporarily</strong></li>
+<li><strong>Plug in a stereo microphone</strong> to the same port you were using for RECAP</li>
+<li><strong>Open your recording software</strong> (Audacity, Sound Recorder, etc.)</li>
+<li><strong>Set recording mode to STEREO</strong> (not mono!) - this is critical</li>
+<li><strong>Record yourself speaking</strong> for 10 seconds</li>
+<li><strong>Play it back</strong></li>
+</ol>
+<h3 id="what-qualifies-as-a-stereo-microphone">What Qualifies as a Stereo Microphone?</h3>
+<p><strong>Good options for baseline test:</strong></p>
+<ul>
+<li><strong>Phone earbuds with mic</strong> (iPhone, Android earbuds) - Most are stereo</li>
+<li><strong>Gaming headset</strong> - Usually stereo</li>
+<li><strong>USB conference mic</strong> - Check specs for stereo support</li>
+<li><strong>Laptop built-in mic</strong> (if it has one) - Often stereo on modern laptops</li>
+<li><strong>Any mic labeled "stereo"</strong> on the packaging</li>
+</ul>
+<p><strong>NOT stereo (don't use for this test):</strong></p>
+<ul>
+<li>Basic karaoke mic</li>
+<li>Old computer mic from 2000s</li>
+<li>Single-element microphones</li>
+</ul>
+<p><strong>Don't have a stereo mic?</strong> You can skip this test and continue to Test 4, but if RECAP doesn't work, you'll need to come back and verify with a stereo mic before claiming RECAP is defective.</p>
+<h3 id="interpreting-results">Interpreting Results</h3>
+<p><strong>✅ Baseline test PASSED (stereo mic recorded successfully):</strong>
+- Your computer CAN record stereo
+- Your recording software is configured correctly
+- The port works and has proper voltage
+- <strong>Conclusion:</strong> Issue is specific to RECAP setup (headset compatibility, connections, etc.)
+- <strong>Next step:</strong> Continue to Test 4</p>
+<p><strong>❌ Baseline test FAILED (stereo mic did NOT record):</strong>
+- <strong>Problem is NOT RECAP!</strong> Your computer can't record stereo from ANY device
+- <strong>Common causes:</strong>
+  - Using LINE IN port instead of MIC IN port
+  - Recording software set to MONO mode
+  - Wrong input device selected in software
+  - Gain set to 0%
+  - Scanner incorrectly reported STEREO (actually MONO)
+- <strong>Next step:</strong> Fix computer setup BEFORE trying RECAP again</p>
+<h3 id="how-to-fix-failed-baseline">How to Fix Failed Baseline</h3>
+<p>If baseline test failed, fix these issues:</p>
+<p><strong>Check port type:</strong>
+- Pink jack = MIC IN ✅ (correct)
+- Blue jack = LINE IN ❌ (no mic power)
+- Green jack = Speaker/Headphone OUT ❌ (wrong)</p>
+<p><strong>Check recording software:</strong>
+- Audacity: Audio Setup → Recording Channels → <strong>2 (Stereo)</strong>
+- Sound Recorder (Windows): Should auto-detect, but check input device selection
+- QuickTime (Mac): File → New Audio Recording → Click dropdown next to record button → Select stereo device</p>
+<p><strong>Check input device:</strong>
+- Recording software must select the correct device
+- Don't use "Default" - explicitly select the stereo-capable device
+- If using USB adapter, select "USB Audio Device" not "Realtek"</p>
+<p><strong>Check gain:</strong>
+- Windows: Sounds → Recording → Device → Properties → Levels → 80-100%
+- Mac: System Preferences → Sound → Input → Input volume slider to right</p>
 <hr />
 <h2 id="the-usb-adapter-solution">The USB Adapter Solution</h2>
 <h3 id="when-you-need-it">When You Need It</h3>
