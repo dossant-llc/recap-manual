@@ -743,6 +743,56 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#test-3b-checking-device-settings-critical" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test 3B: Checking Device Settings (Critical!)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Test 3B: Checking Device Settings (Critical!)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-check-device-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Check Device Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-fix-interference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Fix Interference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-the-vu-meters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using the VU Meters
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#the-usb-adapter-solution" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -937,6 +987,56 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#test-3b-checking-device-settings-critical" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test 3B: Checking Device Settings (Critical!)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Test 3B: Checking Device Settings (Critical!)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-check-device-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Check Device Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-fix-interference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Fix Interference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-the-vu-meters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using the VU Meters
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#the-usb-adapter-solution" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1047,7 +1147,13 @@
 
     Test3 --&gt;|MONO| USBAdapter[✅ USB Adapter Needed&lt;br/&gt;&lt;br/&gt;Andrea USB adapter $20-40&lt;br/&gt;&lt;br/&gt;This is NOT a defect&lt;br/&gt;Most modern computers&lt;br/&gt;have MONO inputs&lt;br/&gt;&lt;br/&gt;Get adapter, then continue]
 
-    Test3 --&gt;|STEREO| Test4{Test 4: Audio Input Gain&lt;br/&gt;&lt;br/&gt;Windows: Recording devices&lt;br/&gt;→ Microphone → Properties&lt;br/&gt;→ Levels → Set to 100%&lt;br/&gt;&lt;br/&gt;Mac: System Preferences&lt;br/&gt;→ Sound → Input&lt;br/&gt;→ Drag slider right&lt;br/&gt;&lt;br/&gt;Level meter moving?}
+    Test3 --&gt;|STEREO| Test3B{Test 3B: Check Device Settings&lt;br/&gt;&lt;br/&gt;Click device to expand details&lt;br/&gt;&lt;br/&gt;Echo Cancellation OFF?&lt;br/&gt;Noise Suppression OFF?&lt;br/&gt;Auto Gain Control OFF?}
+
+    Test3B --&gt;|Features ON| FixInterference[⚠️ Disable Interference&lt;br/&gt;&lt;br/&gt;Turn OFF these features:&lt;br/&gt;• Echo Cancellation&lt;br/&gt;• Noise Suppression&lt;br/&gt;• Auto Gain Control&lt;br/&gt;&lt;br/&gt;These can merge or kill channels!]
+
+    Test3B --&gt;|All OFF| Test4{Test 4: Audio Input Gain&lt;br/&gt;&lt;br/&gt;Windows: Recording devices&lt;br/&gt;→ Microphone → Properties&lt;br/&gt;→ Levels → Set to 100%&lt;br/&gt;&lt;br/&gt;Mac: System Preferences&lt;br/&gt;→ Sound → Input&lt;br/&gt;→ Drag slider right&lt;br/&gt;&lt;br/&gt;Level meter moving?}
+
+    FixInterference --&gt; Test4
 
     Test4 --&gt;|NO movement| FixGain[✅ Increase gain to 100%&lt;br/&gt;&lt;br/&gt;This fixes most&lt;br/&gt;low volume issues!&lt;br/&gt;&lt;br/&gt;Also check: correct&lt;br/&gt;input device selected?]
 
@@ -1067,6 +1173,7 @@
     style BadHeadset fill:#ff6b6b,stroke:#c92a2a,color:#fff
     style TryHeadset fill:#ff6b6b,stroke:#c92a2a,color:#fff
     style USBAdapter fill:#ffd43b,stroke:#f08c00,color:#000
+    style FixInterference fill:#ffd43b,stroke:#f08c00,color:#000
     style FixGain fill:#ffd43b,stroke:#f08c00,color:#000
     style FixSoftware fill:#ffd43b,stroke:#f08c00,color:#000
     style Success fill:#51cf66,stroke:#2f9e44,color:#fff
@@ -1079,6 +1186,61 @@
 <li>Yellow boxes = Action needed (fix something)</li>
 <li>Green box = Success!</li>
 <li>Red boxes = Stop and get different equipment</li>
+</ol>
+<hr />
+<h2 id="test-3b-checking-device-settings-critical">Test 3B: Checking Device Settings (Critical!)</h2>
+<p><strong>After scanner shows STEREO, don't celebrate yet!</strong> Modern audio devices have "enhancement" features that can interfere with RECAP.</p>
+<h3 id="how-to-check-device-settings">How to Check Device Settings</h3>
+<ol>
+<li>On the scanner page, <strong>click on the device name</strong> (e.g., "Microphone (Realtek Audio)")</li>
+<li>The device card will expand to show detailed settings</li>
+<li>Look for these features and their status:</li>
+</ol>
+<p><strong>Interference Features (should be OFF):</strong></p>
+<ul>
+<li><strong>Echo Cancellation</strong> - Designed to remove echo, but may suppress one channel thinking it's an echo</li>
+<li><strong>Noise Suppression</strong> - Filters background noise, but can kill quiet voices or merge channels</li>
+<li><strong>Auto Gain Control (AGC)</strong> - Automatically adjusts volume, but may apply different gain to each channel</li>
+</ul>
+<p><strong>Common problems when these are ON:</strong></p>
+<ul>
+<li>One-sided recording (only hear yourself OR only hear them)</li>
+<li>Merged channels (both sides mixed into mono)</li>
+<li>Inconsistent volume levels</li>
+<li>Audio dropouts or distortion</li>
+</ul>
+<h3 id="how-to-fix-interference">How to Fix Interference</h3>
+<p><strong>Option 1: Via Audio Scanner (if supported)</strong></p>
+<ul>
+<li>Use the toggle switches in the expanded device view</li>
+<li>Turn OFF Echo Cancellation, Noise Suppression, and Auto Gain Control</li>
+<li>Adjust gain sliders to desired level (usually 80-100%)</li>
+</ul>
+<p><strong>Option 2: Via Operating System Settings</strong></p>
+<p><strong>Windows:</strong></p>
+<ol>
+<li>Right-click speaker icon → "Sounds"</li>
+<li>Go to "Recording" tab</li>
+<li>Select the device → "Properties"</li>
+<li><strong>Enhancements tab</strong> → Check "Disable all enhancements" OR uncheck specific features</li>
+<li><strong>Levels tab</strong> → Set microphone to 80-100%</li>
+<li>Click OK</li>
+</ol>
+<p><strong>Mac:</strong></p>
+<ol>
+<li>System Preferences → Sound → Input</li>
+<li>Select the device</li>
+<li><strong>Note:</strong> Mac has fewer audio processing options than Windows</li>
+<li>If issues persist, may need USB adapter for cleaner signal</li>
+</ol>
+<h3 id="using-the-vu-meters">Using the VU Meters</h3>
+<p>While on the scanner page with device expanded:</p>
+<ol>
+<li>Make a test phone call</li>
+<li>Speak into your headset microphone</li>
+<li><strong>Watch the VU meter bars</strong> (visual level indicators)</li>
+<li>Both L and R channels should show movement when speaking</li>
+<li>If only one bar moves, you have a channel interference problem</li>
 </ol>
 <hr />
 <h2 id="the-usb-adapter-solution">The USB Adapter Solution</h2>
