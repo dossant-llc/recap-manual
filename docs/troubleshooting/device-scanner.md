@@ -24,9 +24,14 @@ flowchart TD
 
     Test3B -->|Features ON| FixInterference[⚠️ Disable Interference<br/><br/>Turn OFF these features:<br/>• Echo Cancellation<br/>• Noise Suppression<br/>• Auto Gain Control<br/><br/>These can merge or kill channels!]
 
-    Test3B -->|All OFF| Test4{Test 4: Audio Input Gain<br/><br/>Windows: Recording devices<br/>→ Microphone → Properties<br/>→ Levels → Set to 100%<br/><br/>Mac: System Preferences<br/>→ Sound → Input<br/>→ Drag slider right<br/><br/>Level meter moving?}
+    Test3B -->|All OFF| Test3C{Test 3C: Baseline Test<br/><br/>Test with standard<br/>stereo microphone<br/><br/>Does computer record<br/>stereo audio at all?}
 
-    FixInterference --> Test4
+    Test3C -->|NO| FixBaseline[⚠️ Fix Computer Setup<br/><br/>Problem is NOT RECAP!<br/>Computer can't record stereo.<br/><br/>Check:<br/>• Using MIC IN port not LINE IN<br/>• Recording software set to STEREO<br/>• Correct input device selected]
+
+    Test3C -->|YES or No stereo mic| Test4{Test 4: Audio Input Gain<br/><br/>Windows: Recording devices<br/>→ Microphone → Properties<br/>→ Levels → Set to 100%<br/><br/>Mac: System Preferences<br/>→ Sound → Input<br/>→ Drag slider right<br/><br/>Level meter moving?}
+
+    FixInterference --> Test3C
+    FixBaseline --> Test4
 
     Test4 -->|NO movement| FixGain[✅ Increase gain to 100%<br/><br/>This fixes most<br/>low volume issues!<br/><br/>Also check: correct<br/>input device selected?]
 
@@ -47,6 +52,7 @@ flowchart TD
     style TryHeadset fill:#ff6b6b,stroke:#c92a2a,color:#fff
     style USBAdapter fill:#ffd43b,stroke:#f08c00,color:#000
     style FixInterference fill:#ffd43b,stroke:#f08c00,color:#000
+    style FixBaseline fill:#ffd43b,stroke:#f08c00,color:#000
     style FixGain fill:#ffd43b,stroke:#f08c00,color:#000
     style FixSoftware fill:#ffd43b,stroke:#f08c00,color:#000
     style Success fill:#51cf66,stroke:#2f9e44,color:#fff
@@ -122,6 +128,97 @@ While on the scanner page with device expanded:
 3. **Watch the VU meter bars** (visual level indicators)
 4. Both L and R channels should show movement when speaking
 5. If only one bar moves, you have a channel interference problem
+
+---
+
+## Test 3C: Baseline Stereo Test (Critical!)
+
+**Before troubleshooting RECAP further, verify your computer can record stereo audio at all.**
+
+Many customers have NEVER successfully recorded stereo audio on their computer before using RECAP. If the computer/software isn't configured correctly, RECAP won't work either.
+
+### Why This Test Matters
+
+**The problem:** You might be blaming RECAP when your computer was never set up for stereo recording in the first place.
+
+**Common issues this catches:**
+- RECAP plugged into LINE IN (no microphone power)
+- Recording software defaulting to MONO mode
+- Wrong port selected in recording software
+- Computer genuinely lacks stereo capability (scanner false positive)
+
+### How to Perform Baseline Test
+
+**You'll need:** A stereo microphone (options below)
+
+**Test procedure:**
+
+1. **Unplug RECAP temporarily**
+2. **Plug in a stereo microphone** to the same port you were using for RECAP
+3. **Open your recording software** (Audacity, Sound Recorder, etc.)
+4. **Set recording mode to STEREO** (not mono!) - this is critical
+5. **Record yourself speaking** for 10 seconds
+6. **Play it back**
+
+### What Qualifies as a Stereo Microphone?
+
+**Good options for baseline test:**
+
+- **Phone earbuds with mic** (iPhone, Android earbuds) - Most are stereo
+- **Gaming headset** - Usually stereo
+- **USB conference mic** - Check specs for stereo support
+- **Laptop built-in mic** (if it has one) - Often stereo on modern laptops
+- **Any mic labeled "stereo"** on the packaging
+
+**NOT stereo (don't use for this test):**
+
+- Basic karaoke mic
+- Old computer mic from 2000s
+- Single-element microphones
+
+**Don't have a stereo mic?** You can skip this test and continue to Test 4, but if RECAP doesn't work, you'll need to come back and verify with a stereo mic before claiming RECAP is defective.
+
+### Interpreting Results
+
+**✅ Baseline test PASSED (stereo mic recorded successfully):**
+- Your computer CAN record stereo
+- Your recording software is configured correctly
+- The port works and has proper voltage
+- **Conclusion:** Issue is specific to RECAP setup (headset compatibility, connections, etc.)
+- **Next step:** Continue to Test 4
+
+**❌ Baseline test FAILED (stereo mic did NOT record):**
+- **Problem is NOT RECAP!** Your computer can't record stereo from ANY device
+- **Common causes:**
+  - Using LINE IN port instead of MIC IN port
+  - Recording software set to MONO mode
+  - Wrong input device selected in software
+  - Gain set to 0%
+  - Scanner incorrectly reported STEREO (actually MONO)
+- **Next step:** Fix computer setup BEFORE trying RECAP again
+
+### How to Fix Failed Baseline
+
+If baseline test failed, fix these issues:
+
+**Check port type:**
+- Pink jack = MIC IN ✅ (correct)
+- Blue jack = LINE IN ❌ (no mic power)
+- Green jack = Speaker/Headphone OUT ❌ (wrong)
+
+**Check recording software:**
+- Audacity: Audio Setup → Recording Channels → **2 (Stereo)**
+- Sound Recorder (Windows): Should auto-detect, but check input device selection
+- QuickTime (Mac): File → New Audio Recording → Click dropdown next to record button → Select stereo device
+
+**Check input device:**
+- Recording software must select the correct device
+- Don't use "Default" - explicitly select the stereo-capable device
+- If using USB adapter, select "USB Audio Device" not "Realtek"
+
+**Check gain:**
+- Windows: Sounds → Recording → Device → Properties → Levels → 80-100%
+- Mac: System Preferences → Sound → Input → Input volume slider to right
 
 ---
 
