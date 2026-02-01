@@ -52,7 +52,7 @@ Without these test results, support cannot help diagnose your issue.
 
 **☑ Test 3: Device Scanner**
 
-- [ ] Visited <https://audio.recapmycalls.com>
+- [ ] Visited <https://recapmycalls.com/audio/>
 - [ ] Allowed browser to access microphone
 - [ ] Took screenshot of results
 - [ ] **Result:** Shows STEREO or MONO? **__________**

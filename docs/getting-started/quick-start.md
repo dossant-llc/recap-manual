@@ -59,7 +59,7 @@ Phone ──→ RECAP ──→ Headset
 
 **Run the device scanner:**
 
-👉 **<https://audio.recapmycalls.com>**
+👉 **<https://recapmycalls.com/audio/>**
 
 This free browser tool scans your computer's audio inputs.
 

@@ -39,7 +39,7 @@ RECAP is a small hardware adapter that lets you record phone calls on your compu
 
 - This is where most issues happen
 - Most modern laptops/Macs only have MONO input
-- Use our free scanner to check: **<https://audio.recapmycalls.com>**
+- Use our free scanner to check: **<https://recapmycalls.com/audio/>**
 
 - If MONO only → You need a USB adapter ($20-40)
 

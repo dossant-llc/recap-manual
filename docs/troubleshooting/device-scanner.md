@@ -16,7 +16,7 @@ flowchart TD
 
     Test2 -->|NO| TryHeadset[Try different headset<br/>or contact support<br/><br/>May be RECAP defect]
 
-    Test2 -->|YES| Test3{Test 3: Device Scanner<br/><br/>Visit: audio.recapmycalls.com<br/>Take screenshot<br/><br/>STEREO or MONO input?}
+    Test2 -->|YES| Test3{Test 3: Device Scanner<br/><br/>Visit: recapmycalls.com/audio/<br/>Take screenshot<br/><br/>STEREO or MONO input?}
 
     Test3 -->|MONO| USBAdapter[✅ USB Adapter Needed<br/><br/>Andrea USB adapter $20-40<br/><br/>This is NOT a defect<br/>Most modern computers<br/>have MONO inputs<br/><br/>Get adapter, then continue]
 

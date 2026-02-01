@@ -100,7 +100,7 @@ This fixes 90% of low volume issues!
 
 **Diagnostic:**
 
-1. Run device scanner: <https://audio.recapmycalls.com>
+1. Run device scanner: <https://recapmycalls.com/audio/>
 2. Most Macs show MONO only → USB adapter needed
 
 **Mac audio port types:**
