@@ -1,19 +1,24 @@
 ## Compatibility Requirements
 
-### Phone Compatibility
+### Call Device Compatibility
+
+RECAP works with any device that has a **combo headset port** (3.5mm TRRS) — this includes phones, tablets, and computers.
 
 **Compatible:**
 
-- iPhone (with 3.5mm jack or Lightning-to-3.5mm adapter)
+- iPhone (with 3.5mm jack or Lightning/USB-C to 3.5mm adapter)
 - Android phones with 3.5mm headphone jack
-- Any phone using AHJ standard connector (most cell phones)
+- Laptops and computers with combo headset jack
+- Tablets with 3.5mm headphone jack
+- Any device using AHJ standard connector
 
 **Not compatible:**
 
-- Phones without headphone jack and no adapter
-- Phones using OMTP standard (rare, mostly older European/Asian models)
+- Devices without headphone jack and no adapter
+- Devices using OMTP standard (rare, mostly older European/Asian models)
+- Separate headphone + mic ports (not combo) — these won't pass both signals
 
-**How to check:** If your current headset works with your phone, your phone is compatible.
+**How to check:** If your headset works with the device (you can hear AND be heard), the device is compatible.
 
 ---
 
@@ -21,7 +26,7 @@
 
 **Requirements:**
 
-- Must be compatible with YOUR phone
+- Must be compatible with YOUR call device
 - Standard 3.5mm TRRS connector (4-pole)
 - Known-working headsets: Apple EarPods, most phone headsets
 
@@ -99,11 +104,11 @@ This is where most compatibility issues occur.
 - Some recorders have mono/stereo switch - must be set to STEREO
 - Some have MIC IN / LINE IN switch - must be set to MIC IN
 
-**NOT compatible:**
+**NOT compatible (without adapter):**
 
 - Voice recorders with only mono mic input
 - Devices with only LINE IN (no bias voltage)
-- iPhone/iPad/Android as recording device (combo ports only)
+- iPhone/iPad/Android directly (combo ports only) — see USB adapter option below
 
 ---
 
@@ -121,12 +126,12 @@ This is where most compatibility issues occur.
 - **Will damage RECAP** - never connect to phantom power!
 - RECAP designed for computer mic bias only (2V max)
 
-**❌ Mobile devices as recorder**
+**⚠️ Mobile devices as recorder (requires USB adapter)**
 
-- iPhones, iPads, Android phones/tablets
-- Have combo ports (headphone + mic combined)
-- RECAP requires dedicated stereo MIC IN port
-- No adapter exists for this configuration
+- iPhones, iPads, Android phones/tablets have combo ports only
+- RECAP requires stereo MIC IN, which combo ports don't provide
+- **Solution:** USB audio adapter with stereo mic input, connected via USB-C or Lightning
+- Example: USB-C audio interface with 3.5mm stereo mic input
 
 **❌ Splitter cables**
 

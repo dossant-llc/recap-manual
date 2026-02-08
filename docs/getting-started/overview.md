@@ -1,21 +1,21 @@
 ## What is RECAP?
 
-RECAP is a small hardware adapter that lets you record phone calls on your computer.
+RECAP is a small hardware adapter that records both sides of any conversation — phone calls, computer meetings, or any audio through a headset.
 
 **What it does:**
 
-- Captures both sides of your phone conversation
-- Works with any phone that has a headphone jack
-- Outputs to your computer as a stereo microphone
-- Pass-through audio so you can hear the call in real-time
+- Captures both sides of the conversation (your voice + their voice)
+- Works with any device that has a combo headset port (phones, laptops, tablets)
+- Outputs to any device with stereo microphone input
+- Pass-through audio so you can hear in real-time
 
 **What you get:**
 
 - One channel: Your voice from the headset mic
-- Other channel: Their voice from the phone
+- Other channel: Their voice from the call device
 - ⚠️ Channel assignment (L/R) may vary depending on USB adapter used
 
-**What you need:** Phone + Headset + Computer + Recording software (free)
+**What you need:** Call device + Headset + Recording device + Recording software (free)
 
 ---
 
@@ -23,19 +23,20 @@ RECAP is a small hardware adapter that lets you record phone calls on your compu
 
 ### Required Items
 
-**1. Phone with headphone jack**
+**1. Call device with combo headset port**
 
-- iPhone (with 3.5mm jack or Lightning adapter)
-- Android phone with 3.5mm jack
-- Any phone using standard AHJ headset connector
+- Phone (with 3.5mm jack or Lightning/USB-C adapter)
+- Laptop or computer with combo headset jack
+- Tablet with 3.5mm jack
+- Any device using standard AHJ headset connector
 
 **2. Compatible headset**
 
-- ⚠️ **CRITICAL:** Many old headsets don't work with modern phones
+- ⚠️ **CRITICAL:** Many old headsets don't work with modern devices
 - Test your headset FIRST (see Step 1 below)
 - Apple EarPods work well as a reference headset
 
-**3. Computer with STEREO microphone input**
+**3. Recording device with STEREO microphone input**
 
 - This is where most issues happen
 - Most modern laptops/Macs only have MONO input

@@ -3,13 +3,16 @@
 ### General Questions
 
 **Q: What is RECAP?**
-A: RECAP is a hardware adapter that lets you record phone calls on your computer by converting phone headset audio into a stereo microphone signal.
+A: RECAP is a hardware adapter that records both sides of a conversation by splitting headset audio into a stereo signal — your voice on one channel, theirs on the other.
 
 **Q: Do I need special software?**
 A: No. Any recording software works (Windows Sound Recorder, Mac QuickTime, Audacity, etc.). We recommend Audacity (free) for best features.
 
-**Q: Does RECAP work with my phone?**
-A: RECAP works with any phone that has a 3.5mm headphone jack (iPhone with adapter, Android, etc.). If your current headset works with your phone, RECAP will work.
+**Q: What devices work as the CALL source?**
+A: Any device with a 3.5mm combo headset port (TRRS) — phones, tablets, laptops, even desktops with combo jacks. If your headset works with it, RECAP will work.
+
+**Q: Can I use RECAP with my computer's headset port?**
+A: Yes! If your computer has a combo headset jack (common on laptops), you can use RECAP to record Zoom, Teams, or any audio playing through your headset.
 
 **Q: Do I need batteries?**
 A: No. RECAP is powered by your computer's microphone bias voltage.
@@ -24,8 +27,8 @@ A: Your computer has a MONO microphone input (captures only one channel). Run th
 **Q: Why doesn't RECAP work with my Mac?**
 A: Most modern Macs have MONO inputs or LINE IN ports (not MIC IN). Use the Andrea USB stereo adapter.
 
-**Q: Can I record directly to my iPhone or Android phone?**
-A: No. Mobile devices have combo ports (headphone + mic combined), not separate stereo MIC IN ports. You need a computer or digital voice recorder.
+**Q: Can I record to my iPhone or Android phone?**
+A: Not directly — mobile devices have combo ports, not stereo MIC IN. However, you can use a USB audio adapter (with stereo mic input) connected to your phone's USB-C or Lightning port. This adds a proper stereo input for RECAP.
 
 **Q: Will RECAP work with my computer?**
 A: Check compatibility with our free scanner: <https://recapmycalls.com/audio/>. If it shows STEREO input, yes. If MONO, you'll need a USB adapter.
@@ -53,8 +56,8 @@ A: Audio input gain is almost always the issue. Set your computer's microphone g
 **Q: Can I record to a voice recorder instead of computer?**
 A: Yes, if it has a stereo external microphone input. Check your recorder's manual. Must be set to STEREO mode, not mono.
 
-**Q: Can I use RECAP with Zoom or Skype calls?**
-A: RECAP is designed for phone calls, not computer-to-computer calls. For Zoom/Skype, use the built-in recording features in those apps.
+**Q: Can I use RECAP with Zoom, Teams, or Skype calls on my computer?**
+A: Yes, if your computer uses a combo headset port (3.5mm TRRS). Connect: Computer → RECAP → Headset, then record to a second device (voice recorder, another computer, or phone with USB audio adapter). Unlike built-in recording features, RECAP doesn't notify other participants that you're recording.
 
 **Q: What recording quality should I use?**
 A: For best quality: WAV format, 44.1kHz or 48kHz sample rate, 16-bit depth. For smaller files: MP3 at 192kbps or higher.

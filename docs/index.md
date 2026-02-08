@@ -1,6 +1,6 @@
 # RECAP S2 User Manual
 
-**Record your phone calls on any computer**
+**Record both sides of any call — phone, computer, or tablet**
 
 Version 4.0 | © 2025 Dossant LLC | www.RecapMyCalls.com
 
