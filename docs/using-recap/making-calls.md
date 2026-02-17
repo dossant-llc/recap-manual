@@ -2,7 +2,12 @@
 
 ### What RECAP Does
 
-RECAP is a hardware audio converter. It transforms phone headset audio into a format your computer can record.
+RECAP is a hardware audio converter. It sits between your phone and your headset, and it does two things at once:
+
+1. **Passes call audio through to your headset** — so you can talk normally, as if RECAP wasn't there.
+2. **Sends a separate recording output to your computer** — this is where both sides of the conversation are captured for recording.
+
+These are two independent outputs. They carry different signals. Understanding this distinction is key to troubleshooting any audio issue.
 
 **Audio flow:**
 
@@ -23,6 +28,59 @@ flowchart LR
     style Computer fill:#e7f5ff,stroke:#339af0
 ```
 
+---
+
+### Two Outputs, Two Different Signals
+
+This is the most important thing to understand about RECAP. It has **two outputs** and they work completely differently:
+
+#### Output 1: Pass-Through (Headset Jack)
+
+The pass-through sends your phone's call audio straight to your headset. RECAP does not modify, split, or process this signal in any way. It is **identical** to plugging your headset directly into your phone.
+
+- You hear the caller in **both ears**, same as without RECAP
+- The caller hears you through the headset mic, same as without RECAP
+- The audio is **mono** (same sound in left and right ear) — this is normal for phone calls
+- If you unplugged the recording cable and never connected a computer, the pass-through would still work exactly the same
+
+**Example:** You're on a call with a client. You hear their voice in both ears of your headset, they hear your voice through the headset mic. You talk normally. From a call quality perspective, nothing has changed — RECAP is invisible.
+
+**If you only hear in one ear through the headset pass-through, something is physically wrong.** This is not a RECAP behavior — it's a connection issue, a headset issue, or a cable issue. See troubleshooting below.
+
+#### Output 2: Recording Output (MIC Jack)
+
+This is the separate cable that goes from RECAP to your computer (or voice recorder). This output is where RECAP does its real work — it captures both sides of the conversation and splits them into a **stereo signal**:
+
+- **Left channel** = your voice (picked up from the headset mic)
+- **Right channel** = the caller's voice (picked up from the phone's audio)
+
+This stereo split is intentional. It's the whole point of RECAP — it gives you clean, separated audio that you can edit, transcribe, or process independently.
+
+**Example:** You record a 30-minute interview. When you open the recording in Audacity or any audio editor, you see two channels. Left channel is you, right channel is the interviewee. You can adjust volume on each independently, remove background noise from one side without affecting the other, or export just the caller's audio.
+
+⚠️ **The stereo split only exists on the recording output.** It has nothing to do with what you hear in your headset during the call.
+
+---
+
+### Common Confusion
+
+> "I only hear in one ear — is that the stereo split?"
+
+**No.** If you only hear in one ear through your **headset**, that is not the stereo split. The stereo split only applies to the **recording output** going to your computer. The headset pass-through should always sound normal — both ears, same audio.
+
+One-ear audio in the headset means something else is going on:
+
+- The headset plug isn't fully seated into RECAP
+- The headset is plugged into the wrong jack (the MIC recording output instead of the headset pass-through)
+- The headset itself has a problem (test it directly in your phone without RECAP)
+- The phone-to-RECAP connection is loose
+
+> "My recording only has audio on one side"
+
+This is a different issue — it's about the **recording output**, not the headset. The most common cause is a mono input on your computer. Run the [Audio Device Scanner](https://recapmycalls.com/audio/) to check. Most modern laptops (especially Macs) have mono-only inputs and need a USB stereo adapter.
+
+---
+
 ### Technical Details
 
 **Input (Phone Plug):**
@@ -35,7 +93,8 @@ flowchart LR
 
 - 3.5mm TRRS connector (4-pole)
 - Identical to phone plug
-- Allows you to hear call in real-time
+- Transparent — forwards phone audio to headset unchanged
+- Your headset hears exactly what it would hear plugged directly into the phone
 
 **Output (MIC Jack):**
 
@@ -52,4 +111,3 @@ flowchart LR
 - Powered by computer's microphone bias voltage
 
 ---
-
