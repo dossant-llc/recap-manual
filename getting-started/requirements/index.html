@@ -437,10 +437,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#phone-compatibility" class="md-nav__link">
+  <a href="#call-device-compatibility" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Phone Compatibility
+        Call Device Compatibility
       
     </span>
   </a>
@@ -893,10 +893,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#phone-compatibility" class="md-nav__link">
+  <a href="#call-device-compatibility" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Phone Compatibility
+        Call Device Compatibility
       
     </span>
   </a>
@@ -975,24 +975,28 @@
   <h1>Requirements</h1>
 
 <h2 id="compatibility-requirements">Compatibility Requirements</h2>
-<h3 id="phone-compatibility">Phone Compatibility</h3>
+<h3 id="call-device-compatibility">Call Device Compatibility</h3>
+<p>RECAP works with any device that has a <strong>combo headset port</strong> (3.5mm TRRS) — this includes phones, tablets, and computers.</p>
 <p><strong>Compatible:</strong></p>
 <ul>
-<li>iPhone (with 3.5mm jack or Lightning-to-3.5mm adapter)</li>
+<li>iPhone (with 3.5mm jack or Lightning/USB-C to 3.5mm adapter)</li>
 <li>Android phones with 3.5mm headphone jack</li>
-<li>Any phone using AHJ standard connector (most cell phones)</li>
+<li>Laptops and computers with combo headset jack</li>
+<li>Tablets with 3.5mm headphone jack</li>
+<li>Any device using AHJ standard connector</li>
 </ul>
 <p><strong>Not compatible:</strong></p>
 <ul>
-<li>Phones without headphone jack and no adapter</li>
-<li>Phones using OMTP standard (rare, mostly older European/Asian models)</li>
+<li>Devices without headphone jack and no adapter</li>
+<li>Devices using OMTP standard (rare, mostly older European/Asian models)</li>
+<li>Separate headphone + mic ports (not combo) — these won't pass both signals</li>
 </ul>
-<p><strong>How to check:</strong> If your current headset works with your phone, your phone is compatible.</p>
+<p><strong>How to check:</strong> If your headset works with the device (you can hear AND be heard), the device is compatible.</p>
 <hr />
 <h3 id="headset-compatibility">Headset Compatibility</h3>
 <p><strong>Requirements:</strong></p>
 <ul>
-<li>Must be compatible with YOUR phone</li>
+<li>Must be compatible with YOUR call device</li>
 <li>Standard 3.5mm TRRS connector (4-pole)</li>
 <li>Known-working headsets: Apple EarPods, most phone headsets</li>
 </ul>
@@ -1088,11 +1092,11 @@
 <li>Some recorders have mono/stereo switch - must be set to STEREO</li>
 <li>Some have MIC IN / LINE IN switch - must be set to MIC IN</li>
 </ul>
-<p><strong>NOT compatible:</strong></p>
+<p><strong>NOT compatible (without adapter):</strong></p>
 <ul>
 <li>Voice recorders with only mono mic input</li>
 <li>Devices with only LINE IN (no bias voltage)</li>
-<li>iPhone/iPad/Android as recording device (combo ports only)</li>
+<li>iPhone/iPad/Android directly (combo ports only) — see USB adapter option below</li>
 </ul>
 <hr />
 <h3 id="whats-not-compatible">What's NOT Compatible</h3>
@@ -1108,12 +1112,12 @@
 <li><strong>Will damage RECAP</strong> - never connect to phantom power!</li>
 <li>RECAP designed for computer mic bias only (2V max)</li>
 </ul>
-<p><strong>❌ Mobile devices as recorder</strong></p>
+<p><strong>⚠️ Mobile devices as recorder (requires USB adapter)</strong></p>
 <ul>
-<li>iPhones, iPads, Android phones/tablets</li>
-<li>Have combo ports (headphone + mic combined)</li>
-<li>RECAP requires dedicated stereo MIC IN port</li>
-<li>No adapter exists for this configuration</li>
+<li>iPhones, iPads, Android phones/tablets have combo ports only</li>
+<li>RECAP requires stereo MIC IN, which combo ports don't provide</li>
+<li><strong>Solution:</strong> USB audio adapter with stereo mic input, connected via USB-C or Lightning</li>
+<li>Example: USB-C audio interface with 3.5mm stereo mic input</li>
 </ul>
 <p><strong>❌ Splitter cables</strong></p>
 <ul>

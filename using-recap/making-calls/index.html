@@ -565,6 +565,56 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#two-outputs-two-different-signals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Two Outputs, Two Different Signals
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Two Outputs, Two Different Signals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#output-1-pass-through-headset-jack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Output 1: Pass-Through (Headset Jack)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output-2-recording-output-mic-jack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Output 2: Recording Output (MIC Jack)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-confusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Confusion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#technical-details" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -871,6 +921,56 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#two-outputs-two-different-signals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Two Outputs, Two Different Signals
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Two Outputs, Two Different Signals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#output-1-pass-through-headset-jack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Output 1: Pass-Through (Headset Jack)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output-2-recording-output-mic-jack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Output 2: Recording Output (MIC Jack)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-confusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Confusion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#technical-details" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -910,7 +1010,12 @@
 
 <h2 id="how-recap-works">How RECAP Works</h2>
 <h3 id="what-recap-does">What RECAP Does</h3>
-<p>RECAP is a hardware audio converter. It transforms phone headset audio into a format your computer can record.</p>
+<p>RECAP is a hardware audio converter. It sits between your phone and your headset, and it does two things at once:</p>
+<ol>
+<li><strong>Passes call audio through to your headset</strong> — so you can talk normally, as if RECAP wasn't there.</li>
+<li><strong>Sends a separate recording output to your computer</strong> — this is where both sides of the conversation are captured for recording.</li>
+</ol>
+<p>These are two independent outputs. They carry different signals. Understanding this distinction is key to troubleshooting any audio issue.</p>
 <p><strong>Audio flow:</strong></p>
 <pre class="mermaid"><code>flowchart LR
     Phone[📱 YOUR PHONE&lt;br/&gt;&lt;br/&gt;Phone call audio]
@@ -926,6 +1031,46 @@
     style RECAP fill:#fff3bf,stroke:#f08c00
     style Headset fill:#d3f9d8,stroke:#2f9e44
     style Computer fill:#e7f5ff,stroke:#339af0</code></pre>
+<hr />
+<h3 id="two-outputs-two-different-signals">Two Outputs, Two Different Signals</h3>
+<p>This is the most important thing to understand about RECAP. It has <strong>two outputs</strong> and they work completely differently:</p>
+<h4 id="output-1-pass-through-headset-jack">Output 1: Pass-Through (Headset Jack)</h4>
+<p>The pass-through sends your phone's call audio straight to your headset. RECAP does not modify, split, or process this signal in any way. It is <strong>identical</strong> to plugging your headset directly into your phone.</p>
+<ul>
+<li>You hear the caller in <strong>both ears</strong>, same as without RECAP</li>
+<li>The caller hears you through the headset mic, same as without RECAP</li>
+<li>The audio is <strong>mono</strong> (same sound in left and right ear) — this is normal for phone calls</li>
+<li>If you unplugged the recording cable and never connected a computer, the pass-through would still work exactly the same</li>
+</ul>
+<p><strong>Example:</strong> You're on a call with a client. You hear their voice in both ears of your headset, they hear your voice through the headset mic. You talk normally. From a call quality perspective, nothing has changed — RECAP is invisible.</p>
+<p><strong>If you only hear in one ear through the headset pass-through, something is physically wrong.</strong> This is not a RECAP behavior — it's a connection issue, a headset issue, or a cable issue. See troubleshooting below.</p>
+<h4 id="output-2-recording-output-mic-jack">Output 2: Recording Output (MIC Jack)</h4>
+<p>This is the separate cable that goes from RECAP to your computer (or voice recorder). This output is where RECAP does its real work — it captures both sides of the conversation and splits them into a <strong>stereo signal</strong>:</p>
+<ul>
+<li><strong>Left channel</strong> = your voice (picked up from the headset mic)</li>
+<li><strong>Right channel</strong> = the caller's voice (picked up from the phone's audio)</li>
+</ul>
+<p>This stereo split is intentional. It's the whole point of RECAP — it gives you clean, separated audio that you can edit, transcribe, or process independently.</p>
+<p><strong>Example:</strong> You record a 30-minute interview. When you open the recording in Audacity or any audio editor, you see two channels. Left channel is you, right channel is the interviewee. You can adjust volume on each independently, remove background noise from one side without affecting the other, or export just the caller's audio.</p>
+<p>⚠️ <strong>The stereo split only exists on the recording output.</strong> It has nothing to do with what you hear in your headset during the call.</p>
+<hr />
+<h3 id="common-confusion">Common Confusion</h3>
+<blockquote>
+<p>"I only hear in one ear — is that the stereo split?"</p>
+</blockquote>
+<p><strong>No.</strong> If you only hear in one ear through your <strong>headset</strong>, that is not the stereo split. The stereo split only applies to the <strong>recording output</strong> going to your computer. The headset pass-through should always sound normal — both ears, same audio.</p>
+<p>One-ear audio in the headset means something else is going on:</p>
+<ul>
+<li>The headset plug isn't fully seated into RECAP</li>
+<li>The headset is plugged into the wrong jack (the MIC recording output instead of the headset pass-through)</li>
+<li>The headset itself has a problem (test it directly in your phone without RECAP)</li>
+<li>The phone-to-RECAP connection is loose</li>
+</ul>
+<blockquote>
+<p>"My recording only has audio on one side"</p>
+</blockquote>
+<p>This is a different issue — it's about the <strong>recording output</strong>, not the headset. The most common cause is a mono input on your computer. Run the <a href="https://recapmycalls.com/audio/">Audio Device Scanner</a> to check. Most modern laptops (especially Macs) have mono-only inputs and need a USB stereo adapter.</p>
+<hr />
 <h3 id="technical-details">Technical Details</h3>
 <p><strong>Input (Phone Plug):</strong></p>
 <ul>
@@ -937,7 +1082,8 @@
 <ul>
 <li>3.5mm TRRS connector (4-pole)</li>
 <li>Identical to phone plug</li>
-<li>Allows you to hear call in real-time</li>
+<li>Transparent — forwards phone audio to headset unchanged</li>
+<li>Your headset hears exactly what it would hear plugged directly into the phone</li>
 </ul>
 <p><strong>Output (MIC Jack):</strong></p>
 <ul>
