@@ -24,6 +24,6 @@ Version 4.0 | © 2025 Dossant LLC | www.RecapMyCalls.com
 
 ## Support
 - [Frequently Asked Questions](faq.md)
-- [Warranty & Support](support.md)
+- [Contact Support](support.md)
 
 ---

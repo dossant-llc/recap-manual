@@ -82,9 +82,6 @@ A: No supported configuration for splitters exists.
 
 ### Product Questions
 
-**Q: Can I return RECAP if it doesn't work with my computer?**
-A: All sales are final. Compatibility issues (MONO input) are not defects - they require a USB adapter. We encourage checking compatibility before purchase using our free scanner.
-
 **Q: Is RECAP wireless/Bluetooth?**
 A: No. RECAP is a wired hardware adapter. Bluetooth has too much latency for real-time call recording.
 
@@ -92,7 +89,7 @@ A: No. RECAP is a wired hardware adapter. Bluetooth has too much latency for rea
 A: Never use RECAP with +48V phantom power - it will damage the device. For professional equipment, you may need a different interface.
 
 **Q: How long does RECAP last?**
-A: RECAP has no batteries or moving parts. With proper care, it should last indefinitely. Warranty is 30 days for manufacturing defects.
+A: RECAP has no batteries or moving parts. With proper care, it should last indefinitely.
 
 ---
 

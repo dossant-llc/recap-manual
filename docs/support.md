@@ -1,21 +1,6 @@
-## Warranty & Returns
+## Contact Support
 
-**For complete warranty and return policy, visit:**
-
-👉 **<https://recapmycalls.com/tc>**
-
-### Important: Compatibility vs. Defects
-
-Many "not working" reports are compatibility issues, NOT hardware defects.
-
-Before assuming RECAP is defective, complete the diagnostic checklist:
-
-- ✅ Headset works directly with phone?
-- ✅ Pass-through test passes (hear call in headphones)?
-- ✅ Device scanner shows MONO? (need USB adapter)
-- ✅ Audio gain set to 100%?
-
-**MONO input is not a defect** - it's a computer limitation requiring USB adapter.
+**Website:** www.RecapMyCalls.com
 
 ---
 
@@ -86,11 +71,7 @@ Without these test results, support cannot help diagnose your issue.
 
 ---
 
-### Contact Information
-
-**Website:** www.RecapMyCalls.com
-
-**When contacting support, include:**
+### When Contacting Support, Include:
 
 1. ✅ Results from ALL 5 tests above (copy and paste)
 2. ✅ Device scanner screenshot (attach image)
@@ -100,9 +81,7 @@ Without these test results, support cannot help diagnose your issue.
    - Computer model: __________
    - Operating system: __________ (Windows 10/11, macOS version, etc.)
    - Recording software: __________
-4. ✅ Proof of purchase (if warranty claim)
 
 **Support cannot help without diagnostic test results.** This information allows us to quickly identify the issue and provide the correct solution.
 
 ---
-
