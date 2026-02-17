@@ -62,25 +62,6 @@ This stereo split is intentional. It's the whole point of RECAP — it gives you
 
 ---
 
-### Common Confusion
-
-> "I only hear in one ear — is that the stereo split?"
-
-**No.** If you only hear in one ear through your **headset**, that is not the stereo split. The stereo split only applies to the **recording output** going to your computer. The headset pass-through should always sound normal — both ears, same audio.
-
-One-ear audio in the headset means something else is going on:
-
-- The headset plug isn't fully seated into RECAP
-- The headset is plugged into the wrong jack (the MIC recording output instead of the headset pass-through)
-- The headset itself has a problem (test it directly in your phone without RECAP)
-- The phone-to-RECAP connection is loose
-
-> "My recording only has audio on one side"
-
-This is a different issue — it's about the **recording output**, not the headset. The most common cause is a mono input on your computer. Run the [Audio Device Scanner](https://recapmycalls.com/audio/) to check. Most modern laptops (especially Macs) have mono-only inputs and need a USB stereo adapter.
-
----
-
 ### Technical Details
 
 **Input (Phone Plug):**
