@@ -94,6 +94,30 @@ This fixes 90% of low volume issues!
 
 ---
 
+### Problem: Left and Right Channels Are Swapped
+
+**Symptom:** Your voice is on the right channel and the caller is on the left (or vice versa from what you expected)
+
+**This is normal — not a defect.** RECAP's hardware outputs your voice on one channel and the caller's voice on the other, but which is "left" and which is "right" depends on your recording device. USB audio adapters, voice recorders, and some computer sound cards interpret the Tip and Ring pins differently, which can swap the channels.
+
+**How to verify:**
+
+1. Record a short test call
+2. Open the recording in Audacity
+3. Split Stereo to Mono (track dropdown → Split Stereo to Mono)
+4. Play each track — note which is you and which is the caller
+5. Label them for future reference
+
+**This only matters if you need to edit channels independently.** If you just play back the full recording, you'll hear both voices regardless of which channel they're on.
+
+**If you need to swap channels in Audacity:**
+
+1. Split Stereo to Mono
+2. Drag one track above/below the other to reorder
+3. Track dropdown → Make Stereo Track
+
+---
+
 ### Problem: Not Working on Mac
 
 **Most Macs have MONO-only or LINE IN ports**

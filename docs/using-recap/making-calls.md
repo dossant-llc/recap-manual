@@ -84,7 +84,7 @@ This stereo split is intentional. It's the whole point of RECAP — it gives you
 - Pin 2 (Ring): Left channel - Your voice (1kΩ impedance)
 - Pin 3 (Sleeve): Ground
 - Requires 700-2000mV bias voltage (standard for computer MIC IN)
-- ⚠️ **Note:** Some USB adapters may swap L/R channels - verify which is which in your recording
+- ⚠️ **Note:** Some recording devices may swap L/R channels — see [Channel Swap troubleshooting](../troubleshooting/low-volume-noise.md#problem-left-and-right-channels-are-swapped)
 
 **Power:**
 
