@@ -43,6 +43,41 @@ This fixes 90% of low volume issues!
 
 ---
 
+### Problem: Audio Routes to Speaker or One Ear with Lightning/USB-C Adapter
+
+**Symptom:** Audio plays through phone speaker instead of headset, or only one ear works — but only when using a Lightning or USB-C to 3.5mm adapter.
+
+**Cause:** When you plug a Lightning or USB-C adapter into your phone, the phone immediately performs accessory detection. It decides whether the accessory is "Headphones," "Headset," or something else (like "Dock speaker"). If the adapter is plugged in without a headset already connected through RECAP, the phone may lock into the wrong audio routing mode.
+
+This affects **all modern phones**:
+- **iPhone (Lightning):** Decides "Headphones" vs "Dock speaker" at plug-in
+- **iPhone 15+ (USB-C):** Same detection behavior
+- **Android (USB-C):** Per the Android spec, USB-C audio adapters don't present audio endpoints until a device is detected and its impedance is measured
+
+**Solution — connect in the right order:**
+
+1. Plug your headset into RECAP's headset jack
+2. Plug the recording cable into RECAP's MIC jack (if using a computer)
+3. Plug RECAP into the Lightning/USB-C adapter
+4. **Plug the adapter into your phone LAST**
+
+**The full chain must be connected before the phone sees it.**
+
+**If you already plugged in wrong order:**
+
+1. Unplug the adapter from the phone
+2. Make sure headset is connected to RECAP
+3. Plug the adapter back in
+
+**iPhone reset (if it's still routing wrong):**
+Settings → Sounds & Haptics → Headphone Safety → USB Accessories → "Forget All" — then reconnect.
+
+**References:**
+- [Apple Support — Use Apple wired headphones](https://support.apple.com/en-us/108042)
+- [Android AOSP — USB-C audio adapter spec](https://source.android.com/docs/core/interaction/accessories/headset/usb-adapter)
+
+---
+
 ### Problem: Can't Hear Call in Headset
 
 **Symptom:** No audio in headset during call (but RECAP is connected)

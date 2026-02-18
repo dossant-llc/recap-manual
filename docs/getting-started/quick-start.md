@@ -37,9 +37,11 @@ Phone ──→ RECAP ──→ Headset
 
 **Connection details:**
 
-1. Plug RECAP into your phone's headphone jack
-2. Plug your headset into RECAP's headset jack
+1. Plug your headset into RECAP's headset jack
+2. Plug RECAP into your phone's headphone jack (or Lightning/USB-C adapter)
 3. **Don't connect to computer yet**
+
+> ⚠️ **Connection order matters.** Always connect the headset to RECAP **before** plugging RECAP into your phone. When a Lightning or USB-C adapter is plugged in, your phone immediately decides how to route audio. If the headset isn't already in the chain, the phone may not recognize it as a headset setup — causing audio to route to the speaker instead. See [Connection Order troubleshooting](../troubleshooting/low-volume-noise.md#problem-audio-routes-to-speaker-or-one-ear-with-lightningusb-c-adapter) for details.
 
 **Pass-through test:**
 

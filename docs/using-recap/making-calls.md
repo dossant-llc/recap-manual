@@ -47,6 +47,8 @@ The pass-through sends your phone's call audio straight to your headset. RECAP d
 
 **If you only hear in one ear through the headset pass-through, something is physically wrong.** This is not a RECAP behavior — it's a connection issue, a headset issue, or a cable issue. See troubleshooting below.
 
+> ⚠️ **If using a Lightning or USB-C adapter:** Always connect the headset to RECAP first, then plug into the phone last. Your phone performs accessory detection at plug-in — if the headset isn't already in the chain, audio may route incorrectly. See [Connection Order troubleshooting](../troubleshooting/low-volume-noise.md#problem-audio-routes-to-speaker-or-one-ear-with-lightningusb-c-adapter).
+
 #### Output 2: Recording Output (MIC Jack)
 
 This is the separate cable that goes from RECAP to your computer (or voice recorder). This output is where RECAP does its real work — it captures both sides of the conversation and splits them into a **stereo signal**:
