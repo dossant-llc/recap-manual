@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -670,6 +670,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#problem-audio-routes-to-speaker-or-one-ear-with-lightningusb-c-adapter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem: Audio Routes to Speaker or One Ear with Lightning/USB-C Adapter
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#problem-cant-hear-call-in-headset" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -685,6 +696,17 @@
     <span class="md-ellipsis">
       
         Problem: Static, Noise, or Interference
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-left-and-right-channels-are-swapped" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem: Left and Right Channels Are Swapped
       
     </span>
   </a>
@@ -864,6 +886,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#problem-audio-routes-to-speaker-or-one-ear-with-lightningusb-c-adapter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem: Audio Routes to Speaker or One Ear with Lightning/USB-C Adapter
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#problem-cant-hear-call-in-headset" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -879,6 +912,17 @@
     <span class="md-ellipsis">
       
         Problem: Static, Noise, or Interference
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-left-and-right-channels-are-swapped" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem: Left and Right Channels Are Swapped
       
     </span>
   </a>
@@ -961,6 +1005,33 @@
 <li>Try different headset (Apple EarPods are good reference)</li>
 </ul>
 <hr />
+<h3 id="problem-audio-routes-to-speaker-or-one-ear-with-lightningusb-c-adapter">Problem: Audio Routes to Speaker or One Ear with Lightning/USB-C Adapter</h3>
+<p><strong>Symptom:</strong> Audio plays through phone speaker instead of headset, or only one ear works — but only when using a Lightning or USB-C to 3.5mm adapter.</p>
+<p><strong>Cause:</strong> When you plug a Lightning or USB-C adapter into your phone, the phone immediately performs accessory detection. It decides whether the accessory is "Headphones," "Headset," or something else (like "Dock speaker"). If the adapter is plugged in without a headset already connected through RECAP, the phone may lock into the wrong audio routing mode.</p>
+<p>This affects <strong>all modern phones</strong>:
+- <strong>iPhone (Lightning):</strong> Decides "Headphones" vs "Dock speaker" at plug-in
+- <strong>iPhone 15+ (USB-C):</strong> Same detection behavior
+- <strong>Android (USB-C):</strong> Per the Android spec, USB-C audio adapters don't present audio endpoints until a device is detected and its impedance is measured</p>
+<p><strong>Solution — connect in the right order:</strong></p>
+<ol>
+<li>Plug your headset into RECAP's headset jack</li>
+<li>Plug the recording cable into RECAP's MIC jack (if using a computer)</li>
+<li>Plug RECAP into the Lightning/USB-C adapter</li>
+<li><strong>Plug the adapter into your phone LAST</strong></li>
+</ol>
+<p><strong>The full chain must be connected before the phone sees it.</strong></p>
+<p><strong>If you already plugged in wrong order:</strong></p>
+<ol>
+<li>Unplug the adapter from the phone</li>
+<li>Make sure headset is connected to RECAP</li>
+<li>Plug the adapter back in</li>
+</ol>
+<p><strong>iPhone reset (if it's still routing wrong):</strong>
+Settings → Sounds &amp; Haptics → Headphone Safety → USB Accessories → "Forget All" — then reconnect.</p>
+<p><strong>References:</strong>
+- <a href="https://support.apple.com/en-us/108042">Apple Support — Use Apple wired headphones</a>
+- <a href="https://source.android.com/docs/core/interaction/accessories/headset/usb-adapter">Android AOSP — USB-C audio adapter spec</a></p>
+<hr />
 <h3 id="problem-cant-hear-call-in-headset">Problem: Can't Hear Call in Headset</h3>
 <p><strong>Symptom:</strong> No audio in headset during call (but RECAP is connected)</p>
 <p><strong>Diagnostic:</strong></p>
@@ -1026,6 +1097,25 @@
 </li>
 <li>Some cheap headsets have noisy electronics</li>
 <li>Try different headset</li>
+</ol>
+<hr />
+<h3 id="problem-left-and-right-channels-are-swapped">Problem: Left and Right Channels Are Swapped</h3>
+<p><strong>Symptom:</strong> Your voice is on the right channel and the caller is on the left (or vice versa from what you expected)</p>
+<p><strong>This is normal — not a defect.</strong> RECAP's hardware outputs your voice on one channel and the caller's voice on the other, but which is "left" and which is "right" depends on your recording device. USB audio adapters, voice recorders, and some computer sound cards interpret the Tip and Ring pins differently, which can swap the channels.</p>
+<p><strong>How to verify:</strong></p>
+<ol>
+<li>Record a short test call</li>
+<li>Open the recording in Audacity</li>
+<li>Split Stereo to Mono (track dropdown → Split Stereo to Mono)</li>
+<li>Play each track — note which is you and which is the caller</li>
+<li>Label them for future reference</li>
+</ol>
+<p><strong>This only matters if you need to edit channels independently.</strong> If you just play back the full recording, you'll hear both voices regardless of which channel they're on.</p>
+<p><strong>If you need to swap channels in Audacity:</strong></p>
+<ol>
+<li>Split Stereo to Mono</li>
+<li>Drag one track above/below the other to reorder</li>
+<li>Track dropdown → Make Stereo Track</li>
 </ol>
 <hr />
 <h3 id="problem-not-working-on-mac">Problem: Not Working on Mac</h3>
@@ -1094,7 +1184,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.expand", "search.highlight", "search.suggest"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>

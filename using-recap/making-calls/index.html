@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -1022,6 +1022,9 @@
 </ul>
 <p><strong>Example:</strong> You're on a call with a client. You hear their voice in both ears of your headset, they hear your voice through the headset mic. You talk normally. From a call quality perspective, nothing has changed — RECAP is invisible.</p>
 <p><strong>If you only hear in one ear through the headset pass-through, something is physically wrong.</strong> This is not a RECAP behavior — it's a connection issue, a headset issue, or a cable issue. See troubleshooting below.</p>
+<blockquote>
+<p>⚠️ <strong>If using a Lightning or USB-C adapter:</strong> Always connect the headset to RECAP first, then plug into the phone last. Your phone performs accessory detection at plug-in — if the headset isn't already in the chain, audio may route incorrectly. See <a href="../../troubleshooting/low-volume-noise/#problem-audio-routes-to-speaker-or-one-ear-with-lightningusb-c-adapter">Connection Order troubleshooting</a>.</p>
+</blockquote>
 <h4 id="output-2-recording-output-mic-jack">Output 2: Recording Output (MIC Jack)</h4>
 <p>This is the separate cable that goes from RECAP to your computer (or voice recorder). This output is where RECAP does its real work — it captures both sides of the conversation and splits them into a <strong>stereo signal</strong>:</p>
 <ul>
@@ -1053,7 +1056,7 @@
 <li>Pin 2 (Ring): Left channel - Your voice (1kΩ impedance)</li>
 <li>Pin 3 (Sleeve): Ground</li>
 <li>Requires 700-2000mV bias voltage (standard for computer MIC IN)</li>
-<li>⚠️ <strong>Note:</strong> Some USB adapters may swap L/R channels - verify which is which in your recording</li>
+<li>⚠️ <strong>Note:</strong> Some recording devices may swap L/R channels — see <a href="../../troubleshooting/low-volume-noise/#problem-left-and-right-channels-are-swapped">Channel Swap troubleshooting</a></li>
 </ul>
 <p><strong>Power:</strong></p>
 <ul>
@@ -1113,7 +1116,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.expand", "search.highlight", "search.suggest"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>
