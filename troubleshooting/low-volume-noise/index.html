@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://dossant-llc.github.io/recap-manual/troubleshooting/low-volume-noise/">
       
       
-        <link rel="prev" href="../../using-recap/saving-exporting/">
+        <link rel="prev" href="../far-end-audio/">
       
       
         <link rel="next" href="../no-audio/">
@@ -600,6 +600,34 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../far-end-audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Callers Say I Sound Muffled or Distant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -964,6 +992,9 @@
 
 <h3 id="problem-low-volume-or-faint-audio">Problem: Low Volume or Faint Audio</h3>
 <p><strong>Symptom:</strong> Recording is very quiet, have to turn volume way up to hear</p>
+<blockquote>
+<p>⚠️ <strong>This is about your recording.</strong> If your <em>callers</em> say you sound faint, quiet, or distant during the call, that's a different signal path and none of the gain settings below will fix it — see <a href="../far-end-audio/">Callers Say I Sound Muffled or Distant</a>.</p>
+</blockquote>
 <p><strong>Solutions (try in order):</strong></p>
 <p><strong>1. ⭐ MOST COMMON: Audio input gain too low</strong></p>
 <p>This fixes 90% of low volume issues!</p>
@@ -1028,9 +1059,12 @@
 </ol>
 <p><strong>iPhone reset (if it's still routing wrong):</strong>
 Settings → Sounds &amp; Haptics → Headphone Safety → USB Accessories → "Forget All" — then reconnect.</p>
-<p><strong>References:</strong>
-- <a href="https://support.apple.com/en-us/108042">Apple Support — Use Apple wired headphones</a>
-- <a href="https://source.android.com/docs/core/interaction/accessories/headset/usb-adapter">Android AOSP — USB-C audio adapter spec</a></p>
+<p><strong>If the order is right and it still misbehaves, check the adapter itself.</strong> Many inexpensive adapters don't carry the microphone channel at all, which leaves your phone using its own built-in microphone — a common reason callers say you sound distant. Tested adapters: <a href="https://recapmycalls.com/compatible-adapters-for-recap/">https://recapmycalls.com/compatible-adapters-for-recap/</a></p>
+<p><strong>References:</strong></p>
+<ul>
+<li><a href="https://support.apple.com/en-us/108042">Apple Support — Use Apple wired headphones</a></li>
+<li><a href="https://source.android.com/docs/core/interaction/accessories/headset/usb-adapter">Android AOSP — USB-C audio adapter spec</a></li>
+</ul>
 <hr />
 <h3 id="problem-cant-hear-call-in-headset">Problem: Can't Hear Call in Headset</h3>
 <p><strong>Symptom:</strong> No audio in headset during call (but RECAP is connected)</p>
