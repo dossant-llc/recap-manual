@@ -172,7 +172,7 @@ Settings → Sounds & Haptics → Headphone Safety → USB Accessories → "Forg
 - **Combo port** (one port for headphones + mic): Usually MONO only
 - **Separate input jack**: Often LINE IN, not MIC IN (incompatible)
 
-**Solution:** Andrea USB stereo adapter - [details here](device-scanner.md)
+**Solution:** a USB stereo mic adapter — [how to use it](device-scanner.md) · [which ones](https://recapmycalls.com/compatible-adapters-for-recap/)
 
 ---
 

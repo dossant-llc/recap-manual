@@ -20,7 +20,7 @@ flowchart TD
 
     Test2 -->|YES| Test3{Test 3: Device Scanner<br/><br/>Visit: recapmycalls.com/audio/<br/>Take screenshot<br/><br/>STEREO or MONO input?}
 
-    Test3 -->|MONO| USBAdapter[✅ USB Adapter Needed<br/><br/>Andrea USB adapter $20-40<br/><br/>This is NOT a defect<br/>Most modern computers<br/>have MONO inputs<br/><br/>Get adapter, then continue]
+    Test3 -->|MONO| USBAdapter[✅ USB Adapter Needed<br/><br/>USB stereo mic adapter<br/><br/>This is NOT a defect<br/>Most modern computers<br/>have MONO inputs<br/><br/>Get adapter, then continue]
 
     Test3 -->|STEREO| Test3B{Test 3B: Check Device Settings<br/><br/>Click device to expand details<br/><br/>Echo Cancellation OFF?<br/>Noise Suppression OFF?<br/>Auto Gain Control OFF?}
 
@@ -249,20 +249,21 @@ Most modern computers save cost by including only MONO microphone inputs. This c
 
 **This is NOT a RECAP defect** - it's a common computer compatibility issue.
 
-### Recommended Solution: Andrea USB Adapter
+### The Solution: A USB Stereo Mic Adapter
 
-**Product:** Andrea USB-SA Audio Adapter
-- **Cost:** $20-40 USD
-- **Where to buy:** Amazon, B&H Photo, electronics retailers
-- **Search for:** "Andrea USB stereo microphone adapter"
+A USB audio adapter gives your computer a true stereo microphone input, which is
+the thing it's missing.
 
-**Why we recommend this specific adapter:**
+**What it has to do — these are the criteria, not a brand:**
 
-- ✅ Guaranteed stereo microphone input (2 channels)
-- ✅ Plug-and-play (no drivers needed)
-- ✅ Works on Windows, Mac, Linux
-- ✅ Provides proper bias voltage for RECAP
-- ✅ Tested and confirmed compatible
+- ✅ **Stereo** microphone input (2 channels) — the one that matters most
+- ✅ Supplies bias voltage (plug-in power) to the mic input
+- ✅ Plug-and-play on your OS, no drivers
+
+**Which specific models we currently recommend, and where to buy them, is on the
+[compatible adapters guide](https://recapmycalls.com/compatible-adapters-for-recap/).**
+That list is kept up to date as hardware and prices change — this manual
+deliberately doesn't name models, so the two can't drift apart.
 
 ### How to Use USB Adapter
 
@@ -288,9 +289,9 @@ flowchart LR
 
 **That's it!** The USB adapter gives your computer a true stereo microphone input.
 
-### Alternative USB Adapters
+### Checking Any Adapter Yourself
 
-If Andrea adapter unavailable, look for:
+If the ones on the guide aren't available where you are, look for:
 
 **Required features:**
 

@@ -76,7 +76,7 @@ This free browser tool scans your computer's audio inputs.
 
 - Most modern laptops/Macs have MONO-only inputs
 - This is NOT a defect - it's a compatibility issue
-- Solution: Get Andrea USB stereo adapter ($20-40) FIRST - [See USB Adapter Solution](../troubleshooting/device-scanner.md)
+- Solution: get a USB stereo mic adapter FIRST — [which ones](https://recapmycalls.com/compatible-adapters-for-recap/) · [how to use it](../troubleshooting/device-scanner.md)
 - RECAP works perfectly, your computer just needs the adapter
 - **Don't proceed to Step 4 until you have the USB adapter**
 
