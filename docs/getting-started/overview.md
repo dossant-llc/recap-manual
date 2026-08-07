@@ -42,7 +42,7 @@ RECAP is a small hardware adapter that records both sides of any conversation �
 - Most modern laptops/Macs only have MONO input
 - Use our free scanner to check: **<https://recapmycalls.com/audio/>**
 
-- If MONO only → You need a USB adapter ($20-40)
+- If MONO only → You need a USB adapter that adds a stereo mic input ([which ones](https://recapmycalls.com/compatible-adapters-for-recap/))
 
 **4. Recording software (free)**
 

@@ -78,7 +78,7 @@ This is where most compatibility issues occur.
 - Computers with stereo MIC IN port (2 channels)
 - Older Windows laptops/desktops (pre-2015)
 - Some desktop PCs with dedicated sound cards
-- Computers using USB adapter (Andrea recommended)
+- Computers using a USB adapter that adds a stereo mic input
 
 **❌ NOT Compatible (without USB adapter):**
 
@@ -99,7 +99,7 @@ This is where most compatibility issues occur.
 | Combo port | ❌ Usually MONO | One port for both headphones + mic |
 | Headphone OUT | ❌ NO | Green port, output only |
 
-**Solution for incompatible computers:** Use Andrea USB stereo adapter ($20-40)
+**Solution for incompatible computers:** a USB adapter that adds a **stereo** microphone input. Current recommended models are kept on the [compatible adapters guide](https://recapmycalls.com/compatible-adapters-for-recap/) — that list is maintained as hardware changes, so check it there rather than relying on a model name in this manual.
 
 ---
 
@@ -107,9 +107,12 @@ This is where most compatibility issues occur.
 
 **Compatible devices:**
 
-- Digital voice recorders with **stereo** external mic input
-- Portable recorders (Zoom, Tascam, etc.) with stereo MIC IN
-- Professional recorders with stereo line-level input + preamp
+- Digital voice recorders with a **stereo** external mic input that supplies plug-in power
+- Portable/field recorders meeting the same two conditions
+
+We don't certify individual recorder models — there are too many to test, and a
+model that works in one firmware revision may not in the next. Check your own
+recorder against the two conditions below; its manual is the only reliable source.
 
 **Requirements:**
 
