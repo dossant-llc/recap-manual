@@ -1,8 +1,10 @@
 ## The 5-Minute Diagnostic
 
-**Use this flowchart to diagnose ANY problem with RECAP.**
+**Use this flowchart to diagnose any problem with your recording.**
 
 Run tests IN ORDER. Don't skip steps.
+
+> ⚠️ **Wrong page if your problem is the live call.** This flowchart diagnoses what lands in your *recording*. If your callers say you sound muffled or distant **while you're talking**, none of these tests will help — you can pass all five and still have the problem. Go to [Callers Say I Sound Muffled or Distant](far-end-audio.md) instead.
 
 ### Diagnostic Flowchart
 

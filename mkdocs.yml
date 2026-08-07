@@ -52,6 +52,7 @@ nav:
       - Making Calls: using-recap/making-calls.md
       - Saving & Exporting: using-recap/saving-exporting.md
   - Troubleshooting:
+      - Callers Say I Sound Muffled or Distant: troubleshooting/far-end-audio.md
       - Low Volume & Noise: troubleshooting/low-volume-noise.md
       - No Audio Recorded: troubleshooting/no-audio.md
       - Device Scanner: troubleshooting/device-scanner.md

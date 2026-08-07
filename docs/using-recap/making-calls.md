@@ -43,6 +43,8 @@ The pass-through sends your phone's call audio straight to your headset. RECAP d
 - The audio is **mono** (same sound in left and right ear) — this is normal for phone calls
 - If you unplugged the recording cable and never connected a computer, the pass-through would still work exactly the same
 
+> **This assumes your headset has a microphone on the cable.** If it doesn't, your call device uses its own built-in microphone instead — so your caller hears you from wherever the phone is sitting, which can make you sound distant. If people tell you that you sound muffled, start here: [Callers Say I Sound Muffled or Distant](../troubleshooting/far-end-audio.md).
+
 **Example:** You're on a call with a client. You hear their voice in both ears of your headset, they hear your voice through the headset mic. You talk normally. From a call quality perspective, nothing has changed — RECAP is invisible.
 
 **If you only hear in one ear through the headset pass-through, something is physically wrong.** This is not a RECAP behavior — it's a connection issue, a headset issue, or a cable issue. See troubleshooting below.

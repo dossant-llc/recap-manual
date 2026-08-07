@@ -20,15 +20,34 @@ RECAP works with any device that has a **combo headset port** (3.5mm TRRS) — t
 
 **How to check:** If your headset works with the device (you can hear AND be heard), the device is compatible.
 
+> **No headphone jack on your phone?** You need a Lightning or USB-C to 3.5mm adapter — and it has to be one that carries the microphone channel. Many cheap adapters do not, which leaves your phone using its own built-in microphone. Tested adapters: <https://recapmycalls.com/compatible-adapters-for-recap/>
+
 ---
 
 ### Headset Compatibility
 
+> ⚠️ **The one rule that matters most: the microphone has to be on the headset cable.**
+>
+> RECAP is a passive splitter — it can only work with audio that physically travels through its cable. If your headset has no microphone on the cable, your voice never enters the chain: your call device uses its own built-in microphone instead. Your recording will be missing your side, and your callers may hear you as distant, since that microphone can be sitting on your desk while you wear the headset.
+>
+> **How to check:** look along the cable for a boom arm, or a small inline blob partway down the wire (often with the volume buttons). That blob is the microphone. No boom and no blob means no microphone on the cable.
+
 **Requirements:**
 
+- Wired, with a microphone **on the cable** — a 3.5mm TRRS plug (4-pole)
 - Must be compatible with YOUR call device
-- Standard 3.5mm TRRS connector (4-pole)
-- Known-working headsets: Apple EarPods, most phone headsets
+- Known-working headsets: Apple **3.5mm** EarPods, most phone headsets
+
+A mic on the cable is the first requirement, and an inexpensive headset can meet it — the headset does not shape how your *caller* sounds in the recording, since that audio comes from the call itself. Headset quality still affects how **you** sound, though: a weak or noisy microphone shows up on your own channel. And a small number of TRRS headsets use a reversed pinout or an unusual connector and still misbehave — see **Common incompatibilities** below.
+
+**These cannot work with RECAP:**
+
+| Headset type | Why not | What you'd see |
+|--------------|---------|----------------|
+| Listening-only earphones (3-pole TRS plug) | No microphone on the cable. Common with music earphones and audiophile IEMs, which often ship with a mic-less cable. | Call audio works, and recordings capture the caller but **not you** |
+| USB headsets | Connect digitally. RECAP taps the analog 3.5mm signal, so a USB headset never passes through it. | RECAP is bypassed entirely |
+| Lightning or USB-C EarPods | Have their own converter built into the plug, so they connect straight to the phone and bypass RECAP. | RECAP is bypassed entirely |
+| Bluetooth / wireless headsets | Nothing travels down a cable for RECAP to tap. | RECAP is bypassed entirely |
 
 **How to test compatibility:**
 

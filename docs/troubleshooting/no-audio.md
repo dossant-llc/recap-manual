@@ -2,7 +2,9 @@
 
 **Symptom:** Recording file is silent or shows flat waveform
 
-**Run the diagnostic flowchart above. Most common causes:**
+> **Is this about your recording, or about the live call?** Everything on this page is about what lands in the *recording*. If your problem is that **callers say you sound muffled or distant while you're talking**, that's a different signal path with different tests — see [Callers Say I Sound Muffled or Distant](far-end-audio.md).
+
+**Work through the [diagnostic flowchart](device-scanner.md) first. Most common causes:**
 
 1. **Computer has MONO input (most common)**
    - Run scanner: <https://recapmycalls.com/audio/>
@@ -52,6 +54,7 @@
 4. **Phone adapter issue**
    - If using a Lightning or USB-C to 3.5mm adapter, try a different one
    - Some cheap adapters don't pass all channels correctly
+   - Tested adapters: <https://recapmycalls.com/compatible-adapters-for-recap/>
 
 ---
 

@@ -18,6 +18,7 @@ Version 4.0 | © 2025 Dossant LLC | www.RecapMyCalls.com
 - [Recording Software Guide](using-recap/saving-exporting.md)
 
 ## Troubleshooting
+- [Callers Say I Sound Muffled or Distant](troubleshooting/far-end-audio.md)
 - [No Audio Recorded](troubleshooting/no-audio.md)
 - [Low Volume & Noise](troubleshooting/low-volume-noise.md)
 - [Device Scanner & USB Adapter](troubleshooting/device-scanner.md)

@@ -21,6 +21,8 @@ Many people grab an old headset from a drawer that doesn't work with their phone
 
 **Why this matters:** If your headset doesn't work with your phone directly, RECAP cannot fix it.
 
+> **"They can hear me, but they say I sound muffled or distant."** That usually means there's no microphone on the headset cable, or the adapter isn't carrying the mic channel — see [Callers Say I Sound Muffled or Distant](../troubleshooting/far-end-audio.md). Sort this out before adding RECAP; RECAP can't improve what the phone is already sending.
+
 ---
 
 ### Step 2: Pass-Through Test (2 minutes)
@@ -99,6 +101,8 @@ Phone ──→ RECAP ──→ Headset
   - **If MONO input:** USB adapter's MIC IN jack → USB adapter → Computer USB port
 
 **⚠️ Must be MIC IN (not LINE IN)**
+
+> ⚠️ **Unplug from the phone first, then rebuild with the phone LAST.** Don't add the recording cable to a chain that's already plugged into your phone — that's the connection order problem again. Disconnect from the phone, connect headset → RECAP → recording cable, then plug into the phone last. See [Connection Order troubleshooting](../troubleshooting/low-volume-noise.md#problem-audio-routes-to-speaker-or-one-ear-with-lightningusb-c-adapter).
 
 **Open recording software:**
 

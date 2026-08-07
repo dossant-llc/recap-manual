@@ -2,6 +2,8 @@
 
 **Symptom:** Recording is very quiet, have to turn volume way up to hear
 
+> ⚠️ **This is about your recording.** If your *callers* say you sound faint, quiet, or distant during the call, that's a different signal path and none of the gain settings below will fix it — see [Callers Say I Sound Muffled or Distant](far-end-audio.md).
+
 **Solutions (try in order):**
 
 **1. ⭐ MOST COMMON: Audio input gain too low**
@@ -72,7 +74,10 @@ This affects **all modern phones**:
 **iPhone reset (if it's still routing wrong):**
 Settings → Sounds & Haptics → Headphone Safety → USB Accessories → "Forget All" — then reconnect.
 
+**If the order is right and it still misbehaves, check the adapter itself.** Many inexpensive adapters don't carry the microphone channel at all, which leaves your phone using its own built-in microphone — a common reason callers say you sound distant. Tested adapters: <https://recapmycalls.com/compatible-adapters-for-recap/>
+
 **References:**
+
 - [Apple Support — Use Apple wired headphones](https://support.apple.com/en-us/108042)
 - [Android AOSP — USB-C audio adapter spec](https://source.android.com/docs/core/interaction/accessories/headset/usb-adapter)
 
