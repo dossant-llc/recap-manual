@@ -62,6 +62,14 @@
 
 **Symptom:** You open your recording and only one channel has audio — the other is silent or very quiet.
 
+**If the caller is on the recording but your own voice is missing, start here.** The usual cause is your recording device's input. RECAP draws 1–2 volts of plug-in power from the recorder's microphone input, and your voice needs that power to reach the recording. The caller's side doesn't. Check that:
+
+- The recorder input is a **stereo MIC input (not LINE IN) that supplies plug-in power**. Your recorder's manual will say; see [Recording Device Compatibility](../getting-started/requirements.md#recording-device-compatibility).
+- Your headset has a **microphone on its cable**. Without one, your phone uses its own mic and your voice never reaches RECAP. See [Cause 1](far-end-audio.md#cause-1-most-common-no-microphone-on-the-headset-cable).
+- If your phone uses a Lightning or USB-C adapter, you **connect the phone last**. See [connection order](far-end-audio.md#cause-3-connection-order).
+
+On a computer, also check the causes below.
+
 **This IS about the recording output** (not the headset). Most common cause:
 
 1. **Computer has MONO input (most common)**

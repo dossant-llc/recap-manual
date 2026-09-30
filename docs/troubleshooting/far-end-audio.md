@@ -2,7 +2,7 @@
 
 **Symptom:** People on the other end say your voice sounds muffled, distant, far away, or like you're on speakerphone — or they keep asking you to repeat yourself.
 
-> ⚠️ **This page is about the live call, not the recording.** If your *recording* is silent, one-sided, or too quiet, you are on the wrong page — see [No Audio Recorded](no-audio.md) or [Low Volume & Noise](low-volume-noise.md). Those tests examine the recording output, and they cannot grade what your caller hears. (One exception: if your own voice is completely missing from a recording, there is no microphone in the chain — that's [Cause 1](#cause-1-most-common-no-microphone-on-the-headset-cable) below.)
+> ⚠️ **This page is about the live call, not the recording.** If your *recording* is silent, one-sided, or too quiet, you are on the wrong page — see [No Audio Recorded](no-audio.md) or [Low Volume & Noise](low-volume-noise.md). Those tests examine the recording output, and they cannot grade what your caller hears. (One exception: if your own voice is completely missing from a recording, either there is no microphone in the chain — that's [Cause 1](#cause-1-most-common-no-microphone-on-the-headset-cable) below — or your recording device isn't supplying plug-in power. See [only one side recorded](no-audio.md#problem-recording-only-has-audio-on-one-side).)
 
 **How to tell which one you have:** if you are repeating what other people told you ("everybody says I sound muffled"), you are on the right page. If you are describing something you played back yourself, you want the recording pages above.
 
