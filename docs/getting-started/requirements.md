@@ -51,10 +51,12 @@ A mic on the cable is the first requirement, and an inexpensive headset can meet
 
 **How to test compatibility:**
 
+First confirm the **microphone is on the cable** (see the box above). A headset with no mic on the cable still passes the call test below, because your phone quietly falls back to its own built-in microphone. So the call test alone can't tell you the headset will work with RECAP.
+
 1. Plug headset directly into phone (no RECAP)
 2. Make test call
 3. Verify: Can you hear them? Can they hear you?
-4. If both YES → Headset is compatible
+4. If both YES **and** the mic is on the cable → Headset is compatible
 
 **Common incompatibilities:**
 

@@ -55,12 +55,14 @@ The pass-through sends your phone's call audio straight to your headset. RECAP d
 
 This is the separate cable that goes from RECAP to your computer (or voice recorder). This output is where RECAP does its real work — it captures both sides of the conversation and splits them into a **stereo signal**:
 
-- **Left channel** = your voice (picked up from the headset mic)
-- **Right channel** = the caller's voice (picked up from the phone's audio)
+- **One channel** = your voice (picked up from the headset mic)
+- **The other channel** = the caller's voice (picked up from the phone's audio)
+
+Which one your recording shows as **left** and which as **right** depends on your recording device. Some devices swap them, which is normal. If it matters to you, check with a short test recording ([Channel Swap](../troubleshooting/low-volume-noise.md#problem-left-and-right-channels-are-swapped)).
 
 This stereo split is intentional. It's the whole point of RECAP — it gives you clean, separated audio that you can edit, transcribe, or process independently.
 
-**Example:** You record a 30-minute interview. When you open the recording in Audacity or any audio editor, you see two channels. Left channel is you, right channel is the interviewee. You can adjust volume on each independently, remove background noise from one side without affecting the other, or export just the caller's audio.
+**Example:** You record a 30-minute interview. When you open the recording in Audacity or any audio editor, you see two channels. One channel is you, the other is the interviewee. You can adjust volume on each independently, remove background noise from one side without affecting the other, or export just the caller's audio.
 
 ⚠️ **The stereo split only exists on the recording output.** It has nothing to do with what you hear in your headset during the call.
 
@@ -93,6 +95,6 @@ This stereo split is intentional. It's the whole point of RECAP — it gives you
 **Power:**
 
 - No batteries required
-- Powered by computer's microphone bias voltage
+- Powered by the recording device's microphone input (plug-in power / bias voltage)
 
 ---

@@ -178,7 +178,7 @@ Many customers have NEVER successfully recorded stereo audio on their computer b
 - Old computer mic from 2000s
 - Single-element microphones
 
-**Don't have a stereo mic?** You can skip this test and continue to Test 4, but if RECAP doesn't work, you'll need to come back and verify with a stereo mic before claiming RECAP is defective.
+**Don't have a stereo mic?** You can skip this test and continue to Test 4, but if your recording comes back empty or one-sided, come back and run this test with a stereo mic. It is what separates a mono input from a setup problem.
 
 ### Interpreting Results
 
