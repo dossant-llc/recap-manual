@@ -75,8 +75,12 @@ first. **CALL** is the phone/device running the call; **REC** is the separate re
 
 1. Test the wired TRRS headset directly on CALL with the same phone adapter and
    calling app. Confirm you hear the other person and they hear the **headset mic**.
-   Check the app's input/output route; Bluetooth, the phone speaker or built-in mic
-   bypasses the intended wired path. An app permission alone does not prove routing.
+   Move CALL away from your mouth and gently rub the headset's microphone housing
+   while your test partner listens; compare with a gentle rub near CALL's built-in
+   mic. The headset-mic sound should be prominent. If only the phone-mic sound is
+   prominent, the wired mic route has not passed. Check the app's input/output route
+   and repeat; Bluetooth, the phone speaker or built-in mic bypasses the intended
+   wired path. An app permission alone does not prove routing.
 2. Disconnect from CALL. Connect the headset to RECAP's **HEADSET** pass-through,
    and the included **3-pole TRS recording cable** from RECAP's **MIC/recording output**
    to REC's external stereo mic input. Connect RECAP to the phone adapter if needed,

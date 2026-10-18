@@ -159,8 +159,8 @@ Many customers have NEVER successfully recorded stereo audio on their computer b
 2. **Plug in a stereo microphone** to the same port you were using for RECAP
 3. **Open your recording software** (Audacity, Sound Recorder, etc.)
 4. **Set recording mode to STEREO** (not mono!) - this is critical
-5. **Record yourself speaking** for 10 seconds
-6. **Play it back**
+5. **Test each channel separately**, following the microphone manufacturer's channel-check instructions. Present a sound close to one capsule/input at a time, then the other, while watching separate left/right recording meters or waveforms. Each stimulus must produce a different left/right response.
+6. **Inspect both channels and play them back separately.** A stereo file containing the same signal duplicated into both channels is not a pass. If you cannot distinguish independent channel responses, the baseline remains unverified.
 
 ### What Qualifies as a Stereo Microphone?
 
@@ -174,10 +174,10 @@ RECAP uses.
 
 ### Interpreting Results
 
-**✅ Baseline test PASSED (stereo mic recorded successfully):**
+**✅ Baseline test PASSED (independent left/right responses confirmed):**
 - Your computer CAN record stereo
 - Your recording software is configured correctly
-- The port works and has proper voltage
+- The tested input captured the two-channel stimulus; this does not measure its voltage or validate RECAP's electrical interface
 - **Conclusion:** The external input captured the baseline. Next isolate the complete RECAP call path; this result alone does not identify a cause.
 - **Next step:** Continue to Test 4
 
