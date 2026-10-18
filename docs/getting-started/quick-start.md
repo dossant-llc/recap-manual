@@ -69,16 +69,14 @@ This free browser tool scans your computer's audio inputs.
 
 **What you'll see:**
 
-- ✅ **"STEREO input detected (2 channels)"** → Perfect! Continue to Step 4
-- ❌ **"MONO input detected (1 channel)"** → You need a USB adapter
+- **"STEREO input detected (2 channels)"** → The selected capture path reports two channels. Continue to Step 4 and verify independent two-sided capture; the scan alone does not prove the complete setup works.
+- **"MONO input detected (1 channel)"** → Check that the intended physical external input and stereo recording mode are selected. A mono capture cannot preserve S2's separate channels.
 
-**If MONO:**
-
-- Most modern laptops/Macs have MONO-only inputs
-- This is NOT a defect - it's a compatibility issue
-- Solution: get a USB stereo mic adapter FIRST — [which ones](https://recapmycalls.com/compatible-adapters-for-recap/) · [how to use it](../troubleshooting/device-scanner.md)
-- RECAP works perfectly, your computer just needs the adapter
-- **Don't proceed to Step 4 until you have the USB adapter**
+If the intended input is confirmed to lack stereo MIC capture, use another supported
+input or a suitable [stereo microphone interface](https://recapmycalls.com/compatible-adapters-for-recap/).
+Computer brand/age and scanner channel count alone establish neither a unit defect
+nor its absence. Follow the [compatibility checklist](requirements.md#compatibility-checklist)
+and [two-sided test](../using-recap/making-calls.md#setup-and-two-sided-test).
 
 **Take a screenshot** of the scanner results - helpful if you need support later.
 
