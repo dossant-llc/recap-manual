@@ -16,8 +16,8 @@ Many people grab an old headset from a drawer that doesn't work with their phone
 
 **Results:**
 
-- ✅ **Both YES** → Headset works! Continue to Step 2
-- ❌ **Either NO** → **STOP.** Get a different headset before continuing
+- ✅ **Both YES** → The direct-call audio check passed. Confirm the wired headset mic is active using the [mic-routing check](../using-recap/making-calls.md#setup-and-two-sided-test), then continue to Step 2.
+- ❌ **Either NO** → Check headset connections, the phone adapter and app routing before adding RECAP; this result alone does not identify which part needs attention.
 
 **Why this matters:** If your headset doesn't work with your phone directly, RECAP cannot fix it.
 
@@ -29,7 +29,7 @@ Many people grab an old headset from a drawer that doesn't work with their phone
 
 **⚠️ You DON'T need your computer for this test**
 
-This verifies RECAP hardware is working before you connect to computer.
+This checks the headset playback path through RECAP before connecting the separate recording device (REC). The recording channels remain untested.
 
 **Make the connections:**
 
@@ -52,8 +52,8 @@ Phone ──→ RECAP ──→ Headset
 
 **Results:**
 
-- ✅ **YES** → RECAP hardware works! Continue to Step 3
-- ❌ **NO** → Either bad headset (redo Step 1) or hardware issue ([contact support](../support.md))
+- ✅ **YES** → The headset playback path passed this test. The recording channels remain untested; continue to Step 3.
+- ❌ **NO** → Compare with the direct-headset baseline in Step 1, then check connections, adapter and app routing. This does not identify a cause; [contact support](../support.md) if it remains unresolved.
 
 ---
 
