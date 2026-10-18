@@ -47,7 +47,7 @@ The pass-through sends your phone's call audio straight to your headset. RECAP d
 
 **Example:** You're on a call with a client. You hear their voice in both ears of your headset, they hear your voice through the headset mic. You talk normally. From a call quality perspective, nothing has changed — RECAP is invisible.
 
-**If you only hear in one ear through the headset pass-through, something is physically wrong.** This is not a RECAP behavior — it's a connection issue, a headset issue, or a cable issue. See troubleshooting below.
+**If you only hear in one ear through the headset pass-through, that is not the recording split.** Compare the direct-headset baseline and complete chain to isolate the path; see [headset troubleshooting](../troubleshooting/no-audio.md#problem-only-hear-in-one-ear-headset).
 
 > ⚠️ **If using a Lightning or USB-C adapter:** Always connect the headset to RECAP first, then plug into the phone last. Your phone performs accessory detection at plug-in — if the headset isn't already in the chain, audio may route incorrectly. See [Connection Order troubleshooting](../troubleshooting/low-volume-noise.md#problem-audio-routes-to-speaker-or-one-ear-with-lightningusb-c-adapter).
 
@@ -68,33 +68,49 @@ This stereo split is intentional. It's the whole point of RECAP — it gives you
 
 ---
 
+### Setup and two-sided test
+
+Check the [compatibility checklist](../getting-started/requirements.md#compatibility-checklist)
+first. **CALL** is the phone/device running the call; **REC** is the separate recorder.
+
+1. Test the wired TRRS headset directly on CALL with the same phone adapter and
+   calling app. Confirm you hear the other person and they hear the **headset mic**.
+   Check the app's input/output route; Bluetooth, the phone speaker or built-in mic
+   bypasses the intended wired path. An app permission alone does not prove routing.
+2. Disconnect from CALL. Connect the headset to RECAP's **HEADSET** pass-through,
+   and the included **3-pole TRS recording cable** from RECAP's **MIC/recording output**
+   to REC's external stereo mic input. Connect RECAP to the phone adapter if needed,
+   then connect the **CALL phone last**. See [connection order](../troubleshooting/low-volume-noise.md#problem-audio-routes-to-speaker-or-one-ear-with-lightningusb-c-adapter).
+3. On REC, select that physical external input, **MIC mode** where selectable,
+   plug-in power enabled where supported, and **stereo/two-channel** recording.
+   Start with processing/mono mixing off. Follow the recorder's manual for controls.
+4. Record a short call (about 20–30 seconds). Say a phrase while the other person
+   pauses, then have them say a different phrase while you pause. Keep the call
+   audible only in the headset, so REC's built-in mic cannot pick up speaker audio.
+5. Stop and play back **both recorded channels**. Confirm both voices are audible
+   at useful levels and each appears on its own channel. Note which side is yours;
+   device/software channel labels can differ. Your voice alone does not prove the
+   RECAP path is selected. A stereo setting alone does not prove two-sided capture.
+
+Repeat when changing the phone, adapter, headset, recorder or calling app. For
+missing recording audio use [No Audio Recorded](../troubleshooting/no-audio.md);
+for what the caller hears use [live-call troubleshooting](../troubleshooting/far-end-audio.md).
+If the documented setup still fails, [contact support](../support.md) with the
+symptom and test result; the failure alone does not establish which part is at fault.
+
 ### Technical Details
 
-**Input (Phone Plug):**
+| Connection | Interface |
+|---|---|
+| Phone plug / headset pass-through | 3.5 mm TRRS, AHJ/CTIA headset path |
+| Recording output (MIC jack) | 3.5 mm TRS: Tip carries phone/caller audio, Ring carries headset-mic audio, Sleeve is common ground on reviewed v40 artwork |
+| Recorder setup | External stereo MIC input, MIC mode and plug-in power where supported |
 
-- 3.5mm TRRS connector (4-pole)
-- Standard: AHJ (American Headset Jack)
-- Receives both mic audio (from headset) and speaker audio (to headset)
-
-**Pass-Through (Headset Jack):**
-
-- 3.5mm TRRS connector (4-pole)
-- Identical to phone plug
-- Transparent — forwards phone audio to headset unchanged
-- Your headset hears exactly what it would hear plugged directly into the phone
-
-**Output (MIC Jack):**
-
-- 3.5mm TRS connector (3-pole stereo)
-- Pin 1 (Tip): Right channel - Other person's voice (1kΩ impedance)
-- Pin 2 (Ring): Left channel - Your voice (1kΩ impedance)
-- Pin 3 (Sleeve): Ground
-- Requires 700-2000mV bias voltage (standard for computer MIC IN)
-- ⚠️ **Note:** Some recording devices may swap L/R channels — see [Channel Swap troubleshooting](../troubleshooting/low-volume-noise.md#problem-left-and-right-channels-are-swapped)
-
-**Power:**
-
-- No batteries required
-- Powered by the recording device's microphone input (plug-in power / bias voltage)
+Both recording paths appear AC-coupled in the archived v40 artwork. Earlier bias-power,
+impedance and voltage statements did not establish a validated interface specification;
+see [the corrected requirements and pending validation](../getting-started/requirements.md#plug-in-power-and-voltage-validation-pending).
+No batteries are required. Do not infer a safe interface voltage from a component
+rating, or use 48 V phantom power. Use the two-sided test to establish the channel
+assignment in your actual recording.
 
 ---

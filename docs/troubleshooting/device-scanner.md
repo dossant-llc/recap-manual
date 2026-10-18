@@ -28,7 +28,7 @@ flowchart TD
 
     Test3B -->|All OFF| Test3C{Test 3C: Baseline Test<br/><br/>Test with standard<br/>stereo microphone<br/><br/>Does computer record<br/>stereo audio at all?}
 
-    Test3C -->|NO| FixBaseline[⚠️ Fix Computer Setup<br/><br/>Problem is NOT RECAP!<br/>Computer can't record stereo.<br/><br/>Check:<br/>• Using MIC IN port not LINE IN<br/>• Recording software set to STEREO<br/>• Correct input device selected]
+    Test3C -->|NO| FixBaseline[⚠️ Fix Computer Setup<br/><br/>Baseline stereo test failed.<br/>Check input and recording mode.<br/><br/>Check:<br/>• Using MIC IN port not LINE IN<br/>• Recording software set to STEREO<br/>• Correct input device selected]
 
     Test3C -->|YES or No stereo mic| Test4{Test 4: Audio Input Gain<br/><br/>Windows: Recording devices<br/>→ Microphone → Properties<br/>→ Levels → Set to 100%<br/><br/>Mac: System Preferences<br/>→ Sound → Input<br/>→ Drag slider right<br/><br/>Level meter moving?}
 
@@ -141,17 +141,17 @@ Many customers have NEVER successfully recorded stereo audio on their computer b
 
 ### Why This Test Matters
 
-**The problem:** You might be blaming RECAP when your computer was never set up for stereo recording in the first place.
+**What this checks:** whether the same external recording input can capture two channels independently of the RECAP call chain. It does not establish the condition of the RECAP unit.
 
 **Common issues this catches:**
-- RECAP plugged into LINE IN (no microphone power)
+- RECAP plugged into a line-only input rather than the supported stereo MIC setup
 - Recording software defaulting to MONO mode
 - Wrong port selected in recording software
 - Computer genuinely lacks stereo capability (scanner false positive)
 
 ### How to Perform Baseline Test
 
-**You'll need:** A stereo microphone (options below)
+**You'll need:** A verified two-channel stereo microphone connected to the same physical external input
 
 **Test procedure:**
 
@@ -164,21 +164,13 @@ Many customers have NEVER successfully recorded stereo audio on their computer b
 
 ### What Qualifies as a Stereo Microphone?
 
-**Good options for baseline test:**
+Use a microphone whose manufacturer confirms **two-channel stereo capture** through
+that same external input. Stereo headphones can have a **mono** headset microphone;
+phone earbuds and gaming headsets do not establish a stereo recording baseline.
+A built-in or USB microphone tests a different input and cannot validate the jack
+RECAP uses.
 
-- **Phone earbuds with mic** (iPhone, Android earbuds) - Most are stereo
-- **Gaming headset** - Usually stereo
-- **USB conference mic** - Check specs for stereo support
-- **Laptop built-in mic** (if it has one) - Often stereo on modern laptops
-- **Any mic labeled "stereo"** on the packaging
-
-**NOT stereo (don't use for this test):**
-
-- Basic karaoke mic
-- Old computer mic from 2000s
-- Single-element microphones
-
-**Don't have a stereo mic?** You can skip this test and continue to Test 4, but if your recording comes back empty or one-sided, come back and run this test with a stereo mic. It is what separates a mono input from a setup problem.
+**Don't have a stereo mic?** Continue to Test 4 and use the [two-sided RECAP test](../using-recap/making-calls.md#setup-and-two-sided-test). If it fails, contact support with the result; do not buy another microphone solely to complete this baseline.
 
 ### Interpreting Results
 
@@ -186,11 +178,11 @@ Many customers have NEVER successfully recorded stereo audio on their computer b
 - Your computer CAN record stereo
 - Your recording software is configured correctly
 - The port works and has proper voltage
-- **Conclusion:** Issue is specific to RECAP setup (headset compatibility, connections, etc.)
+- **Conclusion:** The external input captured the baseline. Next isolate the complete RECAP call path; this result alone does not identify a cause.
 - **Next step:** Continue to Test 4
 
 **❌ Baseline test FAILED (stereo mic did NOT record):**
-- **Problem is NOT RECAP!** Your computer can't record stereo from ANY device
+- **The baseline did not capture stereo.** Check the selected input, test microphone and recording mode before interpreting the RECAP test
 - **Common causes:**
   - Using LINE IN port instead of MIC IN port
   - Recording software set to MONO mode
@@ -205,7 +197,7 @@ If baseline test failed, fix these issues:
 
 **Check port type:**
 - Pink jack = MIC IN ✅ (correct)
-- Blue jack = LINE IN ❌ (no mic power)
+- Blue jack often indicates LINE IN; confirm the actual input specification
 - Green jack = Speaker/Headphone OUT ❌ (wrong)
 
 **Check recording software:**

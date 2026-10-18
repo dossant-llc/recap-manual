@@ -20,7 +20,7 @@
    - Old headsets from drawers often don't work
 
 4. **Connected to LINE IN instead of MIC IN**
-   - LINE IN has no bias voltage, won't power RECAP
+   - Use the supported external stereo MIC mode, with plug-in power where supported; line-only operation is not validated
    - Look for port with microphone icon or pink color
 
 5. **Wrong input device selected in software**
@@ -62,18 +62,23 @@
 
 **Symptom:** You open your recording and only one channel has audio — the other is silent or very quiet.
 
-**If the caller is on the recording but your own voice is missing, start here.** The usual cause is your recording device's input. RECAP draws 1–2 volts of plug-in power from the recorder's microphone input, and your voice needs that power to reach the recording. The caller's side doesn't. Check that:
+**If the caller is on the recording but your own voice is missing, check the
+recording input and the headset microphone path.** This symptom alone does not
+identify a fault. Earlier guidance said recorder bias powers S2 and carries your
+voice; that mechanism is not supported by the reviewed v40 artwork. See the
+[correction and pending validation](../getting-started/requirements.md#plug-in-power-and-voltage-validation-pending).
+Keep these supported setup checks:
 
 - The recorder input is a **stereo MIC input (not LINE IN) that supplies plug-in power**. Your recorder's manual will say; see [Recording Device Compatibility](../getting-started/requirements.md#recording-device-compatibility).
 - Your headset has a **microphone on its cable**. Without one, your phone uses its own mic and your voice never reaches RECAP. See [Cause 1](far-end-audio.md#cause-1-most-common-no-microphone-on-the-headset-cable).
 - If your phone uses a Lightning or USB-C adapter, you **connect the phone last**. See [connection order](far-end-audio.md#cause-3-connection-order).
 
-On a computer, also check the causes below.
+Also use the [two-sided test](../using-recap/making-calls.md#setup-and-two-sided-test) to confirm actual external-input capture. On a computer, check the items below.
 
 **This IS about the recording output** (not the headset). Most common cause:
 
 1. **Computer has MONO input (most common)**
-   - Most modern laptops and all Macs have mono-only mic inputs
+   - Many computers have mono microphone inputs; check the exact selected input rather than assuming from the brand
    - A mono input can only capture one of RECAP's two channels
    - Run the [Audio Device Scanner](https://recapmycalls.com/audio/) to check
    - Solution: USB stereo audio adapter — [details here](device-scanner.md)

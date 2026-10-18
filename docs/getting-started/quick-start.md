@@ -118,18 +118,11 @@ Phone ──→ RECAP ──→ Headset
 - Click dropdown next to record button → Select "External Microphone"
 - Click red record button
 
-**Make a test recording:**
+**Make a two-sided test recording:**
 
-1. Start recording
-2. Make a test call (or call voicemail)
-3. Say something, have them say something
-4. Stop recording
-5. Play it back
-
-**What you should hear:**
-
-- ✅ Both sides of conversation (you + them)
-- ✅ Clear audio, reasonable volume
+Follow the [setup and two-sided test](../using-recap/making-calls.md#setup-and-two-sided-test),
+including app routing and a phrase from each participant. Verify both voices at
+useful levels on separate recorded channels before relying on the setup.
 
 **Problems?**
 

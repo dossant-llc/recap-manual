@@ -15,7 +15,7 @@ A: Any device with a 3.5mm combo headset port (TRRS) — phones, tablets, laptop
 A: Yes, as the **call device**. If your computer has a combo headset jack (common on laptops), RECAP plugs into it and you take Zoom, Teams or other calls through your headset. The recording itself goes to a **separate recording device** whose input is a stereo microphone input with plug-in power. See the Zoom question below.
 
 **Q: Do I need batteries?**
-A: No. RECAP draws a small plug-in power (bias voltage) from the microphone input of your recording device: a computer mic input, a USB audio adapter, or a voice recorder. That input has to supply it. A LINE IN does not.
+A: No batteries are required. Use the supported external stereo MIC-mode setup with plug-in power where supported. Earlier explanations that recorder bias powers S2 were not adequately supported; see the [correction and pending validation](getting-started/requirements.md#plug-in-power-and-voltage-validation-pending).
 
 ---
 
@@ -34,7 +34,7 @@ A: Not directly — mobile devices have combo ports, not stereo MIC IN. However,
 A: Check compatibility with our free scanner: <https://recapmycalls.com/audio/>. If it shows STEREO input, yes. If MONO, you'll need a USB adapter.
 
 **Q: What's the difference between MIC IN and LINE IN?**
-A: MIC IN provides bias voltage to power RECAP and has amplification for microphone signals. LINE IN has neither (RECAP won't work). MIC IN is usually pink, LINE IN is usually blue.
+A: Use an external stereo microphone input with MIC mode and plug-in power where supported. Line-only operation is outside the supported setup; port color alone does not establish input capability. See [recorder requirements](getting-started/requirements.md#recording-device-compatibility).
 
 ---
 
@@ -54,7 +54,7 @@ A: Audio input gain is almost always the issue. Set your computer's microphone g
 ### Recording Questions
 
 **Q: Can I record to a voice recorder instead of computer?**
-A: Yes, if its external microphone input is **stereo and supplies plug-in power**. Check your recorder's manual. Set it to STEREO (not mono) and to MIC (not line), with any noise reduction or auto level turned off. Never use an input with 48V phantom power.
+A: A recorder is a candidate if its external input meets the [recorder checklist](getting-started/requirements.md#recording-device-compatibility). Use stereo MIC mode, plug-in power where supported, and processing off for the initial [two-sided test](using-recap/making-calls.md#setup-and-two-sided-test). Matching specifications are not a physically tested configuration; electrical validation remains pending. Never connect phantom power.
 
 **Q: Can I use RECAP with Zoom, Teams, or Skype calls on my computer?**
 A: Yes, if your computer uses a combo headset port (3.5mm TRRS). Connect: Computer → RECAP → Headset, then record to a second device (voice recorder, another computer, or phone with USB audio adapter). Unlike built-in recording features, RECAP doesn't notify other participants that you're recording.
@@ -86,7 +86,7 @@ A: No supported configuration for splitters exists.
 A: No. RECAP is a wired hardware adapter. Bluetooth has too much latency for real-time call recording.
 
 **Q: Can I use RECAP with a mixer or recording equipment?**
-A: Never use RECAP with +48V phantom power - it will damage the device. For professional equipment, you may need a different interface.
+A: Never use RECAP with +48V phantom power - it is outside the supported setup. For professional equipment, you may need a different interface.
 
 **Q: How long does RECAP last?**
 A: RECAP has no batteries or moving parts. With proper care, it should last indefinitely.
