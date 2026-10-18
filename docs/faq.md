@@ -102,7 +102,7 @@ A: STEREO input has 2 channels (can record left and right separately). MONO inpu
 A: American Headset Jack - the standard headphone connector pinout used by iPhone, Android, and most cell phones. Opposite of OMTP (rare, older phones).
 
 **Q: Why does the scanner show my input as MONO?**
-A: Most laptops and Macs made after 2015 have MONO-only inputs to save cost. This is normal. Solution: USB adapter.
+A: The browser/driver reports one capture channel for the selected input. Confirm that it is the intended physical external input and check stereo/mono mode; brand or age does not establish capability. Use the [two-sided test](using-recap/making-calls.md#setup-and-two-sided-test), and consider an interface only if the actual input is confirmed insufficient.
 
 ---
 

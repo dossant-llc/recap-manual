@@ -82,12 +82,12 @@ A mic on the cable is the first requirement, and an inexpensive headset can meet
 
 **How to test compatibility:**
 
-First confirm the **microphone is on the cable** (see the box above). A headset with no mic on the cable still passes the call test below, because your phone quietly falls back to its own built-in microphone. So the call test alone can't tell you the headset will work with RECAP.
-
-1. Plug headset directly into phone (no RECAP)
-2. Make test call
-3. Verify: Can you hear them? Can they hear you?
-4. If both YES **and** the mic is on the cable → Headset is compatible
+A physical microphone on the cable and a call where both people can hear each
+other do **not** establish that the wired mic is active: CALL may still use its
+built-in mic. Follow the canonical [physical microphone-routing check and two-sided
+test](../using-recap/making-calls.md#setup-and-two-sided-test), using the same adapter
+and calling app. Confirm the wired mic route before adding RECAP, then verify the
+complete recording path. These results apply to the tested configuration.
 
 **Common incompatibilities:**
 

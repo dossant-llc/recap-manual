@@ -32,11 +32,11 @@ Add exactly **one** link to the chain per rung, and leave a voicemail after each
 
 | Rung | What's connected | If it sounds worse at this rung |
 |------|------------------|---------------------------------|
-| **1** | Headset → phone. RECAP completely out of the chain. | The problem is upstream of RECAP — RECAP isn't in the signal path at all, so it cannot be the cause. Check [Cause 1: the headset microphone](#cause-1-most-common-no-microphone-on-the-headset-cable), then [Cause 2: the adapter](#cause-2-the-adapter-doesnt-carry-the-microphone-channel). |
+| **1** | Headset → phone. RECAP completely out of the chain. | This baseline symptom occurs with RECAP absent; it does not explain any additional degradation when RECAP or the recording path is added. Check headset/app routing and call conditions. Check [Cause 1: the headset microphone](#cause-1-most-common-no-microphone-on-the-headset-cable), then [Cause 2: the adapter](#cause-2-the-adapter-doesnt-carry-the-microphone-channel). |
 | **2** | Headset → RECAP → phone. Nothing in RECAP's MIC jack. | See [Cause 3: connection order](#cause-3-connection-order), and check the headset is in the pass-through jack rather than the MIC jack. |
-| **3** | Headset → RECAP → phone, **plus** the recording cable in RECAP's MIC jack. **Rebuild the whole chain and plug the phone in LAST** — don't just add the cable to what's already connected, or you'll break the connection order and get a misleading result. | See [Cause 4: wrong jack or wrong cable](#cause-4-wrong-jack-or-the-wrong-recording-cable). |
+| **3** | Headset → RECAP → phone, **plus** the recording cable in RECAP's MIC jack. **Rebuild the whole chain and plug the phone in LAST** — don't just add the cable to what's already connected, or you'll break the connection order and get a misleading result. | The recording connection introduces the observed change; see [Cause 4 checks](#cause-4-wrong-jack-or-the-wrong-recording-cable) without treating them as a verdict. |
 
-**Sounds the same at every rung?** Then the chain isn't introducing it, and you're looking at ordinary call quality — signal strength, the room, or the caller's own line. Try the same test on a different phone or in a different location. If callers still say you sound muffled on a chain that tests clean at all three rungs, [contact support](../support.md) and say exactly that.
+**Sounds the same at every rung?** No added degradation was observed in that comparison. Call quality, signal strength, the room or the other line may be involved; an unchanged comparison does not certify every part or exclude intermittent behavior. Try the same test on a different phone or in a different location. If callers still say you sound muffled on a chain that tests clean at all three rungs, [contact support](../support.md) and say exactly that.
 
 ---
 
@@ -86,16 +86,21 @@ Full explanation and the iPhone reset path: [Audio Routes to Speaker or One Ear 
 
 ### Cause 4: wrong jack, or the wrong recording cable
 
-This one only shows up at rung 3 — fine without the recording cable, worse with it. It means the recording cable is in the wrong place, or is the wrong cable. Check two things:
+This one only shows up at rung 3 — fine without the recording cable, worse with it. That comparison localizes a change introduced when the recording connection is added; it does not establish the cause. A wrong jack or cable is one possibility. The unit, recorder/input loading, contact or grounding interaction also remains possible until isolated. Start with two visible checks:
 
 1. **The recording cable is in RECAP's MIC jack**, not the headset pass-through jack.
-2. **The recording cable is the 3-pole (TRS) cable that ships in the box.** Count the black bands on the plug: **2 bands = TRS (correct), 3 bands = TRRS (wrong)**. A 4-pole cable looks close enough to be missed, but it can ground on the wrong conductor — most often showing up as a unit that appears dead, or a recording missing your voice. If you swapped in your own cable, put the boxed one back before testing anything else.
+2. **The recording cable is the 3-pole (TRS) cable that ships in the box.** Count the black bands on the plug: **2 bands = TRS (correct), 3 bands = TRRS (wrong)**. A 4-pole cable looks close enough to be missed, but it can ground on the wrong conductor — most often showing up as a unit that appears dead, or a recording missing your voice. If you swapped in your own cable, repeat with the boxed TRS cable as a controlled comparison; a changed result localizes that cable/connection combination rather than proving the unit's condition.
+
+If the jacks and TRS cable are correct and rung 3 still degrades the call, note
+which recorder/input is connected and the comparison result, then [contact support](../support.md).
+Support can help isolate the recording path, including unit behavior and loading;
+this result alone does not justify buying another cable, adapter or recorder.
 
 ---
 
 ### Still worse at rung 1?
 
-Rung 1 has RECAP completely out of the chain, so the cause is your headset, your adapter, or the phone — work through [Cause 1](#cause-1-most-common-no-microphone-on-the-headset-cable) and [Cause 2](#cause-2-the-adapter-doesnt-carry-the-microphone-channel) first.
+Rung 1 has RECAP completely out of the chain, so a symptom present there also occurs without RECAP. Check headset/adapter routing and call conditions; that baseline alone does not explain an additional change at rung 2 or 3. Work through [Cause 1](#cause-1-most-common-no-microphone-on-the-headset-cable) and [Cause 2](#cause-2-the-adapter-doesnt-carry-the-microphone-channel) first.
 
 If you've confirmed there's a microphone on the headset cable and tried a known-good adapter and rung 1 is still worse, [contact support](../support.md) and tell us **which rung number** it first got worse at, your headset make and model, and which adapter is in the chain. That saves several rounds of back-and-forth.
 

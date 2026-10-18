@@ -4,11 +4,11 @@
 
 > **Is this about your recording, or about the live call?** Everything on this page is about what lands in the *recording*. If your problem is that **callers say you sound muffled or distant while you're talking**, that's a different signal path with different tests — see [Callers Say I Sound Muffled or Distant](far-end-audio.md).
 
-**Work through the [diagnostic flowchart](device-scanner.md) first. Most common causes:**
+**Work through the [diagnostic flowchart](device-scanner.md). These are checks, not a diagnosis from silence alone:**
 
-1. **Computer has MONO input (most common)**
+1. **Check the selected input and channel mode**
    - Run scanner: <https://recapmycalls.com/audio/>
-   - Solution: USB adapter needed - [details here](device-scanner.md)
+   - Confirm the actual external input and capture mode with the [two-sided test](../using-recap/making-calls.md#setup-and-two-sided-test). Consider an interface only if that input is confirmed insufficient; see [input checks](device-scanner.md#when-you-need-it).
 
 2. **Audio input gain too low/muted**
    - Windows: Right-click speaker icon → Recording devices → Microphone → Properties → Levels → Set to **100%**
@@ -75,13 +75,13 @@ Keep these supported setup checks:
 
 Also use the [two-sided test](../using-recap/making-calls.md#setup-and-two-sided-test) to confirm actual external-input capture. On a computer, check the items below.
 
-**This IS about the recording output** (not the headset). Most common cause:
+**This is about the recording output**, not headset playback. Check:
 
-1. **Computer has MONO input (most common)**
+1. **Check the selected input and channel mode**
    - Many computers have mono microphone inputs; check the exact selected input rather than assuming from the brand
    - A mono input can only capture one of RECAP's two channels
    - Run the [Audio Device Scanner](https://recapmycalls.com/audio/) to check
-   - Solution: USB stereo audio adapter — [details here](device-scanner.md)
+   - The scan alone does not identify the cause. Use the [two-sided test](../using-recap/making-calls.md#setup-and-two-sided-test), and consider another input/interface only if the external input is confirmed unable to capture stereo.
 
 2. **Echo cancellation or noise suppression enabled**
    - These features can merge or suppress one channel
