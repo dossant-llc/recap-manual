@@ -994,8 +994,8 @@
 </ol>
 <p><strong>Results:</strong></p>
 <ul>
-<li>✅ <strong>Both YES</strong> → Headset works! Continue to Step 2</li>
-<li>❌ <strong>Either NO</strong> → <strong>STOP.</strong> Get a different headset before continuing</li>
+<li>✅ <strong>Both YES</strong> → The direct-call audio check passed. Confirm the wired headset mic is active using the <a href="../../using-recap/making-calls/#setup-and-two-sided-test">mic-routing check</a>, then continue to Step 2.</li>
+<li>❌ <strong>Either NO</strong> → Check headset connections, the phone adapter and app routing before adding RECAP; this result alone does not identify which part needs attention.</li>
 </ul>
 <p><strong>Why this matters:</strong> If your headset doesn't work with your phone directly, RECAP cannot fix it.</p>
 <blockquote>
@@ -1004,7 +1004,7 @@
 <hr />
 <h3 id="step-2-pass-through-test-2-minutes">Step 2: Pass-Through Test (2 minutes)</h3>
 <p><strong>⚠️ You DON'T need your computer for this test</strong></p>
-<p>This verifies RECAP hardware is working before you connect to computer.</p>
+<p>This checks the headset playback path through RECAP before connecting the separate recording device (REC). The recording channels remain untested.</p>
 <p><strong>Make the connections:</strong></p>
 <div class="highlight"><pre><span></span><code>Phone ──→ RECAP ──→ Headset
 </code></pre></div>
@@ -1024,8 +1024,8 @@
 </ol>
 <p><strong>Results:</strong></p>
 <ul>
-<li>✅ <strong>YES</strong> → RECAP hardware works! Continue to Step 3</li>
-<li>❌ <strong>NO</strong> → Either bad headset (redo Step 1) or hardware issue (<a href="../../support/">contact support</a>)</li>
+<li>✅ <strong>YES</strong> → The headset playback path passed this test. The recording channels remain untested; continue to Step 3.</li>
+<li>❌ <strong>NO</strong> → Compare with the direct-headset baseline in Step 1, then check connections, adapter and app routing. This does not identify a cause; <a href="../../support/">contact support</a> if it remains unresolved.</li>
 </ul>
 <hr />
 <h3 id="step-3-check-computer-compatibility-1-minute">Step 3: Check Computer Compatibility (1 minute)</h3>
@@ -1035,17 +1035,14 @@
 <p>This free browser tool scans your computer's audio inputs.</p>
 <p><strong>What you'll see:</strong></p>
 <ul>
-<li>✅ <strong>"STEREO input detected (2 channels)"</strong> → Perfect! Continue to Step 4</li>
-<li>❌ <strong>"MONO input detected (1 channel)"</strong> → You need a USB adapter</li>
+<li><strong>"STEREO input detected (2 channels)"</strong> → The selected capture path reports two channels. Continue to Step 4 and verify independent two-sided capture; the scan alone does not prove the complete setup works.</li>
+<li><strong>"MONO input detected (1 channel)"</strong> → Check that the intended physical external input and stereo recording mode are selected. A mono capture cannot preserve S2's separate channels.</li>
 </ul>
-<p><strong>If MONO:</strong></p>
-<ul>
-<li>Most modern laptops/Macs have MONO-only inputs</li>
-<li>This is NOT a defect - it's a compatibility issue</li>
-<li>Solution: get a USB stereo mic adapter FIRST — <a href="https://recapmycalls.com/compatible-adapters-for-recap/">which ones</a> · <a href="../../troubleshooting/device-scanner/">how to use it</a></li>
-<li>RECAP works perfectly, your computer just needs the adapter</li>
-<li><strong>Don't proceed to Step 4 until you have the USB adapter</strong></li>
-</ul>
+<p>If the intended input is confirmed to lack stereo MIC capture, use another supported
+input or a suitable <a href="https://recapmycalls.com/compatible-adapters-for-recap/">stereo microphone interface</a>.
+Computer brand/age and scanner channel count alone establish neither a unit defect
+nor its absence. Follow the <a href="../requirements/#compatibility-checklist">compatibility checklist</a>
+and <a href="../../using-recap/making-calls/#setup-and-two-sided-test">two-sided test</a>.</p>
 <p><strong>Take a screenshot</strong> of the scanner results - helpful if you need support later.</p>
 <hr />
 <h3 id="step-4-connect-to-computer-record-2-minutes">Step 4: Connect to Computer &amp; Record (2 minutes)</h3>
@@ -1077,19 +1074,10 @@
 <li>Click dropdown next to record button → Select "External Microphone"</li>
 <li>Click red record button</li>
 </ul>
-<p><strong>Make a test recording:</strong></p>
-<ol>
-<li>Start recording</li>
-<li>Make a test call (or call voicemail)</li>
-<li>Say something, have them say something</li>
-<li>Stop recording</li>
-<li>Play it back</li>
-</ol>
-<p><strong>What you should hear:</strong></p>
-<ul>
-<li>✅ Both sides of conversation (you + them)</li>
-<li>✅ Clear audio, reasonable volume</li>
-</ul>
+<p><strong>Make a two-sided test recording:</strong></p>
+<p>Follow the <a href="../../using-recap/making-calls/#setup-and-two-sided-test">setup and two-sided test</a>,
+including app routing and a phrase from each participant. Verify both voices at
+useful levels on separate recorded channels before relying on the setup.</p>
 <p><strong>Problems?</strong></p>
 <ul>
 <li>One-sided or no audio → <a href="../../troubleshooting/no-audio/">Go to Troubleshooting</a></li>

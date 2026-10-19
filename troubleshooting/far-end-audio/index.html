@@ -1037,7 +1037,7 @@
 <h3 id="problem-callers-say-i-sound-muffled-or-distant">Problem: Callers Say I Sound Muffled or Distant</h3>
 <p><strong>Symptom:</strong> People on the other end say your voice sounds muffled, distant, far away, or like you're on speakerphone — or they keep asking you to repeat yourself.</p>
 <blockquote>
-<p>⚠️ <strong>This page is about the live call, not the recording.</strong> If your <em>recording</em> is silent, one-sided, or too quiet, you are on the wrong page — see <a href="../no-audio/">No Audio Recorded</a> or <a href="../low-volume-noise/">Low Volume &amp; Noise</a>. Those tests examine the recording output, and they cannot grade what your caller hears. (One exception: if your own voice is completely missing from a recording, either there is no microphone in the chain — that's <a href="#cause-1-most-common-no-microphone-on-the-headset-cable">Cause 1</a> below — or your recording device isn't supplying plug-in power. See <a href="../no-audio/#problem-recording-only-has-audio-on-one-side">only one side recorded</a>.)</p>
+<p>⚠️ <strong>This page is about the live call, not the recording.</strong> If your <em>recording</em> is silent, one-sided, or too quiet, you are on the wrong page — see <a href="../no-audio/">No Audio Recorded</a> or <a href="../low-volume-noise/">Low Volume &amp; Noise</a>. Those tests examine the recording output, and they cannot grade what your caller hears. (One exception: if your own voice is completely missing from a recording, check both the <a href="#cause-1-most-common-no-microphone-on-the-headset-cable">headset mic</a> and the recording input; that symptom alone does not establish the cause. See <a href="../no-audio/#problem-recording-only-has-audio-on-one-side">only one side recorded</a>.)</p>
 </blockquote>
 <p><strong>How to tell which one you have:</strong> if you are repeating what other people told you ("everybody says I sound muffled"), you are on the right page. If you are describing something you played back yourself, you want the recording pages above.</p>
 <hr />
@@ -1071,7 +1071,7 @@
 <tr>
 <td><strong>1</strong></td>
 <td>Headset → phone. RECAP completely out of the chain.</td>
-<td>The problem is upstream of RECAP — RECAP isn't in the signal path at all, so it cannot be the cause. Check <a href="#cause-1-most-common-no-microphone-on-the-headset-cable">Cause 1: the headset microphone</a>, then <a href="#cause-2-the-adapter-doesnt-carry-the-microphone-channel">Cause 2: the adapter</a>.</td>
+<td>This baseline symptom occurs with RECAP absent; it does not explain any additional degradation when RECAP or the recording path is added. Check headset/app routing and call conditions. Check <a href="#cause-1-most-common-no-microphone-on-the-headset-cable">Cause 1: the headset microphone</a>, then <a href="#cause-2-the-adapter-doesnt-carry-the-microphone-channel">Cause 2: the adapter</a>.</td>
 </tr>
 <tr>
 <td><strong>2</strong></td>
@@ -1081,11 +1081,11 @@
 <tr>
 <td><strong>3</strong></td>
 <td>Headset → RECAP → phone, <strong>plus</strong> the recording cable in RECAP's MIC jack. <strong>Rebuild the whole chain and plug the phone in LAST</strong> — don't just add the cable to what's already connected, or you'll break the connection order and get a misleading result.</td>
-<td>See <a href="#cause-4-wrong-jack-or-the-wrong-recording-cable">Cause 4: wrong jack or wrong cable</a>.</td>
+<td>The recording connection introduces the observed change; see <a href="#cause-4-wrong-jack-or-the-wrong-recording-cable">Cause 4 checks</a> without treating them as a verdict.</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Sounds the same at every rung?</strong> Then the chain isn't introducing it, and you're looking at ordinary call quality — signal strength, the room, or the caller's own line. Try the same test on a different phone or in a different location. If callers still say you sound muffled on a chain that tests clean at all three rungs, <a href="../../support/">contact support</a> and say exactly that.</p>
+<p><strong>Sounds the same at every rung?</strong> No added degradation was observed in that comparison. Call quality, signal strength, the room or the other line may be involved; an unchanged comparison does not certify every part or exclude intermittent behavior. Try the same test on a different phone or in a different location. If callers still say you sound muffled on a chain that tests clean at all three rungs, <a href="../../support/">contact support</a> and say exactly that.</p>
 <hr />
 <h3 id="cause-1-most-common-no-microphone-on-the-headset-cable">Cause 1 (most common): no microphone on the headset cable</h3>
 <p>RECAP is a passive splitter. It can only pass along audio that physically travels through its cable. If your headset has no microphone <strong>on the cable</strong>, your voice never enters the chain — your call device uses its own built-in microphone instead. That microphone may be lying on your desk while you are wearing the headset, so you can come across as distant.</p>
@@ -1141,14 +1141,18 @@
 <p>Full explanation and the iPhone reset path: <a href="../low-volume-noise/#problem-audio-routes-to-speaker-or-one-ear-with-lightningusb-c-adapter">Audio Routes to Speaker or One Ear with Lightning/USB-C Adapter</a>.</p>
 <hr />
 <h3 id="cause-4-wrong-jack-or-the-wrong-recording-cable">Cause 4: wrong jack, or the wrong recording cable</h3>
-<p>This one only shows up at rung 3 — fine without the recording cable, worse with it. It means the recording cable is in the wrong place, or is the wrong cable. Check two things:</p>
+<p>This one only shows up at rung 3 — fine without the recording cable, worse with it. That comparison localizes a change introduced when the recording connection is added; it does not establish the cause. A wrong jack or cable is one possibility. The unit, recorder/input loading, contact or grounding interaction also remains possible until isolated. Start with two visible checks:</p>
 <ol>
 <li><strong>The recording cable is in RECAP's MIC jack</strong>, not the headset pass-through jack.</li>
-<li><strong>The recording cable is the 3-pole (TRS) cable that ships in the box.</strong> Count the black bands on the plug: <strong>2 bands = TRS (correct), 3 bands = TRRS (wrong)</strong>. A 4-pole cable looks close enough to be missed, but it can ground on the wrong conductor — most often showing up as a unit that appears dead, or a recording missing your voice. If you swapped in your own cable, put the boxed one back before testing anything else.</li>
+<li><strong>The recording cable is the 3-pole (TRS) cable that ships in the box.</strong> Count the black bands on the plug: <strong>2 bands = TRS (correct), 3 bands = TRRS (wrong)</strong>. A 4-pole cable looks close enough to be missed, but it can ground on the wrong conductor — most often showing up as a unit that appears dead, or a recording missing your voice. If you swapped in your own cable, repeat with the boxed TRS cable as a controlled comparison; a changed result localizes that cable/connection combination rather than proving the unit's condition.</li>
 </ol>
+<p>If the jacks and TRS cable are correct and rung 3 still degrades the call, note
+which recorder/input is connected and the comparison result, then <a href="../../support/">contact support</a>.
+Support can help isolate the recording path, including unit behavior and loading;
+this result alone does not justify buying another cable, adapter or recorder.</p>
 <hr />
 <h3 id="still-worse-at-rung-1">Still worse at rung 1?</h3>
-<p>Rung 1 has RECAP completely out of the chain, so the cause is your headset, your adapter, or the phone — work through <a href="#cause-1-most-common-no-microphone-on-the-headset-cable">Cause 1</a> and <a href="#cause-2-the-adapter-doesnt-carry-the-microphone-channel">Cause 2</a> first.</p>
+<p>Rung 1 has RECAP completely out of the chain, so a symptom present there also occurs without RECAP. Check headset/adapter routing and call conditions; that baseline alone does not explain an additional change at rung 2 or 3. Work through <a href="#cause-1-most-common-no-microphone-on-the-headset-cable">Cause 1</a> and <a href="#cause-2-the-adapter-doesnt-carry-the-microphone-channel">Cause 2</a> first.</p>
 <p>If you've confirmed there's a microphone on the headset cable and tried a known-good adapter and rung 1 is still worse, <a href="../../support/">contact support</a> and tell us <strong>which rung number</strong> it first got worse at, your headset make and model, and which adapter is in the chain. That saves several rounds of back-and-forth.</p>
 <hr />
 

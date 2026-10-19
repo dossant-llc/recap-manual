@@ -1310,38 +1310,38 @@
 </blockquote>
 <h3 id="diagnostic-flowchart">Diagnostic Flowchart</h3>
 <pre class="mermaid"><code>flowchart TD
-    Start([Having problems with RECAP?&lt;br/&gt;Start here]) --&gt; Test1{Test 1: Direct Headset Test&lt;br/&gt;&lt;br/&gt;Plug headset into phone&lt;br/&gt;Make test call&lt;br/&gt;&lt;br/&gt;Can you hear them?&lt;br/&gt;Can they hear you?}
+    Start([Having problems with RECAP?&lt;br/&gt;Start here]) --&gt; Test1{Test 1: Direct Headset Test&lt;br/&gt;&lt;br/&gt;Plug headset into phone&lt;br/&gt;Make test call&lt;br/&gt;&lt;br/&gt;Can you hear them?&lt;br/&gt;Is the wired headset mic active?}
 
-    Test1 --&gt;|NO to either| BadHeadset[❌ STOP&lt;br/&gt;&lt;br/&gt;Get different headset&lt;br/&gt;Old headsets from drawers&lt;br/&gt;often don't work&lt;br/&gt;&lt;br/&gt;RECAP can't fix&lt;br/&gt;incompatible headsets]
+    Test1 --&gt;|NO to either| BadHeadset[Check direct headset path&lt;br/&gt;&lt;br/&gt;Check headset mic, adapter&lt;br/&gt;and app routing before&lt;br/&gt;adding RECAP]
 
     Test1 --&gt;|YES to both| Test2{Test 2: Pass-Through Test&lt;br/&gt;&lt;br/&gt;Connect Phone → RECAP → Headset&lt;br/&gt;Make test call&lt;br/&gt;&lt;br/&gt;Can you hear call&lt;br/&gt;in your headset?}
 
-    Test2 --&gt;|NO| TryHeadset[Try different headset&lt;br/&gt;or contact support&lt;br/&gt;&lt;br/&gt;May be RECAP defect]
+    Test2 --&gt;|NO| TryHeadset[Compare direct baseline&lt;br/&gt;and RECAP chain&lt;br/&gt;&lt;br/&gt;Check connections and routing&lt;br/&gt;No cause established yet]
 
     Test2 --&gt;|YES| Test3{Test 3: Device Scanner&lt;br/&gt;&lt;br/&gt;Visit: recapmycalls.com/audio/&lt;br/&gt;Take screenshot&lt;br/&gt;&lt;br/&gt;STEREO or MONO input?}
 
-    Test3 --&gt;|MONO| USBAdapter[✅ USB Adapter Needed&lt;br/&gt;&lt;br/&gt;USB stereo mic adapter&lt;br/&gt;&lt;br/&gt;This is NOT a defect&lt;br/&gt;Most modern computers&lt;br/&gt;have MONO inputs&lt;br/&gt;&lt;br/&gt;Get adapter, then continue]
+    Test3 --&gt;|MONO| USBAdapter[Check selected input&lt;br/&gt;and capture mode&lt;br/&gt;&lt;br/&gt;If external input is confirmed mono,&lt;br/&gt;use a stereo mic input/interface&lt;br/&gt;&lt;br/&gt;Scan does not establish&lt;br/&gt;unit condition]
 
     Test3 --&gt;|STEREO| Test3B{Test 3B: Check Device Settings&lt;br/&gt;&lt;br/&gt;Click device to expand details&lt;br/&gt;&lt;br/&gt;Echo Cancellation OFF?&lt;br/&gt;Noise Suppression OFF?&lt;br/&gt;Auto Gain Control OFF?}
 
     Test3B --&gt;|Features ON| FixInterference[⚠️ Disable Interference&lt;br/&gt;&lt;br/&gt;Turn OFF these features:&lt;br/&gt;• Echo Cancellation&lt;br/&gt;• Noise Suppression&lt;br/&gt;• Auto Gain Control&lt;br/&gt;&lt;br/&gt;These can merge or kill channels!]
 
-    Test3B --&gt;|All OFF| Test3C{Test 3C: Baseline Test&lt;br/&gt;&lt;br/&gt;Test with standard&lt;br/&gt;stereo microphone&lt;br/&gt;&lt;br/&gt;Does computer record&lt;br/&gt;stereo audio at all?}
+    Test3B --&gt;|All OFF| Test3C{Test 3C: Baseline Test&lt;br/&gt;&lt;br/&gt;Test with standard&lt;br/&gt;stereo microphone&lt;br/&gt;&lt;br/&gt;Independent left/right&lt;br/&gt;responses confirmed?}
 
-    Test3C --&gt;|NO| FixBaseline[⚠️ Fix Computer Setup&lt;br/&gt;&lt;br/&gt;Problem is NOT RECAP!&lt;br/&gt;Computer can't record stereo.&lt;br/&gt;&lt;br/&gt;Check:&lt;br/&gt;• Using MIC IN port not LINE IN&lt;br/&gt;• Recording software set to STEREO&lt;br/&gt;• Correct input device selected]
+    Test3C --&gt;|NO| FixBaseline[⚠️ Fix Computer Setup&lt;br/&gt;&lt;br/&gt;Baseline stereo test failed.&lt;br/&gt;Check input and recording mode.&lt;br/&gt;&lt;br/&gt;Check:&lt;br/&gt;• Using MIC IN port not LINE IN&lt;br/&gt;• Recording software set to STEREO&lt;br/&gt;• Correct input device selected]
 
-    Test3C --&gt;|YES or No stereo mic| Test4{Test 4: Audio Input Gain&lt;br/&gt;&lt;br/&gt;Windows: Recording devices&lt;br/&gt;→ Microphone → Properties&lt;br/&gt;→ Levels → Set to 100%&lt;br/&gt;&lt;br/&gt;Mac: System Preferences&lt;br/&gt;→ Sound → Input&lt;br/&gt;→ Drag slider right&lt;br/&gt;&lt;br/&gt;Level meter moving?}
+    Test3C --&gt;|YES or No stereo mic| Test4{Test 4: Audio Input Gain&lt;br/&gt;&lt;br/&gt;Windows: Recording devices&lt;br/&gt;→ Microphone → Properties&lt;br/&gt;→ Levels → Set to 100%&lt;br/&gt;&lt;br/&gt;Mac: System Preferences&lt;br/&gt;→ Sound → Input&lt;br/&gt;→ Drag slider right&lt;br/&gt;&lt;br/&gt;Alternating test phrases:&lt;br/&gt;corresponding channels moving?}
 
     FixInterference --&gt; Test3C
     FixBaseline --&gt; Test4
 
-    Test4 --&gt;|NO movement| FixGain[✅ Increase gain to 100%&lt;br/&gt;&lt;br/&gt;This fixes most&lt;br/&gt;low volume issues!&lt;br/&gt;&lt;br/&gt;Also check: correct&lt;br/&gt;input device selected?]
+    Test4 --&gt;|NO movement| FixGain[✅ Increase gain to 100%&lt;br/&gt;&lt;br/&gt;Retest both channels&lt;br/&gt;&lt;br/&gt;Also check: correct&lt;br/&gt;input device selected?]
 
-    Test4 --&gt;|YES| Test5{Test 5: Recording Software&lt;br/&gt;&lt;br/&gt;Correct mic selected?&lt;br/&gt;STEREO mode enabled?&lt;br/&gt;&lt;br/&gt;Make test recording&lt;br/&gt;Play it back}
+    Test4 --&gt;|YES| Test5{Test 5: Recording Software&lt;br/&gt;&lt;br/&gt;Correct mic selected?&lt;br/&gt;STEREO mode enabled?&lt;br/&gt;&lt;br/&gt;Alternate participant phrases&lt;br/&gt;Check each recorded channel}
 
     Test5 --&gt;|Problems| FixSoftware[✅ Check settings:&lt;br/&gt;&lt;br/&gt;- Select External Mic/RECAP&lt;br/&gt;- Enable STEREO recording&lt;br/&gt;- Close apps using mic]
 
-    Test5 --&gt;|Works| Success[✅ Success!&lt;br/&gt;&lt;br/&gt;RECAP is working&lt;br/&gt;You're ready to record]
+    Test5 --&gt;|Works| Success[✅ Success!&lt;br/&gt;&lt;br/&gt;Both voices captured&lt;br/&gt;on separate channels&lt;br/&gt;in this tested setup]
 
     FixGain --&gt; Retest1[Retest recording]
     FixSoftware --&gt; Retest1
@@ -1412,64 +1412,55 @@
 <li>System Preferences → Sound → Input</li>
 <li>Select the device</li>
 <li><strong>Note:</strong> Mac has fewer audio processing options than Windows</li>
-<li>If issues persist, may need USB adapter for cleaner signal</li>
+<li>If issues persist, check the selected external input, gain and processing with the two-sided test before considering an interface change</li>
 </ol>
 <h3 id="using-the-vu-meters">Using the VU Meters</h3>
 <p>While on the scanner page with device expanded:</p>
 <ol>
-<li>Make a test phone call</li>
-<li>Speak into your headset microphone</li>
-<li><strong>Watch the VU meter bars</strong> (visual level indicators)</li>
-<li>Both L and R channels should show movement when speaking</li>
-<li>If only one bar moves, you have a channel interference problem</li>
+<li>Make a short test call with REC capturing the connected external stereo input.</li>
+<li>Say a phrase into the headset mic while the other participant pauses; watch which channel responds.</li>
+<li>Have the other participant say a different phrase while you pause; the other channel should respond.</li>
+<li><strong>One channel moving during one participant's phrase is expected.</strong> Both bars need not move together. Some crosstalk may appear; confirm each voice is captured mainly on its own channel by inspecting and playing back the separate channels.</li>
+<li>If a participant's phrase is missing, or both channels carry the same mix, check input selection, stereo/mono mode, headset/app routing and processing. The meter pattern is a clue, not a diagnosis of interference, adapter failure or unit condition. Follow the <a href="../../using-recap/making-calls/#setup-and-two-sided-test">two-sided test</a>.</li>
 </ol>
 <hr />
 <h2 id="test-3c-baseline-stereo-test-critical">Test 3C: Baseline Stereo Test (Critical!)</h2>
 <p><strong>Before troubleshooting RECAP further, verify your computer can record stereo audio at all.</strong></p>
 <p>Many customers have NEVER successfully recorded stereo audio on their computer before using RECAP. If the computer/software isn't configured correctly, RECAP won't work either.</p>
 <h3 id="why-this-test-matters">Why This Test Matters</h3>
-<p><strong>The problem:</strong> You might be blaming RECAP when your computer was never set up for stereo recording in the first place.</p>
+<p><strong>What this checks:</strong> whether the same external recording input can capture two channels independently of the RECAP call chain. It does not establish the condition of the RECAP unit.</p>
 <p><strong>Common issues this catches:</strong>
-- RECAP plugged into LINE IN (no microphone power)
+- RECAP plugged into a line-only input rather than the supported stereo MIC setup
 - Recording software defaulting to MONO mode
 - Wrong port selected in recording software
 - Computer genuinely lacks stereo capability (scanner false positive)</p>
 <h3 id="how-to-perform-baseline-test">How to Perform Baseline Test</h3>
-<p><strong>You'll need:</strong> A stereo microphone (options below)</p>
+<p><strong>You'll need:</strong> A verified two-channel stereo microphone connected to the same physical external input</p>
 <p><strong>Test procedure:</strong></p>
 <ol>
 <li><strong>Unplug RECAP temporarily</strong></li>
 <li><strong>Plug in a stereo microphone</strong> to the same port you were using for RECAP</li>
 <li><strong>Open your recording software</strong> (Audacity, Sound Recorder, etc.)</li>
 <li><strong>Set recording mode to STEREO</strong> (not mono!) - this is critical</li>
-<li><strong>Record yourself speaking</strong> for 10 seconds</li>
-<li><strong>Play it back</strong></li>
+<li><strong>Test each channel separately</strong>, following the microphone manufacturer's channel-check instructions. Present a sound close to one capsule/input at a time, then the other, while watching separate left/right recording meters or waveforms. Each stimulus must produce a different left/right response.</li>
+<li><strong>Inspect both channels and play them back separately.</strong> A stereo file containing the same signal duplicated into both channels is not a pass. If you cannot distinguish independent channel responses, the baseline remains unverified.</li>
 </ol>
 <h3 id="what-qualifies-as-a-stereo-microphone">What Qualifies as a Stereo Microphone?</h3>
-<p><strong>Good options for baseline test:</strong></p>
-<ul>
-<li><strong>Phone earbuds with mic</strong> (iPhone, Android earbuds) - Most are stereo</li>
-<li><strong>Gaming headset</strong> - Usually stereo</li>
-<li><strong>USB conference mic</strong> - Check specs for stereo support</li>
-<li><strong>Laptop built-in mic</strong> (if it has one) - Often stereo on modern laptops</li>
-<li><strong>Any mic labeled "stereo"</strong> on the packaging</li>
-</ul>
-<p><strong>NOT stereo (don't use for this test):</strong></p>
-<ul>
-<li>Basic karaoke mic</li>
-<li>Old computer mic from 2000s</li>
-<li>Single-element microphones</li>
-</ul>
-<p><strong>Don't have a stereo mic?</strong> You can skip this test and continue to Test 4, but if your recording comes back empty or one-sided, come back and run this test with a stereo mic. It is what separates a mono input from a setup problem.</p>
+<p>Use a microphone whose manufacturer confirms <strong>two-channel stereo capture</strong> through
+that same external input. Stereo headphones can have a <strong>mono</strong> headset microphone;
+phone earbuds and gaming headsets do not establish a stereo recording baseline.
+A built-in or USB microphone tests a different input and cannot validate the jack
+RECAP uses.</p>
+<p><strong>Don't have a stereo mic?</strong> Continue to Test 4 and use the <a href="../../using-recap/making-calls/#setup-and-two-sided-test">two-sided RECAP test</a>. If it fails, contact support with the result; do not buy another microphone solely to complete this baseline.</p>
 <h3 id="interpreting-results">Interpreting Results</h3>
-<p><strong>✅ Baseline test PASSED (stereo mic recorded successfully):</strong>
+<p><strong>✅ Baseline test PASSED (independent left/right responses confirmed):</strong>
 - Your computer CAN record stereo
 - Your recording software is configured correctly
-- The port works and has proper voltage
-- <strong>Conclusion:</strong> Issue is specific to RECAP setup (headset compatibility, connections, etc.)
+- The tested input captured the two-channel stimulus; this does not measure its voltage or validate RECAP's electrical interface
+- <strong>Conclusion:</strong> The external input captured the baseline. Next isolate the complete RECAP call path; this result alone does not identify a cause.
 - <strong>Next step:</strong> Continue to Test 4</p>
 <p><strong>❌ Baseline test FAILED (stereo mic did NOT record):</strong>
-- <strong>Problem is NOT RECAP!</strong> Your computer can't record stereo from ANY device
+- <strong>The baseline did not capture stereo.</strong> Check the selected input, test microphone and recording mode before interpreting the RECAP test
 - <strong>Common causes:</strong>
   - Using LINE IN port instead of MIC IN port
   - Recording software set to MONO mode
@@ -1481,7 +1472,7 @@
 <p>If baseline test failed, fix these issues:</p>
 <p><strong>Check port type:</strong>
 - Pink jack = MIC IN ✅ (correct)
-- Blue jack = LINE IN ❌ (no mic power)
+- Blue jack often indicates LINE IN; confirm the actual input specification
 - Green jack = Speaker/Headphone OUT ❌ (wrong)</p>
 <p><strong>Check recording software:</strong>
 - Audacity: Audio Setup → Recording Channels → <strong>2 (Stereo)</strong>
@@ -1497,12 +1488,12 @@
 <hr />
 <h2 id="the-usb-adapter-solution">The USB Adapter Solution</h2>
 <h3 id="when-you-need-it">When You Need It</h3>
-<p><strong>You need a USB stereo adapter if:</strong></p>
+<p><strong>Consider an interface only after checking the actual recording input:</strong></p>
 <ul>
-<li>Device scanner shows "MONO input detected"</li>
-<li>Your computer has no MIC IN port (only LINE IN or combo port)</li>
-<li>Pass-through test works but recording fails</li>
-<li>You have a modern laptop or Mac (most made after 2015 are MONO-only)</li>
+<li>A scanner MONO report is a clue: confirm the selected physical external input and capture mode first.</li>
+<li>If that input is confirmed mono, or there is no supported external stereo MIC input, use another compatible stereo MIC input/interface.</li>
+<li>A working headset pass-through with a failed recording does <strong>not</strong> by itself show an adapter is needed. Check routing, input selection, recording mode, gain and processing.</li>
+<li>Computer brand or age alone does not establish input capability. Use the <a href="../../getting-started/requirements/#compatibility-checklist">compatibility checklist</a> and <a href="../../using-recap/making-calls/#setup-and-two-sided-test">two-sided test</a>.</li>
 </ul>
 <h3 id="why-this-happens">Why This Happens</h3>
 <p><strong>RECAP outputs stereo audio (2 channels):</strong></p>
@@ -1512,11 +1503,12 @@
 <li>⚠️ Channel assignment (L/R) may vary depending on USB adapter</li>
 </ul>
 <p><strong>Your computer needs stereo input to record both channels.</strong></p>
-<p>Most modern computers save cost by including only MONO microphone inputs. This captures only ONE channel (one-sided audio or no audio).</p>
-<p><strong>This is NOT a RECAP defect</strong> - it's a common computer compatibility issue.</p>
+<p>A confirmed mono capture cannot preserve S2's two separate recording channels. A one-sided recording can also result from input selection, routing, cabling, gain or processing; it does not identify a cause on its own.</p>
+<p>Neither a scanner channel count nor a one-sided recording establishes the condition of the RECAP unit. Use controlled tests to isolate the affected path.</p>
 <h3 id="the-solution-a-usb-stereo-mic-adapter">The Solution: A USB Stereo Mic Adapter</h3>
-<p>A USB audio adapter gives your computer a true stereo microphone input, which is
-the thing it's missing.</p>
+<p>If the existing input lacks the required capability, an interface with a verified
+stereo microphone input can supply it. A USB connector or stereo headphone output
+alone does not establish that capability.</p>
 <p><strong>What it has to do — these are the criteria, not a brand:</strong></p>
 <ul>
 <li>✅ <strong>Stereo</strong> microphone input (2 channels) — the one that matters most</li>

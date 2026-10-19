@@ -929,12 +929,12 @@
 <blockquote>
 <p><strong>Is this about your recording, or about the live call?</strong> Everything on this page is about what lands in the <em>recording</em>. If your problem is that <strong>callers say you sound muffled or distant while you're talking</strong>, that's a different signal path with different tests — see <a href="../far-end-audio/">Callers Say I Sound Muffled or Distant</a>.</p>
 </blockquote>
-<p><strong>Work through the <a href="../device-scanner/">diagnostic flowchart</a> first. Most common causes:</strong></p>
+<p><strong>Work through the <a href="../device-scanner/">diagnostic flowchart</a>. These are checks, not a diagnosis from silence alone:</strong></p>
 <ol>
-<li><strong>Computer has MONO input (most common)</strong></li>
+<li><strong>Check the selected input and channel mode</strong></li>
 <li>Run scanner: <a href="https://recapmycalls.com/audio/">https://recapmycalls.com/audio/</a></li>
 <li>
-<p>Solution: USB adapter needed - <a href="../device-scanner/">details here</a></p>
+<p>Confirm the actual external input and capture mode with the <a href="../../using-recap/making-calls/#setup-and-two-sided-test">two-sided test</a>. Consider an interface only if that input is confirmed insufficient; see <a href="../device-scanner/#when-you-need-it">input checks</a>.</p>
 </li>
 <li>
 <p><strong>Audio input gain too low/muted</strong></p>
@@ -954,7 +954,7 @@
 <li>
 <p><strong>Connected to LINE IN instead of MIC IN</strong></p>
 </li>
-<li>LINE IN has no bias voltage, won't power RECAP</li>
+<li>Use the supported external stereo MIC mode, with plug-in power where supported; line-only operation is not validated</li>
 <li>
 <p>Look for port with microphone icon or pink color</p>
 </li>
@@ -1001,21 +1001,26 @@
 <hr />
 <h3 id="problem-recording-only-has-audio-on-one-side">Problem: Recording Only Has Audio on One Side</h3>
 <p><strong>Symptom:</strong> You open your recording and only one channel has audio — the other is silent or very quiet.</p>
-<p><strong>If the caller is on the recording but your own voice is missing, start here.</strong> The usual cause is your recording device's input. RECAP draws 1–2 volts of plug-in power from the recorder's microphone input, and your voice needs that power to reach the recording. The caller's side doesn't. Check that:</p>
+<p><strong>If the caller is on the recording but your own voice is missing, check the
+recording input and the headset microphone path.</strong> This symptom alone does not
+identify a fault. Earlier guidance said recorder bias powers S2 and carries your
+voice; that mechanism is not supported by the reviewed v40 artwork. See the
+<a href="../../getting-started/requirements/#plug-in-power-and-voltage-validation-pending">correction and pending validation</a>.
+Keep these supported setup checks:</p>
 <ul>
 <li>The recorder input is a <strong>stereo MIC input (not LINE IN) that supplies plug-in power</strong>. Your recorder's manual will say; see <a href="../../getting-started/requirements/#recording-device-compatibility">Recording Device Compatibility</a>.</li>
 <li>Your headset has a <strong>microphone on its cable</strong>. Without one, your phone uses its own mic and your voice never reaches RECAP. See <a href="../far-end-audio/#cause-1-most-common-no-microphone-on-the-headset-cable">Cause 1</a>.</li>
 <li>If your phone uses a Lightning or USB-C adapter, you <strong>connect the phone last</strong>. See <a href="../far-end-audio/#cause-3-connection-order">connection order</a>.</li>
 </ul>
-<p>On a computer, also check the causes below.</p>
-<p><strong>This IS about the recording output</strong> (not the headset). Most common cause:</p>
+<p>Also use the <a href="../../using-recap/making-calls/#setup-and-two-sided-test">two-sided test</a> to confirm actual external-input capture. On a computer, check the items below.</p>
+<p><strong>This is about the recording output</strong>, not headset playback. Check:</p>
 <ol>
-<li><strong>Computer has MONO input (most common)</strong></li>
-<li>Most modern laptops and all Macs have mono-only mic inputs</li>
+<li><strong>Check the selected input and channel mode</strong></li>
+<li>Many computers have mono microphone inputs; check the exact selected input rather than assuming from the brand</li>
 <li>A mono input can only capture one of RECAP's two channels</li>
 <li>Run the <a href="https://recapmycalls.com/audio/">Audio Device Scanner</a> to check</li>
 <li>
-<p>Solution: USB stereo audio adapter — <a href="../device-scanner/">details here</a></p>
+<p>The scan alone does not identify the cause. Use the <a href="../../using-recap/making-calls/#setup-and-two-sided-test">two-sided test</a>, and consider another input/interface only if the external input is confirmed unable to capture stereo.</p>
 </li>
 <li>
 <p><strong>Echo cancellation or noise suppression enabled</strong></p>

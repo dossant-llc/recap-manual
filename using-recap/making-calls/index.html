@@ -604,6 +604,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#setup-and-two-sided-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setup and two-sided test
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#technical-details" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -977,6 +988,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#setup-and-two-sided-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setup and two-sided test
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#technical-details" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1052,7 +1074,7 @@
 <p><strong>This assumes your headset has a microphone on the cable.</strong> If it doesn't, your call device uses its own built-in microphone instead — so your caller hears you from wherever the phone is sitting, which can make you sound distant. If people tell you that you sound muffled, start here: <a href="../../troubleshooting/far-end-audio/">Callers Say I Sound Muffled or Distant</a>.</p>
 </blockquote>
 <p><strong>Example:</strong> You're on a call with a client. You hear their voice in both ears of your headset, they hear your voice through the headset mic. You talk normally. From a call quality perspective, nothing has changed — RECAP is invisible.</p>
-<p><strong>If you only hear in one ear through the headset pass-through, something is physically wrong.</strong> This is not a RECAP behavior — it's a connection issue, a headset issue, or a cable issue. See troubleshooting below.</p>
+<p><strong>If you only hear in one ear through the headset pass-through, that is not the recording split.</strong> Compare the direct-headset baseline and complete chain to isolate the path; see <a href="../../troubleshooting/no-audio/#problem-only-hear-in-one-ear-headset">headset troubleshooting</a>.</p>
 <blockquote>
 <p>⚠️ <strong>If using a Lightning or USB-C adapter:</strong> Always connect the headset to RECAP first, then plug into the phone last. Your phone performs accessory detection at plug-in — if the headset isn't already in the chain, audio may route incorrectly. See <a href="../../troubleshooting/low-volume-noise/#problem-audio-routes-to-speaker-or-one-ear-with-lightningusb-c-adapter">Connection Order troubleshooting</a>.</p>
 </blockquote>
@@ -1067,34 +1089,67 @@
 <p><strong>Example:</strong> You record a 30-minute interview. When you open the recording in Audacity or any audio editor, you see two channels. One channel is you, the other is the interviewee. You can adjust volume on each independently, remove background noise from one side without affecting the other, or export just the caller's audio.</p>
 <p>⚠️ <strong>The stereo split only exists on the recording output.</strong> It has nothing to do with what you hear in your headset during the call.</p>
 <hr />
+<h3 id="setup-and-two-sided-test">Setup and two-sided test</h3>
+<p>Check the <a href="../../getting-started/requirements/#compatibility-checklist">compatibility checklist</a>
+first. <strong>CALL</strong> is the phone/device running the call; <strong>REC</strong> is the separate recorder.</p>
+<ol>
+<li>Test the wired TRRS headset directly on CALL with the same phone adapter and
+   calling app. Confirm you hear the other person and they hear the <strong>headset mic</strong>.
+   Move CALL away from your mouth and gently rub the headset's microphone housing
+   while your test partner listens; compare with a gentle rub near CALL's built-in
+   mic. The headset-mic sound should be prominent. If only the phone-mic sound is
+   prominent, the wired mic route has not passed. Check the app's input/output route
+   and repeat; Bluetooth, the phone speaker or built-in mic bypasses the intended
+   wired path. An app permission alone does not prove routing.</li>
+<li>Disconnect from CALL. Connect the headset to RECAP's <strong>HEADSET</strong> pass-through,
+   and the included <strong>3-pole TRS recording cable</strong> from RECAP's <strong>MIC/recording output</strong>
+   to REC's external stereo mic input. Connect RECAP to the phone adapter if needed,
+   then connect the <strong>CALL phone last</strong>. See <a href="../../troubleshooting/low-volume-noise/#problem-audio-routes-to-speaker-or-one-ear-with-lightningusb-c-adapter">connection order</a>.</li>
+<li>On REC, select that physical external input, <strong>MIC mode</strong> where selectable,
+   plug-in power enabled where supported, and <strong>stereo/two-channel</strong> recording.
+   Start with processing/mono mixing off. Follow the recorder's manual for controls.</li>
+<li>Record a short call (about 20–30 seconds). Say a phrase while the other person
+   pauses, then have them say a different phrase while you pause. Keep the call
+   audible only in the headset, so REC's built-in mic cannot pick up speaker audio.</li>
+<li>Stop and play back <strong>both recorded channels</strong>. Confirm both voices are audible
+   at useful levels and each appears on its own channel. Note which side is yours;
+   device/software channel labels can differ. Your voice alone does not prove the
+   RECAP path is selected. A stereo setting alone does not prove two-sided capture.</li>
+</ol>
+<p>Repeat when changing the phone, adapter, headset, recorder or calling app. For
+missing recording audio use <a href="../../troubleshooting/no-audio/">No Audio Recorded</a>;
+for what the caller hears use <a href="../../troubleshooting/far-end-audio/">live-call troubleshooting</a>.
+If the documented setup still fails, <a href="../../support/">contact support</a> with the
+symptom and test result; the failure alone does not establish which part is at fault.</p>
 <h3 id="technical-details">Technical Details</h3>
-<p><strong>Input (Phone Plug):</strong></p>
-<ul>
-<li>3.5mm TRRS connector (4-pole)</li>
-<li>Standard: AHJ (American Headset Jack)</li>
-<li>Receives both mic audio (from headset) and speaker audio (to headset)</li>
-</ul>
-<p><strong>Pass-Through (Headset Jack):</strong></p>
-<ul>
-<li>3.5mm TRRS connector (4-pole)</li>
-<li>Identical to phone plug</li>
-<li>Transparent — forwards phone audio to headset unchanged</li>
-<li>Your headset hears exactly what it would hear plugged directly into the phone</li>
-</ul>
-<p><strong>Output (MIC Jack):</strong></p>
-<ul>
-<li>3.5mm TRS connector (3-pole stereo)</li>
-<li>Pin 1 (Tip): Right channel - Other person's voice (1kΩ impedance)</li>
-<li>Pin 2 (Ring): Left channel - Your voice (1kΩ impedance)</li>
-<li>Pin 3 (Sleeve): Ground</li>
-<li>Requires 700-2000mV bias voltage (standard for computer MIC IN)</li>
-<li>⚠️ <strong>Note:</strong> Some recording devices may swap L/R channels — see <a href="../../troubleshooting/low-volume-noise/#problem-left-and-right-channels-are-swapped">Channel Swap troubleshooting</a></li>
-</ul>
-<p><strong>Power:</strong></p>
-<ul>
-<li>No batteries required</li>
-<li>Powered by the recording device's microphone input (plug-in power / bias voltage)</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>Connection</th>
+<th>Interface</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phone plug / headset pass-through</td>
+<td>3.5 mm TRRS, AHJ/CTIA headset path</td>
+</tr>
+<tr>
+<td>Recording output (MIC jack)</td>
+<td>3.5 mm TRS: Tip carries phone/caller audio, Ring carries headset-mic audio, Sleeve is common ground on reviewed v40 artwork</td>
+</tr>
+<tr>
+<td>Recorder setup</td>
+<td>External stereo MIC input, MIC mode and plug-in power where supported</td>
+</tr>
+</tbody>
+</table>
+<p>Both recording paths appear AC-coupled in the archived v40 artwork. Earlier bias-power,
+impedance and voltage statements did not establish a validated interface specification;
+see <a href="../../getting-started/requirements/#plug-in-power-and-voltage-validation-pending">the corrected requirements and pending validation</a>.
+No batteries are required. Do not infer a safe interface voltage from a component
+rating, or use 48 V phantom power. Use the two-sided test to establish the channel
+assignment in your actual recording.</p>
 <hr />
 
 

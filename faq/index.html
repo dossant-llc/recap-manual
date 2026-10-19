@@ -1051,25 +1051,25 @@
 <p><strong>Q: What is RECAP?</strong>
 A: RECAP is a hardware adapter that records both sides of a conversation by splitting headset audio into a stereo signal — your voice on one channel, theirs on the other.</p>
 <p><strong>Q: Do I need special software?</strong>
-A: No. Any recording software works (Windows Sound Recorder, Mac QuickTime, Audacity, etc.). We recommend Audacity (free) for best features.</p>
+A: Use recording software that selects the connected external input and captures both stereo channels separately. Verify the result with the <a href="../using-recap/making-calls/#setup-and-two-sided-test">two-sided test</a>.</p>
 <p><strong>Q: What devices work as the CALL source?</strong>
-A: Any device with a 3.5mm combo headset port (TRRS) — phones, tablets, laptops, even desktops with combo jacks. If your headset works with it, RECAP will work.</p>
+A: A device with an AHJ/CTIA 3.5mm TRRS headset path is a candidate. A working headset establishes a direct-call baseline, not compatibility of the complete RECAP recording chain. Check the <a href="../getting-started/requirements/#compatibility-checklist">compatibility checklist</a>, including microphone-capable adapters/app routing, then run the <a href="../using-recap/making-calls/#setup-and-two-sided-test">two-sided test</a>.</p>
 <p><strong>Q: Can I use RECAP with my computer's headset port?</strong>
 A: Yes, as the <strong>call device</strong>. If your computer has a combo headset jack (common on laptops), RECAP plugs into it and you take Zoom, Teams or other calls through your headset. The recording itself goes to a <strong>separate recording device</strong> whose input is a stereo microphone input with plug-in power. See the Zoom question below.</p>
 <p><strong>Q: Do I need batteries?</strong>
-A: No. RECAP draws a small plug-in power (bias voltage) from the microphone input of your recording device: a computer mic input, a USB audio adapter, or a voice recorder. That input has to supply it. A LINE IN does not.</p>
+A: No batteries are required. Use the supported external stereo MIC-mode setup with plug-in power where supported. Earlier explanations that recorder bias powers S2 were not adequately supported; see the <a href="../getting-started/requirements/#plug-in-power-and-voltage-validation-pending">correction and pending validation</a>.</p>
 <hr />
 <h3 id="compatibility-questions">Compatibility Questions</h3>
 <p><strong>Q: Why do I only hear one side of the conversation?</strong>
-A: Your computer has a MONO microphone input (captures only one channel). Run the scanner at <a href="https://recapmycalls.com/audio/">https://recapmycalls.com/audio/</a> to confirm. Solution: a USB adapter that adds a <a href="https://recapmycalls.com/compatible-adapters-for-recap/">stereo mic input</a>.</p>
+A: First distinguish one ear in the live headset from a missing recorded channel. A mono recording input is one possibility; wrong input selection, headset/app routing, cabling, gain or processing can also lose a voice. Use <a href="../troubleshooting/no-audio/#problem-recording-only-has-audio-on-one-side">recording troubleshooting</a> and the <a href="../using-recap/making-calls/#setup-and-two-sided-test">two-sided test</a>; a scanner result alone does not identify the cause.</p>
 <p><strong>Q: Why doesn't RECAP work with my Mac?</strong>
-A: Most modern Macs have MONO inputs or LINE IN ports (not MIC IN). You need a USB adapter that adds a stereo mic input — see the <a href="https://recapmycalls.com/compatible-adapters-for-recap/">compatible adapters guide</a>.</p>
+A: Check the actual selected external input against the <a href="../getting-started/requirements/#compatibility-checklist">compatibility checklist</a>. A Mac model name or failed recording does not establish input capability or the cause. If the input is confirmed to lack stereo MIC capture, use a suitable interface; see the <a href="https://recapmycalls.com/compatible-adapters-for-recap/">adapter guide</a>.</p>
 <p><strong>Q: Can I record to my iPhone or Android phone?</strong>
 A: Not directly — mobile devices have combo ports, not stereo MIC IN. However, you can use a USB audio adapter (with stereo mic input) connected to your phone's USB-C or Lightning port. This adds a proper stereo input for RECAP. A plain Lightning or USB-C to 3.5mm <em>headphone</em> adapter is not enough here. That adapter is the fix for the phone you make calls <strong>on</strong>, not for the one you record <strong>onto</strong>.</p>
 <p><strong>Q: Will RECAP work with my computer?</strong>
-A: Check compatibility with our free scanner: <a href="https://recapmycalls.com/audio/">https://recapmycalls.com/audio/</a>. If it shows STEREO input, yes. If MONO, you'll need a USB adapter.</p>
+A: The <a href="https://recapmycalls.com/audio/">scanner</a> reports the selected capture path's channel capability. STEREO does not prove the complete chain works, and MONO calls for checking the selected input/mode before choosing an interface. Follow the <a href="../getting-started/requirements/#compatibility-checklist">compatibility checklist</a> and <a href="../using-recap/making-calls/#setup-and-two-sided-test">two-sided test</a>.</p>
 <p><strong>Q: What's the difference between MIC IN and LINE IN?</strong>
-A: MIC IN provides bias voltage to power RECAP and has amplification for microphone signals. LINE IN has neither (RECAP won't work). MIC IN is usually pink, LINE IN is usually blue.</p>
+A: Use an external stereo microphone input with MIC mode and plug-in power where supported. Line-only operation is outside the supported setup; port color alone does not establish input capability. See <a href="../getting-started/requirements/#recording-device-compatibility">recorder requirements</a>.</p>
 <hr />
 <h3 id="setup-questions">Setup Questions</h3>
 <p><strong>Q: Can I hear the call while recording?</strong>
@@ -1077,13 +1077,13 @@ A: Yes! Connect your headset to RECAP and you'll hear the call in real-time whil
 <p><strong>Q: Which headset should I use?</strong>
 A: A <strong>wired headset with the microphone on the cable</strong>, which means a 4-pole (TRRS) plug with a boom or an inline mic. It also has to work with your phone: plug it straight into the phone and make a call. Apple 3.5mm EarPods work well as a reference. A headset that works with your phone but has <strong>no mic on the cable</strong> will not record your voice, because your phone uses its own built-in microphone instead. See <a href="../getting-started/requirements/#headset-compatibility">Headset Compatibility</a>.</p>
 <p><strong>Q: Why is my recording very quiet?</strong>
-A: Audio input gain is almost always the issue. Set your computer's microphone gain to 100%. This fixes 90% of low volume issues.</p>
+A: Check the selected external input, recording gain and processing. Raise gain while watching for clipping, then check each participant's recorded channel in the <a href="../using-recap/making-calls/#setup-and-two-sided-test">two-sided test</a>. Low level alone does not establish a cause.</p>
 <hr />
 <h3 id="recording-questions">Recording Questions</h3>
 <p><strong>Q: Can I record to a voice recorder instead of computer?</strong>
-A: Yes, if its external microphone input is <strong>stereo and supplies plug-in power</strong>. Check your recorder's manual. Set it to STEREO (not mono) and to MIC (not line), with any noise reduction or auto level turned off. Never use an input with 48V phantom power.</p>
+A: A recorder is a candidate if its external input meets the <a href="../getting-started/requirements/#recording-device-compatibility">recorder checklist</a>. Use stereo MIC mode, plug-in power where supported, and processing off for the initial <a href="../using-recap/making-calls/#setup-and-two-sided-test">two-sided test</a>. Matching specifications are not a physically tested configuration; electrical validation remains pending. Never connect phantom power.</p>
 <p><strong>Q: Can I use RECAP with Zoom, Teams, or Skype calls on my computer?</strong>
-A: Yes, if your computer uses a combo headset port (3.5mm TRRS). Connect: Computer → RECAP → Headset, then record to a second device (voice recorder, another computer, or phone with USB audio adapter). Unlike built-in recording features, RECAP doesn't notify other participants that you're recording.</p>
+A: A computer can be CALL when its AHJ/CTIA wired headset path carries both app audio and the headset mic. Use a separate REC device meeting the <a href="../getting-started/requirements/#compatibility-checklist">checklist</a>, and confirm routing/capture with the <a href="../using-recap/making-calls/#setup-and-two-sided-test">two-sided test</a>. The app name or headset jack alone does not certify the complete chain.</p>
 <p><strong>Q: What recording quality should I use?</strong>
 A: For best quality: WAV format, 44.1kHz or 48kHz sample rate, 16-bit depth. For smaller files: MP3 at 192kbps or higher.</p>
 <p><strong>Q: Can I record on both sides in separate files?</strong>
@@ -1101,7 +1101,7 @@ A: No supported configuration for splitters exists.</p>
 <p><strong>Q: Is RECAP wireless/Bluetooth?</strong>
 A: No. RECAP is a wired hardware adapter. Bluetooth has too much latency for real-time call recording.</p>
 <p><strong>Q: Can I use RECAP with a mixer or recording equipment?</strong>
-A: Never use RECAP with +48V phantom power - it will damage the device. For professional equipment, you may need a different interface.</p>
+A: Never use RECAP with +48V phantom power - it is outside the supported setup. For professional equipment, you may need a different interface.</p>
 <p><strong>Q: How long does RECAP last?</strong>
 A: RECAP has no batteries or moving parts. With proper care, it should last indefinitely.</p>
 <hr />
@@ -1111,7 +1111,7 @@ A: STEREO input has 2 channels (can record left and right separately). MONO inpu
 <p><strong>Q: What is AHJ standard?</strong>
 A: American Headset Jack - the standard headphone connector pinout used by iPhone, Android, and most cell phones. Opposite of OMTP (rare, older phones).</p>
 <p><strong>Q: Why does the scanner show my input as MONO?</strong>
-A: Most laptops and Macs made after 2015 have MONO-only inputs to save cost. This is normal. Solution: USB adapter.</p>
+A: The browser/driver reports one capture channel for the selected input. Confirm that it is the intended physical external input and check stereo/mono mode; brand or age does not establish capability. Use the <a href="../using-recap/making-calls/#setup-and-two-sided-test">two-sided test</a>, and consider an interface only if the actual input is confirmed insufficient.</p>
 <hr />
 
 

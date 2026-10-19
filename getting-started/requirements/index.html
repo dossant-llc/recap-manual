@@ -437,6 +437,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#compatibility-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compatibility checklist
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-a-compatibility-claim-means" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What a compatibility claim means
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#call-device-compatibility" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -477,6 +499,23 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Recording Device Compatibility">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#plug-in-power-and-voltage-validation-pending" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plug-in power and voltage: validation pending
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -921,6 +960,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#compatibility-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compatibility checklist
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-a-compatibility-claim-means" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What a compatibility claim means
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#call-device-compatibility" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -961,6 +1022,23 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Recording Device Compatibility">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#plug-in-power-and-voltage-validation-pending" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plug-in power and voltage: validation pending
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1003,9 +1081,62 @@
   <h1>Requirements</h1>
 
 <h2 id="compatibility-requirements">Compatibility Requirements</h2>
+<h3 id="compatibility-checklist">Compatibility checklist</h3>
+<p>Use a <strong>call device (CALL)</strong> and a <strong>separate recording device (REC)</strong>. Check the
+connection and input specifications, rather than a product name or headphone jack alone.</p>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>What to check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CALL phone/device</td>
+<td>A 3.5 mm AHJ/CTIA TRRS headset connection, directly or through a microphone-capable adapter</td>
+</tr>
+<tr>
+<td>Phone adapter</td>
+<td>Correct Lightning/USB-C connector <strong>and microphone input support</strong>; a headphone-only adapter cannot carry your headset mic</td>
+</tr>
+<tr>
+<td>Headset</td>
+<td>Wired 3.5 mm <strong>TRRS, 4 contacts / 3 insulating bands</strong>, with an inline or boom microphone; it must work on CALL with the same adapter</td>
+</tr>
+<tr>
+<td>Recording cable</td>
+<td>Included 3.5 mm male-to-male <strong>TRS, 3 contacts / 2 insulating bands</strong>, straight-through stereo cable; a TRRS headset cable is a different part</td>
+</tr>
+<tr>
+<td>REC input</td>
+<td>External <strong>stereo microphone input (two channels)</strong>; MIC mode where selectable, with plug-in power enabled where supported; no phantom power</td>
+</tr>
+<tr>
+<td>Recording settings</td>
+<td>Select the connected external input, record both channels separately, and turn off mono mixing and processing for the initial test</td>
+</tr>
+<tr>
+<td>Calling app</td>
+<td>Call audio and the headset microphone must both route through the wired headset path, including in apps such as Teams</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Before an important call:</strong> follow <a href="../../using-recap/making-calls/#setup-and-two-sided-test">setup and the two-sided test</a>.
+For recorder details and the open electrical-validation issue, see
+<a href="#recording-device-compatibility">Recording Device Compatibility</a>.</p>
+<h3 id="what-a-compatibility-claim-means">What a compatibility claim means</h3>
+<p>A <strong>physically tested configuration</strong> needs a recorded test for those exact models
+and settings. A tested phone adapter does not validate every phone, app or recorder
+used with it. A <strong>specification-based expectation</strong> means the manufacturer's manual
+matches the requirements; it is useful evidence, but not certification or a guarantee
+for the whole chain. If the evidence is missing, compatibility is unresolved.</p>
+<p>If our setup instructions are unclear or the documented setup fails, <a href="../../support/">contact support</a>
+with the specific question or symptom. We can help isolate the RECAP setup; you do not
+need a full device inventory for a general requirements question.</p>
 <h3 id="call-device-compatibility">Call Device Compatibility</h3>
-<p>RECAP works with any device that has a <strong>combo headset port</strong> (3.5mm TRRS) — this includes phones, tablets, and computers.</p>
-<p><strong>Compatible:</strong></p>
+<p>RECAP uses the call device's <strong>AHJ/CTIA combo headset connection</strong> (3.5mm TRRS). Phones, tablets and computers may provide it directly or through a compatible microphone-capable adapter; the app must actually route both call audio and the headset microphone through it.</p>
+<p><strong>Connection types to check:</strong></p>
 <ul>
 <li>iPhone (with 3.5mm jack or Lightning/USB-C to 3.5mm adapter)</li>
 <li>Android phones with 3.5mm headphone jack</li>
@@ -1019,9 +1150,9 @@
 <li>Devices using OMTP standard (rare, mostly older European/Asian models)</li>
 <li>Separate headphone + mic ports (not combo) — these won't pass both signals</li>
 </ul>
-<p><strong>How to check:</strong> If your headset works with the device (you can hear AND be heard), the device is compatible.</p>
+<p><strong>How to check:</strong> Test the headset directly on CALL, using the same phone adapter and calling app. Hearing and being heard through the headset establishes that baseline; then repeat with RECAP and REC in the <a href="../../using-recap/making-calls/#setup-and-two-sided-test">two-sided test</a>.</p>
 <blockquote>
-<p><strong>No headphone jack on your phone?</strong> You need a Lightning or USB-C to 3.5mm adapter — and it has to be one that carries the microphone channel. Many cheap adapters do not, which leaves your phone using its own built-in microphone. Tested adapters: <a href="https://recapmycalls.com/compatible-adapters-for-recap/">https://recapmycalls.com/compatible-adapters-for-recap/</a></p>
+<p><strong>No headphone jack on your phone?</strong> You need a Lightning or USB-C to 3.5mm adapter — and it has to be one that carries the microphone channel. Many cheap adapters do not, which leaves your phone using its own built-in microphone. Adapter guide (check the evidence for the exact model): <a href="https://recapmycalls.com/compatible-adapters-for-recap/">https://recapmycalls.com/compatible-adapters-for-recap/</a></p>
 </blockquote>
 <hr />
 <h3 id="headset-compatibility">Headset Compatibility</h3>
@@ -1034,7 +1165,7 @@
 <ul>
 <li>Wired, with a microphone <strong>on the cable</strong> — a 3.5mm TRRS plug (4-pole)</li>
 <li>Must be compatible with YOUR call device</li>
-<li>Known-working headsets: Apple <strong>3.5mm</strong> EarPods, most phone headsets</li>
+<li>Reference headset: Apple <strong>3.5mm</strong> EarPods. Other phone headsets must meet the same microphone and pinout requirements; a category name is not a test result.</li>
 </ul>
 <p>A mic on the cable is the first requirement, and an inexpensive headset can meet it — the headset does not shape how your <em>caller</em> sounds in the recording, since that audio comes from the call itself. Headset quality still affects how <strong>you</strong> sound, though: a weak or noisy microphone shows up on your own channel. And a small number of TRRS headsets use a reversed pinout or an unusual connector and still misbehave — see <strong>Common incompatibilities</strong> below.</p>
 <p><strong>These cannot work with RECAP:</strong></p>
@@ -1070,13 +1201,12 @@
 </tbody>
 </table>
 <p><strong>How to test compatibility:</strong></p>
-<p>First confirm the <strong>microphone is on the cable</strong> (see the box above). A headset with no mic on the cable still passes the call test below, because your phone quietly falls back to its own built-in microphone. So the call test alone can't tell you the headset will work with RECAP.</p>
-<ol>
-<li>Plug headset directly into phone (no RECAP)</li>
-<li>Make test call</li>
-<li>Verify: Can you hear them? Can they hear you?</li>
-<li>If both YES <strong>and</strong> the mic is on the cable → Headset is compatible</li>
-</ol>
+<p>A physical microphone on the cable and a call where both people can hear each
+other do <strong>not</strong> establish that the wired mic is active: CALL may still use its
+built-in mic. Follow the canonical <a href="../../using-recap/making-calls/#setup-and-two-sided-test">physical microphone-routing check and two-sided
+test</a>, using the same adapter
+and calling app. Confirm the wired mic route before adding RECAP, then verify the
+complete recording path. These results apply to the tested configuration.</p>
 <p><strong>Common incompatibilities:</strong></p>
 <ul>
 <li>Old headsets using OMTP standard (mic/ground pins reversed)</li>
@@ -1087,102 +1217,97 @@
 <p><strong>⚠️ Important:</strong> Distance of microphone boom to mouth affects volume. Keep mic 1-2 inches from corner of mouth.</p>
 <hr />
 <h3 id="computer-compatibility">Computer Compatibility</h3>
-<p><strong>The Critical Requirement: STEREO Microphone Input</strong></p>
-<p>This is where most compatibility issues occur.</p>
-<p><strong>✅ Compatible:</strong></p>
-<ul>
-<li>Computers with stereo MIC IN port (2 channels)</li>
-<li>Older Windows laptops/desktops (pre-2015)</li>
-<li>Some desktop PCs with dedicated sound cards</li>
-<li>Computers using a USB adapter that adds a stereo mic input</li>
-</ul>
-<p><strong>❌ NOT Compatible (without USB adapter):</strong></p>
-<ul>
-<li>Most modern laptops (2015+) - usually MONO input only</li>
-<li>Most Mac computers - usually MONO input or LINE IN only</li>
-<li>Computers with only LINE IN port (no bias voltage)</li>
-<li>Computers with only headphone/speaker outputs</li>
-</ul>
-<p><strong>How to check:</strong> Visit <strong><a href="https://recapmycalls.com/audio/">https://recapmycalls.com/audio/</a></strong> and run the free device scanner.</p>
-<p><strong>Port types explained:</strong></p>
+<p><strong>REC needs a stereo microphone input, not just stereo headphone output.</strong>
+Computer age, port color and the word "stereo" in a product listing do not establish
+that its <strong>input</strong> captures two channels. A combo headset jack carries stereo
+headphone output plus a mono microphone input; it cannot directly capture S2's two
+recording channels. A headphone output cannot record at all.</p>
+<p>Use the <a href="https://recapmycalls.com/audio/">Audio Device Scanner</a> to check the selected
+input's reported channel capability. It does not measure plug-in power, prove a
+signal is present, or certify the complete chain. Confirm capture with the
+<a href="../../using-recap/making-calls/#setup-and-two-sided-test">two-sided test</a>.</p>
 <table>
 <thead>
 <tr>
-<th>Port Type</th>
-<th>Compatible?</th>
-<th>How to Identify</th>
+<th>Input</th>
+<th>RECAP recording setup</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>MIC IN (stereo)</td>
-<td>✅ YES</td>
-<td>Pink port or mic icon, supports stereo</td>
+<td>External stereo MIC input</td>
+<td>Use MIC mode and plug-in power where supported; record two channels</td>
 </tr>
 <tr>
-<td>MIC IN (mono)</td>
-<td>❌ NO - need USB adapter</td>
-<td>Pink port but only 1 channel</td>
+<td>Mono MIC / combo headset input</td>
+<td>Cannot preserve both S2 channels directly</td>
 </tr>
 <tr>
-<td>LINE IN</td>
-<td>❌ NO</td>
-<td>Blue port, no bias voltage</td>
+<td>Line-only input</td>
+<td>Outside the supported MIC setup; not validated here</td>
 </tr>
 <tr>
-<td>Combo port</td>
-<td>❌ Usually MONO</td>
-<td>One port for both headphones + mic</td>
-</tr>
-<tr>
-<td>Headphone OUT</td>
-<td>❌ NO</td>
-<td>Green port, output only</td>
+<td>Headphone/speaker output</td>
+<td>Output only, cannot capture audio</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Solution for incompatible computers:</strong> a USB adapter that adds a <strong>stereo</strong> microphone input. Current recommended models are kept on the <a href="https://recapmycalls.com/compatible-adapters-for-recap/">compatible adapters guide</a> — that list is maintained as hardware changes, so check it there rather than relying on a model name in this manual.</p>
+<p>If the computer lacks the required input, use an interface that supplies an actual
+<strong>stereo microphone input</strong>, not merely stereo playback. See the
+<a href="https://recapmycalls.com/compatible-adapters-for-recap/">compatible adapters guide</a>
+and the exact model's manufacturer documentation.</p>
 <hr />
 <h3 id="recording-device-compatibility">Recording Device Compatibility</h3>
-<p><strong>Compatible devices:</strong></p>
+<p>Digital voice recorders and portable/field recorders are candidates when their
+<strong>external input</strong> meets these checks. A stereo built-in microphone does not prove
+that an external jack accepts stereo.</p>
 <ul>
-<li>Digital voice recorders with a <strong>stereo</strong> external mic input that supplies plug-in power</li>
-<li>Portable/field recorders meeting the same two conditions</li>
+<li><strong>3.5 mm TRS stereo external microphone input</strong> with two captured channels.</li>
+<li><strong>MIC mode</strong>, if the jack switches between mic and line; retain the supported
+  <strong>plug-in-power</strong> setup, enabled where selectable.</li>
+<li>Select the external input and <strong>stereo</strong> recording, preserving both channels.
+  Disable mono mixing, noise reduction and automatic processing for the test.</li>
+<li>Use the included <strong>TRS recording cable</strong>, not a TRRS headset cable.</li>
+<li><strong>Never connect RECAP to 48 V phantom power.</strong> A single balanced XLR/TRS input
+  is not a stereo microphone input, even if it has three contacts.</li>
 </ul>
-<p>We don't certify individual recorder models — there are too many to test, and a
-model that works in one firmware revision may not in the next. Check your own
-recorder against the two conditions below; its manual is the only reliable source.</p>
-<p><strong>Requirements:</strong></p>
-<ul>
-<li>Must accept stereo external microphone (2 channels)</li>
-<li>Must provide bias voltage (or use adapter with bias voltage)</li>
-<li><strong>Not LINE IN</strong> - must be MIC IN or have MIC mode</li>
-</ul>
-<p><strong>How to check your recorder:</strong></p>
-<ul>
-<li>Look in user manual for "stereo external microphone" support</li>
-<li>Some recorders have mono/stereo switch - must be set to STEREO</li>
-<li>Some have MIC IN / LINE IN switch - must be set to MIC IN</li>
-</ul>
-<p><strong>NOT compatible (without adapter):</strong></p>
-<ul>
-<li>Voice recorders with only mono mic input</li>
-<li>Devices with only LINE IN (no bias voltage)</li>
-<li>iPhone/iPad/Android directly (combo ports only) — see USB adapter option below</li>
-</ul>
+<p>Check the exact model's manufacturer manual, then make the
+<a href="../../using-recap/making-calls/#setup-and-two-sided-test">two-sided test recording</a>.
+A phone's Lightning/USB-C headphone adapter normally exposes a combo headset input,
+not this stereo recording input. Using a second mobile device as REC requires a
+stereo microphone interface supported by that device and recording app; a connector
+adapter alone is insufficient.</p>
+<h4 id="plug-in-power-and-voltage-validation-pending">Plug-in power and voltage: validation pending</h4>
+<p>Earlier versions of this manual said recorder bias powers S2 and specified a <strong>2 V
+maximum</strong>. That explanation and limit were not adequately supported. Review of the
+archived <strong>S2 v40</strong> fabrication artwork shows a passive resistor/capacitor circuit
+with a series coupling capacitor on <strong>each</strong> recording channel. This conflicts
+with the earlier DC-power explanation. Revision applicability and bench validation
+remain open; we have not established a validated S2 interface voltage range.</p>
+<p>Keep the documented stereo MIC-mode / plug-in-power setup while validation is
+pending. A capacitor's <strong>10 V component rating does not establish a 10 V safe
+interface limit</strong>, and this correction does not validate line-only inputs or higher
+voltages. Do not connect phantom power.</p>
+<p>For example, the <a href="https://zoomcorp.com/manuals/h1essential-en/">Zoom H1essential manual</a>
+specifies a stereo mini input, 2 kΩ impedance and 2.5 V plug-in power. The
+<a href="https://zoomcorp.com/manuals/h4essential-en/">H4essential manual</a> specifies a stereo
+mini input, at least 2 kΩ and selectable plug-in power, without establishing its
+voltage. These are <strong>specification-based candidates</strong>, subject to the open S2
+interface validation. No exact-model RECAP physical test or complete iPhone/Teams
+chain test has been established for these examples. They are not certified setups.</p>
 <hr />
 <h3 id="whats-not-compatible">What's NOT Compatible</h3>
 <p><strong>❌ LINE IN ports</strong></p>
 <ul>
-<li>Don't provide bias voltage needed to power RECAP</li>
+<li>Outside the supported external stereo MIC setup; line-only operation is not validated here</li>
 <li>Usually blue color or line icon</li>
 <li>Found on: Older desktops, some Macs, stereo equipment</li>
 </ul>
 <p><strong>❌ +48V Phantom Power</strong></p>
 <ul>
 <li>Professional mixer equipment</li>
-<li><strong>Will damage RECAP</strong> - never connect to phantom power!</li>
-<li>RECAP designed for computer mic bias only (2V max)</li>
+<li><strong>Never connect RECAP to phantom power.</strong> It is different from microphone plug-in power.</li>
+<li>See the <a href="#plug-in-power-and-voltage-validation-pending">pending voltage validation</a>; no numerical S2 interface limit is established here.</li>
 </ul>
 <p><strong>⚠️ Mobile devices as recorder (requires USB adapter)</strong></p>
 <ul>
