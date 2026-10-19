@@ -16,8 +16,8 @@ Many people grab an old headset from a drawer that doesn't work with their phone
 
 **Results:**
 
-- ✅ **Both YES** → Headset works! Continue to Step 2
-- ❌ **Either NO** → **STOP.** Get a different headset before continuing
+- ✅ **Both YES** → The direct-call audio check passed. Confirm the wired headset mic is active using the [mic-routing check](../using-recap/making-calls.md#setup-and-two-sided-test), then continue to Step 2.
+- ❌ **Either NO** → Check headset connections, the phone adapter and app routing before adding RECAP; this result alone does not identify which part needs attention.
 
 **Why this matters:** If your headset doesn't work with your phone directly, RECAP cannot fix it.
 
@@ -29,7 +29,7 @@ Many people grab an old headset from a drawer that doesn't work with their phone
 
 **⚠️ You DON'T need your computer for this test**
 
-This verifies RECAP hardware is working before you connect to computer.
+This checks the headset playback path through RECAP before connecting the separate recording device (REC). The recording channels remain untested.
 
 **Make the connections:**
 
@@ -52,8 +52,8 @@ Phone ──→ RECAP ──→ Headset
 
 **Results:**
 
-- ✅ **YES** → RECAP hardware works! Continue to Step 3
-- ❌ **NO** → Either bad headset (redo Step 1) or hardware issue ([contact support](../support.md))
+- ✅ **YES** → The headset playback path passed this test. The recording channels remain untested; continue to Step 3.
+- ❌ **NO** → Compare with the direct-headset baseline in Step 1, then check connections, adapter and app routing. This does not identify a cause; [contact support](../support.md) if it remains unresolved.
 
 ---
 
@@ -69,16 +69,14 @@ This free browser tool scans your computer's audio inputs.
 
 **What you'll see:**
 
-- ✅ **"STEREO input detected (2 channels)"** → Perfect! Continue to Step 4
-- ❌ **"MONO input detected (1 channel)"** → You need a USB adapter
+- **"STEREO input detected (2 channels)"** → The selected capture path reports two channels. Continue to Step 4 and verify independent two-sided capture; the scan alone does not prove the complete setup works.
+- **"MONO input detected (1 channel)"** → Check that the intended physical external input and stereo recording mode are selected. A mono capture cannot preserve S2's separate channels.
 
-**If MONO:**
-
-- Most modern laptops/Macs have MONO-only inputs
-- This is NOT a defect - it's a compatibility issue
-- Solution: get a USB stereo mic adapter FIRST — [which ones](https://recapmycalls.com/compatible-adapters-for-recap/) · [how to use it](../troubleshooting/device-scanner.md)
-- RECAP works perfectly, your computer just needs the adapter
-- **Don't proceed to Step 4 until you have the USB adapter**
+If the intended input is confirmed to lack stereo MIC capture, use another supported
+input or a suitable [stereo microphone interface](https://recapmycalls.com/compatible-adapters-for-recap/).
+Computer brand/age and scanner channel count alone establish neither a unit defect
+nor its absence. Follow the [compatibility checklist](requirements.md#compatibility-checklist)
+and [two-sided test](../using-recap/making-calls.md#setup-and-two-sided-test).
 
 **Take a screenshot** of the scanner results - helpful if you need support later.
 
@@ -118,18 +116,11 @@ Phone ──→ RECAP ──→ Headset
 - Click dropdown next to record button → Select "External Microphone"
 - Click red record button
 
-**Make a test recording:**
+**Make a two-sided test recording:**
 
-1. Start recording
-2. Make a test call (or call voicemail)
-3. Say something, have them say something
-4. Stop recording
-5. Play it back
-
-**What you should hear:**
-
-- ✅ Both sides of conversation (you + them)
-- ✅ Clear audio, reasonable volume
+Follow the [setup and two-sided test](../using-recap/making-calls.md#setup-and-two-sided-test),
+including app routing and a phrase from each participant. Verify both voices at
+useful levels on separate recorded channels before relying on the setup.
 
 **Problems?**
 

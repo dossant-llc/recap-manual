@@ -4,11 +4,11 @@
 
 > **Is this about your recording, or about the live call?** Everything on this page is about what lands in the *recording*. If your problem is that **callers say you sound muffled or distant while you're talking**, that's a different signal path with different tests — see [Callers Say I Sound Muffled or Distant](far-end-audio.md).
 
-**Work through the [diagnostic flowchart](device-scanner.md) first. Most common causes:**
+**Work through the [diagnostic flowchart](device-scanner.md). These are checks, not a diagnosis from silence alone:**
 
-1. **Computer has MONO input (most common)**
+1. **Check the selected input and channel mode**
    - Run scanner: <https://recapmycalls.com/audio/>
-   - Solution: USB adapter needed - [details here](device-scanner.md)
+   - Confirm the actual external input and capture mode with the [two-sided test](../using-recap/making-calls.md#setup-and-two-sided-test). Consider an interface only if that input is confirmed insufficient; see [input checks](device-scanner.md#when-you-need-it).
 
 2. **Audio input gain too low/muted**
    - Windows: Right-click speaker icon → Recording devices → Microphone → Properties → Levels → Set to **100%**
@@ -20,7 +20,7 @@
    - Old headsets from drawers often don't work
 
 4. **Connected to LINE IN instead of MIC IN**
-   - LINE IN has no bias voltage, won't power RECAP
+   - Use the supported external stereo MIC mode, with plug-in power where supported; line-only operation is not validated
    - Look for port with microphone icon or pink color
 
 5. **Wrong input device selected in software**
@@ -62,21 +62,26 @@
 
 **Symptom:** You open your recording and only one channel has audio — the other is silent or very quiet.
 
-**If the caller is on the recording but your own voice is missing, start here.** The usual cause is your recording device's input. RECAP draws 1–2 volts of plug-in power from the recorder's microphone input, and your voice needs that power to reach the recording. The caller's side doesn't. Check that:
+**If the caller is on the recording but your own voice is missing, check the
+recording input and the headset microphone path.** This symptom alone does not
+identify a fault. Earlier guidance said recorder bias powers S2 and carries your
+voice; that mechanism is not supported by the reviewed v40 artwork. See the
+[correction and pending validation](../getting-started/requirements.md#plug-in-power-and-voltage-validation-pending).
+Keep these supported setup checks:
 
 - The recorder input is a **stereo MIC input (not LINE IN) that supplies plug-in power**. Your recorder's manual will say; see [Recording Device Compatibility](../getting-started/requirements.md#recording-device-compatibility).
 - Your headset has a **microphone on its cable**. Without one, your phone uses its own mic and your voice never reaches RECAP. See [Cause 1](far-end-audio.md#cause-1-most-common-no-microphone-on-the-headset-cable).
 - If your phone uses a Lightning or USB-C adapter, you **connect the phone last**. See [connection order](far-end-audio.md#cause-3-connection-order).
 
-On a computer, also check the causes below.
+Also use the [two-sided test](../using-recap/making-calls.md#setup-and-two-sided-test) to confirm actual external-input capture. On a computer, check the items below.
 
-**This IS about the recording output** (not the headset). Most common cause:
+**This is about the recording output**, not headset playback. Check:
 
-1. **Computer has MONO input (most common)**
-   - Most modern laptops and all Macs have mono-only mic inputs
+1. **Check the selected input and channel mode**
+   - Many computers have mono microphone inputs; check the exact selected input rather than assuming from the brand
    - A mono input can only capture one of RECAP's two channels
    - Run the [Audio Device Scanner](https://recapmycalls.com/audio/) to check
-   - Solution: USB stereo audio adapter — [details here](device-scanner.md)
+   - The scan alone does not identify the cause. Use the [two-sided test](../using-recap/making-calls.md#setup-and-two-sided-test), and consider another input/interface only if the external input is confirmed unable to capture stereo.
 
 2. **Echo cancellation or noise suppression enabled**
    - These features can merge or suppress one channel
